@@ -18,3 +18,13 @@ C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\AddOrder\obj\Debug\AddOrder
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\AddOrder\obj\Debug\AddOrder.csproj.CoreCompileInputs.cache
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\AddOrder\obj\Debug\AddOrder.exe
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\AddOrder\obj\Debug\AddOrder.pdb
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\bin\Debug\AddOrder.exe.config
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\bin\Debug\AddOrder.exe
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\bin\Debug\AddOrder.pdb
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.csprojResolveAssemblyReference.cache
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.AddOrderForm.resources
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.Properties.Resources.resources
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.csproj.GenerateResource.Cache
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.csproj.CoreCompileInputs.cache
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.exe
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.pdb

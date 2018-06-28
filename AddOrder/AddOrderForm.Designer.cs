@@ -28,155 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.lbSause = new System.Windows.Forms.Label();
+            this.rbStandart = new System.Windows.Forms.RadioButton();
+            this.rbBig = new System.Windows.Forms.RadioButton();
+            this.cbGarlic = new System.Windows.Forms.CheckBox();
+            this.cbSalsa = new System.Windows.Forms.CheckBox();
+            this.cbCheese = new System.Windows.Forms.CheckBox();
+            this.cbCaesar = new System.Windows.Forms.CheckBox();
+            this.cbMustard = new System.Windows.Forms.CheckBox();
+            this.cbBigMac = new System.Windows.Forms.CheckBox();
+            this.cbBigTasty = new System.Windows.Forms.CheckBox();
+            this.btAdd = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbOrder = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.rbCash = new System.Windows.Forms.RadioButton();
+            this.rbCard = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.tbDiscount = new System.Windows.Forms.TextBox();
+            this.lbTotal = new System.Windows.Forms.Label();
+            this.lbChange = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbGiven = new System.Windows.Forms.TextBox();
+            this.btPrint = new System.Windows.Forms.Button();
+            this.btClose = new System.Windows.Forms.Button();
+            this.gbSize = new System.Windows.Forms.GroupBox();
+            this.gbPita = new System.Windows.Forms.GroupBox();
+            this.rbWheat = new System.Windows.Forms.RadioButton();
+            this.rbCheese = new System.Windows.Forms.RadioButton();
+            this.tbCount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.rtbComment = new System.Windows.Forms.RichTextBox();
+            this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.gbSize.SuspendLayout();
+            this.gbPita.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // label3
+            // lbSause
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(12, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Соус:";
+            this.lbSause.AutoSize = true;
+            this.lbSause.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSause.Location = new System.Drawing.Point(12, 124);
+            this.lbSause.Name = "lbSause";
+            this.lbSause.Size = new System.Drawing.Size(67, 25);
+            this.lbSause.TabIndex = 2;
+            this.lbSause.Text = "Соус:";
             // 
-            // radioButton1
+            // rbStandart
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(31, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 17);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Стандарт";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbStandart.AutoSize = true;
+            this.rbStandart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbStandart.Location = new System.Drawing.Point(31, 30);
+            this.rbStandart.Name = "rbStandart";
+            this.rbStandart.Size = new System.Drawing.Size(72, 17);
+            this.rbStandart.TabIndex = 3;
+            this.rbStandart.TabStop = true;
+            this.rbStandart.Text = "Стандарт";
+            this.rbStandart.UseVisualStyleBackColor = true;
+            this.rbStandart.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // radioButton2
+            // rbBig
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(123, 30);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(70, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Большая";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbBig.AutoSize = true;
+            this.rbBig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbBig.Location = new System.Drawing.Point(123, 30);
+            this.rbBig.Name = "rbBig";
+            this.rbBig.Size = new System.Drawing.Size(70, 17);
+            this.rbBig.TabIndex = 4;
+            this.rbBig.TabStop = true;
+            this.rbBig.Text = "Большая";
+            this.rbBig.UseVisualStyleBackColor = true;
+            this.rbBig.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // checkBox1
+            // cbGarlic
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(39, 194);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 17);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "Чесночный";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbGarlic.AutoSize = true;
+            this.cbGarlic.Location = new System.Drawing.Point(39, 194);
+            this.cbGarlic.Name = "cbGarlic";
+            this.cbGarlic.Size = new System.Drawing.Size(83, 17);
+            this.cbGarlic.TabIndex = 7;
+            this.cbGarlic.Text = "Чесночный";
+            this.cbGarlic.UseVisualStyleBackColor = true;
+            this.cbGarlic.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // checkBox2
+            // cbSalsa
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(131, 194);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(63, 17);
-            this.checkBox2.TabIndex = 8;
-            this.checkBox2.Text = "Сальса";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbSalsa.AutoSize = true;
+            this.cbSalsa.Location = new System.Drawing.Point(131, 194);
+            this.cbSalsa.Name = "cbSalsa";
+            this.cbSalsa.Size = new System.Drawing.Size(63, 17);
+            this.cbSalsa.TabIndex = 8;
+            this.cbSalsa.Text = "Сальса";
+            this.cbSalsa.UseVisualStyleBackColor = true;
+            this.cbSalsa.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // checkBox3
+            // cbCheese
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(39, 224);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(67, 17);
-            this.checkBox3.TabIndex = 9;
-            this.checkBox3.Text = "Сырный";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbCheese.AutoSize = true;
+            this.cbCheese.Location = new System.Drawing.Point(39, 224);
+            this.cbCheese.Name = "cbCheese";
+            this.cbCheese.Size = new System.Drawing.Size(67, 17);
+            this.cbCheese.TabIndex = 9;
+            this.cbCheese.Text = "Сырный";
+            this.cbCheese.UseVisualStyleBackColor = true;
+            this.cbCheese.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // checkBox4
+            // cbCaesar
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(131, 224);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(64, 17);
-            this.checkBox4.TabIndex = 10;
-            this.checkBox4.Text = "Цезарь";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbCaesar.AutoSize = true;
+            this.cbCaesar.Location = new System.Drawing.Point(131, 224);
+            this.cbCaesar.Name = "cbCaesar";
+            this.cbCaesar.Size = new System.Drawing.Size(64, 17);
+            this.cbCaesar.TabIndex = 10;
+            this.cbCaesar.Text = "Цезарь";
+            this.cbCaesar.UseVisualStyleBackColor = true;
+            this.cbCaesar.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // checkBox5
+            // cbMustard
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(39, 259);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(80, 17);
-            this.checkBox5.TabIndex = 11;
-            this.checkBox5.Text = "Горчичный";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbMustard.AutoSize = true;
+            this.cbMustard.Location = new System.Drawing.Point(39, 259);
+            this.cbMustard.Name = "cbMustard";
+            this.cbMustard.Size = new System.Drawing.Size(80, 17);
+            this.cbMustard.TabIndex = 11;
+            this.cbMustard.Text = "Горчичный";
+            this.cbMustard.UseVisualStyleBackColor = true;
+            this.cbMustard.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // checkBox6
+            // cbBigMac
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(39, 312);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(68, 17);
-            this.checkBox6.TabIndex = 12;
-            this.checkBox6.Text = "Биг Мак";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cbBigMac.AutoSize = true;
+            this.cbBigMac.Location = new System.Drawing.Point(39, 312);
+            this.cbBigMac.Name = "cbBigMac";
+            this.cbBigMac.Size = new System.Drawing.Size(68, 17);
+            this.cbBigMac.TabIndex = 12;
+            this.cbBigMac.Text = "Биг Мак";
+            this.cbBigMac.UseVisualStyleBackColor = true;
+            this.cbBigMac.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // checkBox7
+            // cbBigTasty
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(131, 312);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(83, 17);
-            this.checkBox7.TabIndex = 13;
-            this.checkBox7.Text = "Биг Тейсти";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.cbBigTasty.AutoSize = true;
+            this.cbBigTasty.Location = new System.Drawing.Point(131, 312);
+            this.cbBigTasty.Name = "cbBigTasty";
+            this.cbBigTasty.Size = new System.Drawing.Size(83, 17);
+            this.cbBigTasty.TabIndex = 13;
+            this.cbBigTasty.Text = "Биг Тейсти";
+            this.cbBigTasty.UseVisualStyleBackColor = true;
+            this.cbBigTasty.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // button1
+            // btAdd
             // 
-            this.button1.Location = new System.Drawing.Point(39, 462);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Добавить к заказу";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btAdd.Location = new System.Drawing.Point(39, 462);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(126, 23);
+            this.btAdd.TabIndex = 14;
+            this.btAdd.Text = "Добавить к заказу";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // label4
             // 
@@ -196,15 +209,15 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Премиум:";
             // 
-            // groupBox1
+            // gbOrder
             // 
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(296, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(438, 282);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Заказ";
+            this.gbOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbOrder.Location = new System.Drawing.Point(256, 12);
+            this.gbOrder.Name = "gbOrder";
+            this.gbOrder.Size = new System.Drawing.Size(496, 282);
+            this.gbOrder.TabIndex = 17;
+            this.gbOrder.TabStop = false;
+            this.gbOrder.Text = "Заказ";
             // 
             // label6
             // 
@@ -215,27 +228,27 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Способ оплаты:";
             // 
-            // radioButton5
+            // rbCash
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(394, 307);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(76, 17);
-            this.radioButton5.TabIndex = 19;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Наличные";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbCash.AutoSize = true;
+            this.rbCash.Location = new System.Drawing.Point(394, 307);
+            this.rbCash.Name = "rbCash";
+            this.rbCash.Size = new System.Drawing.Size(76, 17);
+            this.rbCash.TabIndex = 19;
+            this.rbCash.TabStop = true;
+            this.rbCash.Text = "Наличные";
+            this.rbCash.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rbCard
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(476, 307);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(55, 17);
-            this.radioButton6.TabIndex = 20;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Карта";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rbCard.AutoSize = true;
+            this.rbCard.Location = new System.Drawing.Point(476, 307);
+            this.rbCard.Name = "rbCard";
+            this.rbCard.Size = new System.Drawing.Size(55, 17);
+            this.rbCard.TabIndex = 20;
+            this.rbCard.TabStop = true;
+            this.rbCard.Text = "Карта";
+            this.rbCard.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -246,32 +259,32 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "Скидка:";
             // 
-            // textBox1
+            // tbDiscount
             // 
-            this.textBox1.Location = new System.Drawing.Point(394, 336);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 22;
+            this.tbDiscount.Location = new System.Drawing.Point(394, 336);
+            this.tbDiscount.Name = "tbDiscount";
+            this.tbDiscount.Size = new System.Drawing.Size(100, 20);
+            this.tbDiscount.TabIndex = 22;
             // 
-            // label8
+            // lbTotal
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(575, 307);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 25);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Итого:";
+            this.lbTotal.AutoSize = true;
+            this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTotal.Location = new System.Drawing.Point(575, 307);
+            this.lbTotal.Name = "lbTotal";
+            this.lbTotal.Size = new System.Drawing.Size(75, 25);
+            this.lbTotal.TabIndex = 23;
+            this.lbTotal.Text = "Итого:";
             // 
-            // label9
+            // lbChange
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(575, 366);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 25);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Сдача:";
+            this.lbChange.AutoSize = true;
+            this.lbChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbChange.Location = new System.Drawing.Point(575, 366);
+            this.lbChange.Name = "lbChange";
+            this.lbChange.Size = new System.Drawing.Size(80, 25);
+            this.lbChange.TabIndex = 24;
+            this.lbChange.Text = "Сдача:";
             // 
             // label10
             // 
@@ -282,85 +295,90 @@
             this.label10.TabIndex = 25;
             this.label10.Text = "Внесено:";
             // 
-            // textBox2
+            // tbGiven
             // 
-            this.textBox2.Location = new System.Drawing.Point(394, 377);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 26;
+            this.tbGiven.Location = new System.Drawing.Point(394, 377);
+            this.tbGiven.Name = "tbGiven";
+            this.tbGiven.Size = new System.Drawing.Size(100, 20);
+            this.tbGiven.TabIndex = 26;
             // 
-            // button2
+            // btPrint
             // 
-            this.button2.Location = new System.Drawing.Point(296, 438);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 23);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Напечатать чек";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btPrint.Location = new System.Drawing.Point(296, 438);
+            this.btPrint.Name = "btPrint";
+            this.btPrint.Size = new System.Drawing.Size(143, 23);
+            this.btPrint.TabIndex = 27;
+            this.btPrint.Text = "Напечатать чек";
+            this.btPrint.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btClose
             // 
-            this.button3.Location = new System.Drawing.Point(530, 438);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(143, 23);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Закочнить заказ";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btClose.Location = new System.Drawing.Point(530, 438);
+            this.btClose.Name = "btClose";
+            this.btClose.Size = new System.Drawing.Size(143, 23);
+            this.btClose.TabIndex = 28;
+            this.btClose.Text = "Закочнить заказ";
+            this.btClose.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gbSize
             // 
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox2.Location = new System.Drawing.Point(8, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(218, 58);
-            this.groupBox2.TabIndex = 29;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Размер:";
+            this.gbSize.Controls.Add(this.rbStandart);
+            this.gbSize.Controls.Add(this.rbBig);
+            this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbSize.Location = new System.Drawing.Point(8, 3);
+            this.gbSize.Name = "gbSize";
+            this.gbSize.Size = new System.Drawing.Size(218, 58);
+            this.gbSize.TabIndex = 29;
+            this.gbSize.TabStop = false;
+            this.gbSize.Text = "Размер:";
             // 
-            // groupBox3
+            // gbPita
             // 
-            this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Controls.Add(this.radioButton4);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox3.Location = new System.Drawing.Point(8, 67);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(218, 54);
-            this.groupBox3.TabIndex = 30;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Лаваш:";
+            this.gbPita.Controls.Add(this.rbWheat);
+            this.gbPita.Controls.Add(this.rbCheese);
+            this.gbPita.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbPita.Location = new System.Drawing.Point(8, 67);
+            this.gbPita.Name = "gbPita";
+            this.gbPita.Size = new System.Drawing.Size(218, 54);
+            this.gbPita.TabIndex = 30;
+            this.gbPita.TabStop = false;
+            this.gbPita.Text = "Лаваш:";
             // 
-            // radioButton3
+            // rbWheat
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(31, 30);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(84, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Пшеничный";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbWheat.AutoSize = true;
+            this.rbWheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbWheat.Location = new System.Drawing.Point(31, 30);
+            this.rbWheat.Name = "rbWheat";
+            this.rbWheat.Size = new System.Drawing.Size(84, 17);
+            this.rbWheat.TabIndex = 3;
+            this.rbWheat.TabStop = true;
+            this.rbWheat.Text = "Пшеничный";
+            this.rbWheat.UseVisualStyleBackColor = true;
+            this.rbWheat.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // radioButton4
+            // rbCheese
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton4.Location = new System.Drawing.Point(123, 30);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(66, 17);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Сырный";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbCheese.AutoSize = true;
+            this.rbCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbCheese.Location = new System.Drawing.Point(123, 30);
+            this.rbCheese.Name = "rbCheese";
+            this.rbCheese.Size = new System.Drawing.Size(66, 17);
+            this.rbCheese.TabIndex = 4;
+            this.rbCheese.TabStop = true;
+            this.rbCheese.Text = "Сырный";
+            this.rbCheese.UseVisualStyleBackColor = true;
+            this.rbCheese.CheckedChanged += new System.EventHandler(this.clearErrorProvider);
             // 
-            // textBox3
+            // tbCount
             // 
-            this.textBox3.Location = new System.Drawing.Point(108, 356);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 32;
+            this.tbCount.AllowDrop = true;
+            this.tbCount.Location = new System.Drawing.Point(108, 356);
+            this.tbCount.Name = "tbCount";
+            this.tbCount.Size = new System.Drawing.Size(100, 20);
+            this.tbCount.TabIndex = 32;
+            this.tbCount.Text = "1";
+            this.tbCount.TextChanged += new System.EventHandler(this.clearErrorProvider);
             // 
             // label1
             // 
@@ -380,93 +398,99 @@
             this.label2.TabIndex = 33;
             this.label2.Text = "Комментарий:";
             // 
-            // richTextBox1
+            // rtbComment
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(108, 382);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(149, 74);
-            this.richTextBox1.TabIndex = 35;
-            this.richTextBox1.Text = "";
+            this.rtbComment.Location = new System.Drawing.Point(108, 382);
+            this.rtbComment.Name = "rtbComment";
+            this.rtbComment.Size = new System.Drawing.Size(149, 74);
+            this.rtbComment.TabIndex = 35;
+            this.rtbComment.Text = "";
             // 
-            // Form1
+            // errProvider
+            // 
+            this.errProvider.ContainerControl = this;
+            // 
+            // AddOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 497);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbComment);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbCount);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.gbPita);
+            this.Controls.Add(this.gbSize);
+            this.Controls.Add(this.btClose);
+            this.Controls.Add(this.btPrint);
+            this.Controls.Add(this.tbGiven);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbChange);
+            this.Controls.Add(this.lbTotal);
+            this.Controls.Add(this.tbDiscount);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.radioButton5);
+            this.Controls.Add(this.rbCard);
+            this.Controls.Add(this.rbCash);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbOrder);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label3);
-            this.Name = "Form1";
+            this.Controls.Add(this.btAdd);
+            this.Controls.Add(this.cbBigTasty);
+            this.Controls.Add(this.cbBigMac);
+            this.Controls.Add(this.cbMustard);
+            this.Controls.Add(this.cbCaesar);
+            this.Controls.Add(this.cbCheese);
+            this.Controls.Add(this.cbSalsa);
+            this.Controls.Add(this.cbGarlic);
+            this.Controls.Add(this.lbSause);
+            this.Name = "AddOrderForm";
             this.Text = "Form1";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbSize.ResumeLayout(false);
+            this.gbSize.PerformLayout();
+            this.gbPita.ResumeLayout(false);
+            this.gbPita.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbSause;
+        private System.Windows.Forms.RadioButton rbStandart;
+        private System.Windows.Forms.RadioButton rbBig;
+        private System.Windows.Forms.CheckBox cbGarlic;
+        private System.Windows.Forms.CheckBox cbSalsa;
+        private System.Windows.Forms.CheckBox cbCheese;
+        private System.Windows.Forms.CheckBox cbCaesar;
+        private System.Windows.Forms.CheckBox cbMustard;
+        private System.Windows.Forms.CheckBox cbBigMac;
+        private System.Windows.Forms.CheckBox cbBigTasty;
+        private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbOrder;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton rbCash;
+        private System.Windows.Forms.RadioButton rbCard;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tbDiscount;
+        private System.Windows.Forms.Label lbTotal;
+        private System.Windows.Forms.Label lbChange;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbGiven;
+        private System.Windows.Forms.Button btPrint;
+        private System.Windows.Forms.Button btClose;
+        private System.Windows.Forms.GroupBox gbSize;
+        private System.Windows.Forms.GroupBox gbPita;
+        private System.Windows.Forms.RadioButton rbWheat;
+        private System.Windows.Forms.RadioButton rbCheese;
+        private System.Windows.Forms.TextBox tbCount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbComment;
+        private System.Windows.Forms.ErrorProvider errProvider;
     }
 }
 
