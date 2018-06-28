@@ -1,0 +1,9 @@
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\bin\Debug\SecondForm.exe.config
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\bin\Debug\SecondForm.exe
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\bin\Debug\SecondForm.pdb
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\obj\Debug\SecondForm.Form1.resources
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\obj\Debug\SecondForm.Properties.Resources.resources
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\obj\Debug\SecondForm.csproj.GenerateResource.Cache
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\obj\Debug\SecondForm.csproj.CoreCompileInputs.cache
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\obj\Debug\SecondForm.exe
+C:\Users\GODLIKE\source\repos\UI_Example\SecondForm\obj\Debug\SecondForm.pdb
