@@ -95,7 +95,7 @@
             // 
             this.rbBig.AutoSize = true;
             this.rbBig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbBig.Location = new System.Drawing.Point(123, 30);
+            this.rbBig.Location = new System.Drawing.Point(153, 30);
             this.rbBig.Name = "rbBig";
             this.rbBig.Size = new System.Drawing.Size(70, 17);
             this.rbBig.TabIndex = 4;
@@ -118,7 +118,7 @@
             // cbSalsa
             // 
             this.cbSalsa.AutoSize = true;
-            this.cbSalsa.Location = new System.Drawing.Point(131, 194);
+            this.cbSalsa.Location = new System.Drawing.Point(161, 194);
             this.cbSalsa.Name = "cbSalsa";
             this.cbSalsa.Size = new System.Drawing.Size(63, 17);
             this.cbSalsa.TabIndex = 8;
@@ -140,7 +140,7 @@
             // cbCaesar
             // 
             this.cbCaesar.AutoSize = true;
-            this.cbCaesar.Location = new System.Drawing.Point(131, 224);
+            this.cbCaesar.Location = new System.Drawing.Point(161, 224);
             this.cbCaesar.Name = "cbCaesar";
             this.cbCaesar.Size = new System.Drawing.Size(64, 17);
             this.cbCaesar.TabIndex = 10;
@@ -173,7 +173,7 @@
             // cbBigTasty
             // 
             this.cbBigTasty.AutoSize = true;
-            this.cbBigTasty.Location = new System.Drawing.Point(131, 312);
+            this.cbBigTasty.Location = new System.Drawing.Point(161, 312);
             this.cbBigTasty.Name = "cbBigTasty";
             this.cbBigTasty.Size = new System.Drawing.Size(83, 17);
             this.cbBigTasty.TabIndex = 13;
@@ -183,7 +183,7 @@
             // 
             // btAdd
             // 
-            this.btAdd.Location = new System.Drawing.Point(39, 462);
+            this.btAdd.Location = new System.Drawing.Point(39, 531);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(126, 23);
             this.btAdd.TabIndex = 14;
@@ -212,9 +212,9 @@
             // gbOrder
             // 
             this.gbOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gbOrder.Location = new System.Drawing.Point(256, 12);
+            this.gbOrder.Location = new System.Drawing.Point(359, 12);
             this.gbOrder.Name = "gbOrder";
-            this.gbOrder.Size = new System.Drawing.Size(496, 282);
+            this.gbOrder.Size = new System.Drawing.Size(632, 364);
             this.gbOrder.TabIndex = 17;
             this.gbOrder.TabStop = false;
             this.gbOrder.Text = "Заказ";
@@ -222,7 +222,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(300, 307);
+            this.label6.Location = new System.Drawing.Point(457, 405);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 13);
             this.label6.TabIndex = 18;
@@ -231,29 +231,32 @@
             // rbCash
             // 
             this.rbCash.AutoSize = true;
-            this.rbCash.Location = new System.Drawing.Point(394, 307);
+            this.rbCash.Checked = true;
+            this.rbCash.Location = new System.Drawing.Point(551, 405);
             this.rbCash.Name = "rbCash";
             this.rbCash.Size = new System.Drawing.Size(76, 17);
             this.rbCash.TabIndex = 19;
             this.rbCash.TabStop = true;
             this.rbCash.Text = "Наличные";
             this.rbCash.UseVisualStyleBackColor = true;
+            this.rbCash.CheckedChanged += new System.EventHandler(this.paymentChanged);
             // 
             // rbCard
             // 
             this.rbCard.AutoSize = true;
-            this.rbCard.Location = new System.Drawing.Point(476, 307);
+            this.rbCard.Location = new System.Drawing.Point(633, 405);
             this.rbCard.Name = "rbCard";
             this.rbCard.Size = new System.Drawing.Size(55, 17);
             this.rbCard.TabIndex = 20;
             this.rbCard.TabStop = true;
             this.rbCard.Text = "Карта";
             this.rbCard.UseVisualStyleBackColor = true;
+            this.rbCard.CheckedChanged += new System.EventHandler(this.paymentChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(300, 336);
+            this.label7.Location = new System.Drawing.Point(457, 434);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 13);
             this.label7.TabIndex = 21;
@@ -261,16 +264,17 @@
             // 
             // tbDiscount
             // 
-            this.tbDiscount.Location = new System.Drawing.Point(394, 336);
+            this.tbDiscount.Location = new System.Drawing.Point(551, 434);
             this.tbDiscount.Name = "tbDiscount";
             this.tbDiscount.Size = new System.Drawing.Size(100, 20);
             this.tbDiscount.TabIndex = 22;
+            this.tbDiscount.TextChanged += new System.EventHandler(this.recountTotalAndChange);
             // 
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTotal.Location = new System.Drawing.Point(575, 307);
+            this.lbTotal.Location = new System.Drawing.Point(735, 407);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(75, 25);
             this.lbTotal.TabIndex = 23;
@@ -280,7 +284,7 @@
             // 
             this.lbChange.AutoSize = true;
             this.lbChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbChange.Location = new System.Drawing.Point(575, 366);
+            this.lbChange.Location = new System.Drawing.Point(735, 466);
             this.lbChange.Name = "lbChange";
             this.lbChange.Size = new System.Drawing.Size(80, 25);
             this.lbChange.TabIndex = 24;
@@ -289,7 +293,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(300, 377);
+            this.label10.Location = new System.Drawing.Point(457, 475);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 13);
             this.label10.TabIndex = 25;
@@ -297,14 +301,15 @@
             // 
             // tbGiven
             // 
-            this.tbGiven.Location = new System.Drawing.Point(394, 377);
+            this.tbGiven.Location = new System.Drawing.Point(551, 475);
             this.tbGiven.Name = "tbGiven";
             this.tbGiven.Size = new System.Drawing.Size(100, 20);
             this.tbGiven.TabIndex = 26;
+            this.tbGiven.TextChanged += new System.EventHandler(this.recountTotalAndChange);
             // 
             // btPrint
             // 
-            this.btPrint.Location = new System.Drawing.Point(296, 438);
+            this.btPrint.Location = new System.Drawing.Point(603, 531);
             this.btPrint.Name = "btPrint";
             this.btPrint.Size = new System.Drawing.Size(143, 23);
             this.btPrint.TabIndex = 27;
@@ -313,7 +318,7 @@
             // 
             // btClose
             // 
-            this.btClose.Location = new System.Drawing.Point(530, 438);
+            this.btClose.Location = new System.Drawing.Point(773, 531);
             this.btClose.Name = "btClose";
             this.btClose.Size = new System.Drawing.Size(143, 23);
             this.btClose.TabIndex = 28;
@@ -327,7 +332,7 @@
             this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gbSize.Location = new System.Drawing.Point(8, 3);
             this.gbSize.Name = "gbSize";
-            this.gbSize.Size = new System.Drawing.Size(218, 58);
+            this.gbSize.Size = new System.Drawing.Size(268, 58);
             this.gbSize.TabIndex = 29;
             this.gbSize.TabStop = false;
             this.gbSize.Text = "Размер:";
@@ -339,7 +344,7 @@
             this.gbPita.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gbPita.Location = new System.Drawing.Point(8, 67);
             this.gbPita.Name = "gbPita";
-            this.gbPita.Size = new System.Drawing.Size(218, 54);
+            this.gbPita.Size = new System.Drawing.Size(268, 54);
             this.gbPita.TabIndex = 30;
             this.gbPita.TabStop = false;
             this.gbPita.Text = "Лаваш:";
@@ -361,7 +366,7 @@
             // 
             this.rbCheese.AutoSize = true;
             this.rbCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbCheese.Location = new System.Drawing.Point(123, 30);
+            this.rbCheese.Location = new System.Drawing.Point(153, 30);
             this.rbCheese.Name = "rbCheese";
             this.rbCheese.Size = new System.Drawing.Size(66, 17);
             this.rbCheese.TabIndex = 4;
@@ -392,7 +397,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 384);
+            this.label2.Location = new System.Drawing.Point(14, 398);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 33;
@@ -400,9 +405,9 @@
             // 
             // rtbComment
             // 
-            this.rtbComment.Location = new System.Drawing.Point(108, 382);
+            this.rtbComment.Location = new System.Drawing.Point(108, 396);
             this.rtbComment.Name = "rtbComment";
-            this.rtbComment.Size = new System.Drawing.Size(149, 74);
+            this.rtbComment.Size = new System.Drawing.Size(211, 104);
             this.rtbComment.TabIndex = 35;
             this.rtbComment.Text = "";
             // 
@@ -414,7 +419,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 497);
+            this.ClientSize = new System.Drawing.Size(1012, 566);
             this.Controls.Add(this.rtbComment);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbCount);

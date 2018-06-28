@@ -14,22 +14,23 @@ namespace AddOrder
     {
         private Label lastLabel;
         private int labelCounter;
+        private double summary = 0;
 
         public AddOrderForm()
         {
             InitializeComponent();
         }
 
-        private float getCost()
+        private double getCost()
         {
-            float cost;
+            double cost;
             if (rbBig.Checked)
                 cost = 7;
             else
                 cost = 5;
 
             if (cbBigMac.Checked || cbBigTasty.Checked)
-                cost += (float)1.5;
+                cost += (double)1.5;
             return cost * int.Parse(tbCount.Text);
         }
 
@@ -50,24 +51,24 @@ namespace AddOrder
             result += "Cоус: ";
 
             if (cbBigMac.Checked)
-                result += "БМ ";
+                result += "БигМак ";
             if (cbBigTasty.Checked)
-                result += "БТ ";
+                result += "БигТейсти ";
             if (cbCaesar.Checked)
-                result += "Цез ";
+                result += "Цезарь ";
             if (cbCheese.Checked)
-                result += "Сыр ";
+                result += "Сырный ";
             if (cbGarlic.Checked)
-                result += "Чесн ";
+                result += "Чесночный ";
             if (cbMustard.Checked)
-                result += "Горч ";
+                result += "Горчичный ";
             if (cbSalsa.Checked)
                 result += "Сальса ";
 
             result += "X" + tbCount.Text;
 
             if (rtbComment.Text != "")
-                result += " (" + rtbComment.Text + ")";
+                result += " \n(" + rtbComment.Text + ")";
 
             return result;
         }
@@ -80,6 +81,7 @@ namespace AddOrder
                 newLabel.Name = "lbN" + labelCounter;
                 newLabel.Left = 10;
                 newLabel.Width = gbOrder.Width - 100;
+                newLabel.Height = 30;
                 if (lastLabel == null)
                     newLabel.Top = 20;
                 else
@@ -96,9 +98,35 @@ namespace AddOrder
                 costLabel.Text = "=" + getCost();
                 gbOrder.Controls.Add(costLabel);
 
+                summary += getCost();
+
                 labelCounter++;
                 lastLabel = newLabel;
+
+                recountTotalAndChange(sender, e);
+
+                clearInput();
             }
+        }
+
+        private void clearInput()
+        {
+            rbBig.Checked = false;
+            rbStandart.Checked = false;
+            rbWheat.Checked = false;
+            rbCheese.Checked = false;
+
+            cbBigMac.Checked = false;
+            cbBigTasty.Checked = false;
+            cbCaesar.Checked = false;
+            cbCheese.Checked = false;
+            cbGarlic.Checked = false;
+            cbMustard.Checked = false;
+            cbSalsa.Checked = false;
+
+            tbCount.Text = "1";
+
+            rtbComment.Text = "";
         }
 
         private void clearErrorProvider(object sender, EventArgs e)
@@ -131,6 +159,32 @@ namespace AddOrder
                 return false;
             }
             return true;
+        }
+
+        private void paymentChanged(object sender, EventArgs e)
+        {
+            if (rbCard.Checked)
+            {
+                tbGiven.Enabled = false;
+                tbGiven.Text = "";
+                lbChange.Text = "Сдача: ";
+            }
+            else
+                tbGiven.Enabled = true;
+            recountTotalAndChange(sender, e);
+        }
+
+        private void recountTotalAndChange(object sender, EventArgs e)
+        {
+            double total = summary;
+            double discount, given;
+            if (double.TryParse(tbDiscount.Text, out discount) && discount >= 0)
+                total *= (100 - discount) / 100;
+            total = Math.Round(total, 2);
+            lbTotal.Text = "Итого: " + total;
+
+            if (double.TryParse(tbGiven.Text, out given) && given >= total)
+                lbChange.Text = "Сдача: " + (given - total);
         }
     }
 }
