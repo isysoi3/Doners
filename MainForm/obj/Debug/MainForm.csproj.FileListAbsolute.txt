@@ -1,0 +1,19 @@
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\bin\Debug\UI_Example.exe.config
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\bin\Debug\UI_Example.exe
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\bin\Debug\UI_Example.pdb
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\obj\Debug\UI_Example.QueueForm.resources
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\obj\Debug\UI_Example.Properties.Resources.resources
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\obj\Debug\MainForm.csproj.GenerateResource.Cache
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\obj\Debug\UI_Example.exe
+C:\Users\GODLIKE\source\repos\UI_Example\UI_Example\obj\Debug\UI_Example.pdb
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\bin\Debug\UI_Example.exe.config
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\bin\Debug\UI_Example.exe
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\bin\Debug\UI_Example.pdb
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\UI_Example.QueueForm.resources
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\UI_Example.Properties.Resources.resources
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\MainForm.csproj.GenerateResource.Cache
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\UI_Example.exe
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\UI_Example.pdb
+C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\MainForm.csprojResolveAssemblyReference.cache
