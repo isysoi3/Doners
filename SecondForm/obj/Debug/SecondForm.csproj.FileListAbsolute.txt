@@ -17,3 +17,13 @@ C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\SecondForm\obj\Debug\Second
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\SecondForm\obj\Debug\SecondForm.pdb
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\SecondForm\obj\Debug\SecondForm.csprojResolveAssemblyReference.cache
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\SecondForm\obj\Debug\SecondForm.SecondForm.resources
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\bin\Debug\SecondForm.exe.config
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\bin\Debug\SecondForm.exe
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\bin\Debug\SecondForm.pdb
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\obj\Debug\SecondForm.csprojAssemblyReference.cache
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\obj\Debug\SecondForm.SecondForm.resources
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\obj\Debug\SecondForm.Properties.Resources.resources
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\obj\Debug\SecondForm.csproj.GenerateResource.cache
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\obj\Debug\SecondForm.csproj.CoreCompileInputs.cache
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\obj\Debug\SecondForm.exe
+C:\Users\isysoi\Documents\GitHub\Doners\SecondForm\obj\Debug\SecondForm.pdb

@@ -315,6 +315,7 @@
             this.btPrint.TabIndex = 27;
             this.btPrint.Text = "Напечатать чек";
             this.btPrint.UseVisualStyleBackColor = true;
+            this.btPrint.Click += new System.EventHandler(this.printCkeckButtonClicked);
             // 
             // btClose
             // 

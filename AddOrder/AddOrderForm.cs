@@ -186,5 +186,10 @@ namespace AddOrder
             if (double.TryParse(tbGiven.Text, out given) && given >= total)
                 lbChange.Text = "Сдача: " + (given - total);
         }
+
+        private void printCkeckButtonClicked(object sender, EventArgs e)
+        {
+            //TODO: print check
+        }
     }
 }

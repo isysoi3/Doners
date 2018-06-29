@@ -28,3 +28,13 @@ C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.csproj.Gen
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.csproj.CoreCompileInputs.cache
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.exe
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\AddOrder\obj\Debug\AddOrder.pdb
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\bin\Debug\AddOrder.exe.config
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\bin\Debug\AddOrder.exe
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\bin\Debug\AddOrder.pdb
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\obj\Debug\AddOrder.csprojAssemblyReference.cache
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\obj\Debug\AddOrder.AddOrderForm.resources
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\obj\Debug\AddOrder.Properties.Resources.resources
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\obj\Debug\AddOrder.csproj.GenerateResource.cache
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\obj\Debug\AddOrder.csproj.CoreCompileInputs.cache
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\obj\Debug\AddOrder.exe
+C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\obj\Debug\AddOrder.pdb
