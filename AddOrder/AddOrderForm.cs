@@ -14,10 +14,11 @@ namespace AddOrder
     {
         private Label lastLabel;
         private int labelCounter;
-        private double summary = 0;
+        private double summary;
 
         public AddOrderForm()
         {
+            summary = 0;
             InitializeComponent();
         }
 
