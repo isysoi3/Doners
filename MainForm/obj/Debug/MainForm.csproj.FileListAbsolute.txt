@@ -17,3 +17,12 @@ C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\MainFo
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\UI_Example.exe
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\UI_Example.pdb
 C:\Users\GODLIKE\Desktop\Doners UI\Doners\UI_Example\UI_Example\obj\Debug\MainForm.csprojResolveAssemblyReference.cache
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\bin\Debug\UI_Example.exe.config
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\bin\Debug\UI_Example.exe
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\bin\Debug\UI_Example.pdb
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\UI_Example.QueueForm.resources
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\UI_Example.Properties.Resources.resources
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\UI_Example.exe
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\UI_Example.pdb
