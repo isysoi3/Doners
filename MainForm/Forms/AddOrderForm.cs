@@ -191,6 +191,7 @@ namespace AddOrder
             currentOrder.orderNumber = orderNumber;
             currentOrder.orderTime = currentTime;
             AddOrderCallback(currentOrder);
+            tbNumber.Text = "";
             currentOrder.ClearOrder();
             clearOrderInput();
             Hide();
