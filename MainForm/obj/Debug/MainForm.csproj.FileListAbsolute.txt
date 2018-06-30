@@ -26,3 +26,6 @@ C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\MainForm.csproj.Gener
 C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
 C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\UI_Example.exe
 C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\UI_Example.pdb
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\MainForm.csprojAssemblyReference.cache
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\AddOrder.AddOrderForm.resources
+C:\Users\isysoi\Documents\GitHub\Doners\MainForm\obj\Debug\SecondForm.SecondForm.resources

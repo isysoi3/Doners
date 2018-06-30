@@ -17,17 +17,17 @@ namespace UI_Example
 {
     public partial class QueueForm : Form
     {
-        //TODO: fix this path
-        private const string orderExePath = @"C:\Users\isysoi\Documents\GitHub\Doners\AddOrder\bin\Debug\AddOrder.exe";
 
         public QueueForm()
         {
             InitializeComponent();
+           
         }
 
         private void AddNewOrderButtonClick(object sender, EventArgs e)
         {
-            Process.Start(orderExePath);
+            var orderForm = new AddOrder.AddOrderForm();
+            orderForm.Show();
         }
     }
 }
