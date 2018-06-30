@@ -67,11 +67,77 @@ namespace UI_Example.Models
             return cost * quantity;
         }
 
+        public string GetSizeString()
+        {
+            switch (sizeType)
+            {
+                case SizeTypeEnum.big:
+                    return "Большая";
+                default:
+                    return "Стандартная";
+            }
+        }
+
+        public string GetPitaTypeString()
+        {
+            switch (pitaType)
+            {
+                case PitaTypeEnum.cheesy:
+                    return "Сырный";
+                default:
+                    return "Пшеничный";
+            }
+        }
+
+        public string GetSaucesString()
+        {
+            string result = "";
+            foreach (SauceTypeEnum sauce in sauces)
+            {
+                if (sauce == SauceTypeEnum.bigMac)
+                {
+                    result += "БигМак ";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.bigTasty)
+                {
+                    result += "БигТейсти ";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.caesar)
+                {
+                    result += "Цезарь ";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.cheesy)
+                {
+                    result += "Сырный ";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.garlic)
+                {
+                    result += "Чесночный ";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.mustard)
+                {
+                    result += "Горчичный ";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.salsa)
+                {
+                    result += "Сальса ";
+                    continue;
+                }
+            }
+            return result;
+        }
+
         public override string ToString()
         {
 
             string result;
-
+            //delete duplicating
             if (sizeType == SizeTypeEnum.big)
                 result = "Большая, ";
             else
