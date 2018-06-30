@@ -160,10 +160,10 @@ namespace AddOrder
 
         private void endOrderButtonClick(object sender, EventArgs e)
         {
-
+            //callbackOrder(currentOrder);
             currentOrder.ClearOrder();
             clearInput();
-            this.Close();
+            this.Hide();
         }
 
         private List<SauceTypeEnum> GetKebabSauces()
