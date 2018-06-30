@@ -96,37 +96,37 @@ namespace UI_Example.Models
             {
                 if (sauce == SauceTypeEnum.bigMac)
                 {
-                    result += "БигМак ";
+                    result += "БигМак\n";
                     continue;
                 }
                 if (sauce == SauceTypeEnum.bigTasty)
                 {
-                    result += "БигТейсти ";
+                    result += "БигТейсти\n";
                     continue;
                 }
                 if (sauce == SauceTypeEnum.caesar)
                 {
-                    result += "Цезарь ";
+                    result += "Цезарь\n";
                     continue;
                 }
                 if (sauce == SauceTypeEnum.cheesy)
                 {
-                    result += "Сырный ";
+                    result += "Сырный\n";
                     continue;
                 }
                 if (sauce == SauceTypeEnum.garlic)
                 {
-                    result += "Чесночный ";
+                    result += "Чесночный\n";
                     continue;
                 }
                 if (sauce == SauceTypeEnum.mustard)
                 {
-                    result += "Горчичный ";
+                    result += "Горчичный\n";
                     continue;
                 }
                 if (sauce == SauceTypeEnum.salsa)
                 {
-                    result += "Сальса ";
+                    result += "Сальса\n";
                     continue;
                 }
             }

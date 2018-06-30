@@ -48,7 +48,7 @@
             // 
             this.btRemove.BackColor = System.Drawing.Color.White;
             this.btRemove.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btRemove.Location = new System.Drawing.Point(778, 13);
+            this.btRemove.Location = new System.Drawing.Point(1051, 13);
             this.btRemove.Name = "btRemove";
             this.btRemove.Size = new System.Drawing.Size(26, 22);
             this.btRemove.TabIndex = 66;
@@ -63,7 +63,7 @@
             this.Controls.Add(this.lbOrderId);
             this.Controls.Add(this.btRemove);
             this.Name = "OrderControl";
-            this.Size = new System.Drawing.Size(813, 59);
+            this.Size = new System.Drawing.Size(1100, 59);
             this.ResumeLayout(false);
 
         }

@@ -17,11 +17,32 @@ namespace UI_Example.Controls
         {
             InitializeComponent();
 
+            setInfo(item);
+
+            int saucesCount = lbSauces.Text.Split('\n').Length - 1;
+            int cellsHeight = saucesCount * lbSauces.Height;
+
+            setHeigth(cellsHeight);
+        }
+
+        private void setInfo(KebabItem item)
+        {
             lbComment.Text = item.comment;
             lbQuantity.Text = item.quantity.ToString();
             lbSauces.Text = item.GetSaucesString();
             lbPitaType.Text = item.GetPitaTypeString();
             lbSize.Text = item.GetSizeString();
+        }
+
+        private void setHeigth(int height)
+        {
+            Height = height;
+            lbComment.Height = height;
+            lbQuantity.Height = height;
+            lbSauces.Height = height;
+            lbPitaType.Height = height;
+            lbSize.Height = height;
+            lbTime.Height = height;
         }
     }
 }
