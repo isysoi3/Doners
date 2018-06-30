@@ -15,11 +15,15 @@ using UI_Example.Models;
 //TODO: fix all namespace
 namespace AddOrder
 {
+
+    public delegate void AddNewOrderDelegate(OrderItem item);
+
     public partial class AddOrderForm : Form
     {
         private Label lastLabel;
         private int labelCounter;
         private OrderItem currentOrder;
+        public AddNewOrderDelegate AddOrderCallback;
 
         public AddOrderForm()
         {
@@ -29,7 +33,7 @@ namespace AddOrder
 
         private void btAdd_Click(object sender, EventArgs e)
         {
-            if(!checkInput())
+            if (!checkInput())
                 return;
 
             SizeTypeEnum size = (rbBig.Checked ? SizeTypeEnum.big : SizeTypeEnum.standart);
@@ -38,8 +42,9 @@ namespace AddOrder
             string comment = rtbComment.Text;
             int quantity = int.Parse(tbCount.Text);
 
-            KebabItem kebab = new KebabItem(size, 
-                pitaType, 
+            KebabItem kebab = new KebabItem(
+                size,
+                pitaType,
                 sauces,
                 comment,
                 quantity);
@@ -112,14 +117,14 @@ namespace AddOrder
                 errProvider.SetError(gbPita, "Лаваш не выбран");
                 return false;
             }
-            if (!cbCaesar.Checked && !cbCheese.Checked && !cbGarlic.Checked && !cbMustard.Checked 
+            if (!cbCaesar.Checked && !cbCheese.Checked && !cbGarlic.Checked && !cbMustard.Checked
                 && !cbSalsa.Checked && !cbBigMac.Checked && !cbBigTasty.Checked)
             {
                 errProvider.SetError(lbSause, "Соус не выбран");
                 return false;
             }
             int count;
-            if (tbCount.Text == "" ||  !int.TryParse(tbCount.Text, out count) || count <= 0)
+            if (tbCount.Text == "" || !int.TryParse(tbCount.Text, out count) || count <= 0)
             {
                 errProvider.SetError(tbCount, "Введите количество");
                 return false;
@@ -160,10 +165,10 @@ namespace AddOrder
 
         private void endOrderButtonClick(object sender, EventArgs e)
         {
-            //callbackOrder(currentOrder);
+            AddOrderCallback(currentOrder);
             currentOrder.ClearOrder();
             clearInput();
-            this.Hide();
+            Hide();
         }
 
         private List<SauceTypeEnum> GetKebabSauces()
@@ -182,8 +187,8 @@ namespace AddOrder
                 sauces.Add(SauceTypeEnum.cheesy);
 
             if (cbGarlic.Checked)
-               sauces.Add(SauceTypeEnum.garlic);
-               
+                sauces.Add(SauceTypeEnum.garlic);
+
             if (cbSalsa.Checked)
                 sauces.Add(SauceTypeEnum.salsa);
 

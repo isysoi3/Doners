@@ -12,23 +12,33 @@ using System.IO.Pipes;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Diagnostics;
+using UI_Example.Models;
+using AddOrder;
 
 //TODO: fix all namespace
 namespace UI_Example
 {
+
     public partial class QueueForm : Form
     {
+        private AddOrderForm orderForm;
 
         public QueueForm()
         {
             InitializeComponent();
-           
+            orderForm = new AddOrderForm();
+            orderForm.AddOrderCallback = new AddNewOrderDelegate(HandleNewOrder);
         }
 
         private void AddNewOrderButtonClick(object sender, EventArgs e)
         {
-            var orderForm = new AddOrder.AddOrderForm();
             orderForm.Show();
+        }
+
+        private void HandleNewOrder(OrderItem item)
+        {
+            double tmp = item.summary;
+
         }
     }
 }
