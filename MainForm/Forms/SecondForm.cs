@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//TODO: fix all namespace
 namespace SecondForm
 {
     public partial class SecondForm : Form

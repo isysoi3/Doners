@@ -13,6 +13,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Diagnostics;
 
+//TODO: fix all namespace
 namespace UI_Example
 {
     public partial class QueueForm : Form
