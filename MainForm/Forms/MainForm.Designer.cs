@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lbNumberCommon = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.lbSizeCommon = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -46,24 +47,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.AddNewOrderButtonClick);
             // 
-            // label21
+            // lbNumberCommon
             // 
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.Location = new System.Drawing.Point(10, 2);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 33);
-            this.label21.TabIndex = 78;
-            this.label21.Text = "№";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbNumberCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbNumberCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNumberCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbNumberCommon.Location = new System.Drawing.Point(10, 2);
+            this.lbNumberCommon.Name = "lbNumberCommon";
+            this.lbNumberCommon.Size = new System.Drawing.Size(42, 33);
+            this.lbNumberCommon.TabIndex = 78;
+            this.lbNumberCommon.Text = "№";
+            this.lbNumberCommon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.Location = new System.Drawing.Point(417, 2);
+            this.label23.Location = new System.Drawing.Point(567, 2);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(366, 33);
             this.label23.TabIndex = 77;
@@ -75,7 +76,7 @@
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.Location = new System.Drawing.Point(367, 2);
+            this.label25.Location = new System.Drawing.Point(517, 2);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 33);
             this.label25.TabIndex = 76;
@@ -87,7 +88,7 @@
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.Location = new System.Drawing.Point(49, 2);
+            this.label27.Location = new System.Drawing.Point(199, 2);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(164, 33);
             this.label27.TabIndex = 75;
@@ -99,19 +100,32 @@
             this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.Location = new System.Drawing.Point(212, 2);
+            this.label29.Location = new System.Drawing.Point(362, 2);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(155, 33);
             this.label29.TabIndex = 74;
             this.label29.Text = "Лаваш";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbSizeCommon
+            // 
+            this.lbSizeCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSizeCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSizeCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSizeCommon.Location = new System.Drawing.Point(50, 2);
+            this.lbSizeCommon.Name = "lbSizeCommon";
+            this.lbSizeCommon.Size = new System.Drawing.Size(150, 33);
+            this.lbSizeCommon.TabIndex = 79;
+            this.lbSizeCommon.Text = "Размер";
+            this.lbSizeCommon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // QueueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 517);
-            this.Controls.Add(this.label21);
+            this.Controls.Add(this.lbSizeCommon);
+            this.Controls.Add(this.lbNumberCommon);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label27);
@@ -126,11 +140,12 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lbNumberCommon;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lbSizeCommon;
     }
 }
 

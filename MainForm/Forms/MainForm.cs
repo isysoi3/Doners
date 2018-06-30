@@ -23,10 +23,13 @@ namespace UI_Example
     public partial class QueueForm : Form
     {
         private AddOrderForm orderForm;
+        private List<OrderControl> orderControls;
 
         public QueueForm()
         {
             InitializeComponent();
+
+            orderControls = new List<OrderControl>();
             orderForm = new AddOrderForm();
             orderForm.AddOrderCallback = new AddNewOrderDelegate(HandleNewOrder);
         }
@@ -38,10 +41,19 @@ namespace UI_Example
 
         private void HandleNewOrder(OrderItem item)
         {
-            double tmp = item.summary;
             OrderControl orderControl = new OrderControl(item);
             Controls.Add(orderControl);
-            orderControl.Top = label14.Bottom + 10;
+            if (orderControls.Count == 0)
+            {
+                orderControl.Top = lbNumberCommon.Bottom + 10;
+                orderControl.Left = lbNumberCommon.Left;
+            }
+            else {
+                OrderControl lastOrder = orderControls.Last();
+                orderControl.Top = lastOrder.Bottom + 10;
+                orderControl.Left = lastOrder.Left;
+            }
+            orderControls.Add(orderControl);
         }
     }
 }
