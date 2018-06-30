@@ -14,6 +14,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Diagnostics;
 using UI_Example.Models;
 using AddOrder;
+using UI_Example.Controls;
 
 //TODO: fix all namespace
 namespace UI_Example
@@ -38,7 +39,9 @@ namespace UI_Example
         private void HandleNewOrder(OrderItem item)
         {
             double tmp = item.summary;
-
+            OrderControl orderControl = new OrderControl(item);
+            Controls.Add(orderControl);
+            orderControl.Top = label14.Bottom + 10;
         }
     }
 }
