@@ -63,7 +63,7 @@
             this.Controls.Add(this.lbOrderId);
             this.Controls.Add(this.btRemove);
             this.Name = "OrderControl";
-            this.Size = new System.Drawing.Size(1100, 47);
+            this.Size = new System.Drawing.Size(1100, 34);
             this.ResumeLayout(false);
 
         }
