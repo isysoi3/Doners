@@ -18,7 +18,6 @@ namespace UI_Example.Controls
             InitializeComponent();
 
             setInfo(item);
-
             int saucesCount = lbSauces.Text.Split('\n').Length - 1;
             int cellsHeight = saucesCount * lbSauces.Height;
 
@@ -42,7 +41,6 @@ namespace UI_Example.Controls
             lbSauces.Height = height;
             lbPitaType.Height = height;
             lbSize.Height = height;
-            lbTime.Height = height;
         }
     }
 }

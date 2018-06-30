@@ -30,6 +30,7 @@
         {
             this.lbOrderId = new System.Windows.Forms.Label();
             this.btRemove = new System.Windows.Forms.Button();
+            this.lbTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbOrderId
@@ -56,10 +57,23 @@
             this.btRemove.UseVisualStyleBackColor = false;
             this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
             // 
+            // lbTime
+            // 
+            this.lbTime.BackColor = System.Drawing.Color.White;
+            this.lbTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTime.Location = new System.Drawing.Point(41, 0);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(100, 33);
+            this.lbTime.TabIndex = 77;
+            this.lbTime.Text = "14:22:22";
+            this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OrderControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.lbOrderId);
             this.Controls.Add(this.btRemove);
             this.Name = "OrderControl";
@@ -72,5 +86,6 @@
 
         private System.Windows.Forms.Label lbOrderId;
         private System.Windows.Forms.Button btRemove;
+        private System.Windows.Forms.Label lbTime;
     }
 }

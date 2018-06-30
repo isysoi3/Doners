@@ -19,6 +19,8 @@ namespace UI_Example.Controls
             lbOrderId.Text = item.orderNumber.ToString();
             lbOrderId.DoubleClick += changeOrderColor;
             AddKebabControls(item.kebabs);
+
+            lbTime.Text = item.orderTime.ToString("HH:mm:ss");
         }
 
         private void changeOrderColor(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace UI_Example.Controls
             foreach(KebabItem kebab in kebabs)
             {
                 KebabControl orderControl = new KebabControl(kebab);
-                orderControl.Left = lbOrderId.Right;
+                orderControl.Left = lbTime.Right;
                 if (lastControl == null)
                     orderControl.Top = lbOrderId.Top;
                 else
@@ -50,6 +52,7 @@ namespace UI_Example.Controls
                 this.Controls.Add(orderControl);
             }
             lbOrderId.Height = lastControl.Bottom - lbOrderId.Top;
+            lbTime.Height = lbOrderId.Height;
             this.Height = height + lbOrderId.Height;
         }
 

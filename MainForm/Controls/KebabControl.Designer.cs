@@ -33,7 +33,6 @@
             this.lbSauces = new System.Windows.Forms.Label();
             this.lbPitaType = new System.Windows.Forms.Label();
             this.lbSize = new System.Windows.Forms.Label();
-            this.lbTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbComment
@@ -41,7 +40,7 @@
             this.lbComment.BackColor = System.Drawing.Color.White;
             this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbComment.Location = new System.Drawing.Point(577, 0);
+            this.lbComment.Location = new System.Drawing.Point(478, 0);
             this.lbComment.Name = "lbComment";
             this.lbComment.Size = new System.Drawing.Size(400, 26);
             this.lbComment.TabIndex = 74;
@@ -96,30 +95,17 @@
             this.lbSize.Text = "Большая";
             this.lbSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbTime
-            // 
-            this.lbTime.BackColor = System.Drawing.Color.White;
-            this.lbTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTime.Location = new System.Drawing.Point(478, 0);
-            this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(100, 26);
-            this.lbTime.TabIndex = 76;
-            this.lbTime.Text = "14:22:22";
-            this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // KebabControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lbTime);
             this.Controls.Add(this.lbSize);
             this.Controls.Add(this.lbComment);
             this.Controls.Add(this.lbQuantity);
             this.Controls.Add(this.lbSauces);
             this.Controls.Add(this.lbPitaType);
             this.Name = "KebabControl";
-            this.Size = new System.Drawing.Size(1095, 275);
+            this.Size = new System.Drawing.Size(879, 27);
             this.ResumeLayout(false);
 
         }
@@ -131,6 +117,5 @@
         private System.Windows.Forms.Label lbSauces;
         private System.Windows.Forms.Label lbPitaType;
         private System.Windows.Forms.Label lbSize;
-        private System.Windows.Forms.Label lbTime;
     }
 }
