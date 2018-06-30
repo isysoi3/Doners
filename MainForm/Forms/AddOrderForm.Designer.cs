@@ -63,6 +63,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.rtbComment = new System.Windows.Forms.RichTextBox();
             this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.tbNumber = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.gbSize.SuspendLayout();
             this.gbPita.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
@@ -274,7 +276,7 @@
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTotal.Location = new System.Drawing.Point(735, 407);
+            this.lbTotal.Location = new System.Drawing.Point(735, 398);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(75, 25);
             this.lbTotal.TabIndex = 23;
@@ -284,7 +286,7 @@
             // 
             this.lbChange.AutoSize = true;
             this.lbChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbChange.Location = new System.Drawing.Point(735, 466);
+            this.lbChange.Location = new System.Drawing.Point(735, 434);
             this.lbChange.Name = "lbChange";
             this.lbChange.Size = new System.Drawing.Size(80, 25);
             this.lbChange.TabIndex = 24;
@@ -417,11 +419,30 @@
             // 
             this.errProvider.ContainerControl = this;
             // 
+            // tbNumber
+            // 
+            this.tbNumber.Location = new System.Drawing.Point(840, 475);
+            this.tbNumber.Name = "tbNumber";
+            this.tbNumber.Size = new System.Drawing.Size(100, 20);
+            this.tbNumber.TabIndex = 37;
+            this.tbNumber.TextChanged += new System.EventHandler(this.clearErrorProvider);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(741, 480);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Номер заказа:";
+            // 
             // AddOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 566);
+            this.Controls.Add(this.tbNumber);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.rtbComment);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbCount);
@@ -498,6 +519,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox rtbComment;
         private System.Windows.Forms.ErrorProvider errProvider;
+        private System.Windows.Forms.TextBox tbNumber;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -9,6 +9,7 @@ namespace UI_Example.Models
 {
     public class OrderItem
     {
+        public int orderNumber;
         public double summary { get; private set; }
         public List<KebabItem> kebabs { get; private set; }
 

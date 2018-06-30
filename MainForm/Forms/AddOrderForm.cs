@@ -100,6 +100,18 @@ namespace AddOrder
             rtbComment.Text = "";
         }
 
+        private void clearOrderInput()
+        {
+            clearInput();
+            gbOrder.Controls.Clear();
+            tbDiscount.Clear();
+            tbGiven.Clear();
+            rbCash.Checked = true;
+
+            lbTotal.Text = "Итого:";
+            lbChange.Text = "Сдача:";
+        }
+
         private void clearErrorProvider(object sender, EventArgs e)
         {
             errProvider.Clear();
@@ -167,9 +179,16 @@ namespace AddOrder
 
         private void endOrderButtonClick(object sender, EventArgs e)
         {
+            int orderNumber;
+            if(!int.TryParse(tbNumber.Text, out orderNumber) || orderNumber < 0)
+            {
+                errProvider.SetError(tbNumber, "Не указан номер заказа");
+                return;
+            }
+            currentOrder.orderNumber = orderNumber;
             AddOrderCallback(currentOrder);
             currentOrder.ClearOrder();
-            clearInput();
+            clearOrderInput();
             Hide();
         }
 

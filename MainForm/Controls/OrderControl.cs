@@ -16,7 +16,7 @@ namespace UI_Example.Controls
         public OrderControl(OrderItem item)
         {
             InitializeComponent();
-            lbOrderId.Text = "21";
+            lbOrderId.Text = item.orderNumber.ToString();
             AddKebabControls(item.kebabs);
         }
 
