@@ -47,6 +47,8 @@ namespace UI_Example
 
         private void HandleNewOrder(OrderItem item)
         {
+            secondForm.AddNewOrder(item);
+
             OrderControl orderControl = new OrderControl(item);
             Controls.Add(orderControl);
             if (orderControls.Count == 0)
@@ -60,6 +62,7 @@ namespace UI_Example
                 orderControl.Left = lastOrder.Left;
             }
             orderControls.Add(orderControl);
+
         }
     }
 }
