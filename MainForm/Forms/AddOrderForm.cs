@@ -134,6 +134,7 @@ namespace AddOrder
 
         private void paymentChanged(object sender, EventArgs e)
         {
+            //TODO: move to order item
             if (rbCard.Checked)
             {
                 tbGiven.Enabled = false;
@@ -147,6 +148,7 @@ namespace AddOrder
 
         private void recountTotalAndChange(object sender, EventArgs e)
         {
+            //TODO: move to order item
             double total = currentOrder.summary;
             double discount, given;
             if (double.TryParse(tbDiscount.Text, out discount) && discount >= 0)
