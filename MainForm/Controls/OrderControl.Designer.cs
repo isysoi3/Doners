@@ -37,7 +37,7 @@
             this.lbOrderId.BackColor = System.Drawing.Color.White;
             this.lbOrderId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbOrderId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbOrderId.Location = new System.Drawing.Point(8, 13);
+            this.lbOrderId.Location = new System.Drawing.Point(0, 0);
             this.lbOrderId.Name = "lbOrderId";
             this.lbOrderId.Size = new System.Drawing.Size(42, 33);
             this.lbOrderId.TabIndex = 71;
@@ -48,7 +48,7 @@
             // 
             this.btRemove.BackColor = System.Drawing.Color.White;
             this.btRemove.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btRemove.Location = new System.Drawing.Point(1051, 13);
+            this.btRemove.Location = new System.Drawing.Point(1074, 0);
             this.btRemove.Name = "btRemove";
             this.btRemove.Size = new System.Drawing.Size(26, 22);
             this.btRemove.TabIndex = 66;
@@ -63,7 +63,7 @@
             this.Controls.Add(this.lbOrderId);
             this.Controls.Add(this.btRemove);
             this.Name = "OrderControl";
-            this.Size = new System.Drawing.Size(1100, 59);
+            this.Size = new System.Drawing.Size(1100, 47);
             this.ResumeLayout(false);
 
         }

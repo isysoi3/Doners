@@ -31,7 +31,6 @@ namespace UI_Example.Controls
                 lbOrderId.BackColor = Color.Lime;
             else
                 lbOrderId.BackColor = Color.White;
-
         }
 
         private void AddKebabControls(List<KebabItem> kebabs)
