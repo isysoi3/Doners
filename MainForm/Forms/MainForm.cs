@@ -14,6 +14,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Diagnostics;
 using UI_Example.Models;
 using AddOrder;
+using SecondForm;
 using UI_Example.Controls;
 
 //TODO: fix all namespace
@@ -23,6 +24,7 @@ namespace UI_Example
     public partial class QueueForm : Form
     {
         private AddOrderForm orderForm;
+        private SecondForm.SecondForm secondForm;
         private List<OrderControl> orderControls;
 
         public QueueForm()
@@ -30,8 +32,12 @@ namespace UI_Example
             InitializeComponent();
 
             orderControls = new List<OrderControl>();
+
             orderForm = new AddOrderForm();
             orderForm.AddOrderCallback = new AddNewOrderDelegate(HandleNewOrder);
+
+            secondForm = new SecondForm.SecondForm();
+            secondForm.Show();
         }
 
         private void AddNewOrderButtonClick(object sender, EventArgs e)
