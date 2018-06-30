@@ -10,107 +10,69 @@ using System.Windows.Forms;
 using System.IO.Pipes;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using UI_Example.Models;
 
+//TODO: fix all namespace
 namespace AddOrder
 {
     public partial class AddOrderForm : Form
     {
         private Label lastLabel;
         private int labelCounter;
-        private double summary;
+        private OrderItem currentOrder;
 
         public AddOrderForm()
         {
-            summary = 0;
+            currentOrder = new OrderItem();
             InitializeComponent();
-        }
-
-        private double getCost()
-        {
-            double cost;
-            if (rbBig.Checked)
-                cost = 7;
-            else
-                cost = 5;
-
-            if (cbBigMac.Checked || cbBigTasty.Checked)
-                cost += (double)1.5;
-            return cost * int.Parse(tbCount.Text);
-        }
-
-        private string makeText()
-        {
-            string result;
-
-            if (rbBig.Checked)
-                result = "Большая, ";
-            else
-                result = "Cтандарт, ";
-
-            if (rbWheat.Checked)
-                result += "Пш. лаваш, ";
-            else
-                result += "Сыр. лаваш, ";
-
-            result += "Cоус: ";
-
-            if (cbBigMac.Checked)
-                result += "БигМак ";
-            if (cbBigTasty.Checked)
-                result += "БигТейсти ";
-            if (cbCaesar.Checked)
-                result += "Цезарь ";
-            if (cbCheese.Checked)
-                result += "Сырный ";
-            if (cbGarlic.Checked)
-                result += "Чесночный ";
-            if (cbMustard.Checked)
-                result += "Горчичный ";
-            if (cbSalsa.Checked)
-                result += "Сальса ";
-
-            result += "X" + tbCount.Text;
-
-            if (rtbComment.Text != "")
-                result += " \n(" + rtbComment.Text + ")";
-
-            return result;
         }
 
         private void btAdd_Click(object sender, EventArgs e)
         {
-            if(checkInput())
-            {
-                Label newLabel = new Label();
-                newLabel.Name = "lbN" + labelCounter;
-                newLabel.Left = 10;
-                newLabel.Width = gbOrder.Width - 100;
-                newLabel.Height = 30;
-                if (lastLabel == null)
-                    newLabel.Top = 20;
-                else
-                    newLabel.Top = lastLabel.Bottom;
+            if(!checkInput())
+                return;
 
-                newLabel.Text = makeText();
-                gbOrder.Controls.Add(newLabel);
+            SizeTypeEnum size = (rbBig.Checked ? SizeTypeEnum.big : SizeTypeEnum.standart);
+            PitaTypeEnum pitaType = (rbWheat.Checked ? PitaTypeEnum.wheaten : PitaTypeEnum.cheesy);
+            List<SauceTypeEnum> sauces = GetKebabSauces();
+            string comment = rtbComment.Text;
+            int quantity = int.Parse(tbCount.Text);
 
-                Label costLabel = new Label();
-                costLabel.Width = 60;
-                costLabel.Name = "costN" + labelCounter;
-                costLabel.Left = gbOrder.Width - 70;
-                costLabel.Top = newLabel.Top;
-                costLabel.Text = "=" + getCost();
-                gbOrder.Controls.Add(costLabel);
+            KebabItem kebab = new KebabItem(size, 
+                pitaType, 
+                sauces,
+                comment,
+                quantity);
 
-                summary += getCost();
+            currentOrder.AddNewKebabToOrder(kebab);
 
-                labelCounter++;
-                lastLabel = newLabel;
+            Label newLabel = new Label();
+            newLabel.Name = "lbN" + labelCounter;
+            newLabel.Left = 10;
+            newLabel.Width = gbOrder.Width - 100;
+            newLabel.Height = 30;
+            if (lastLabel == null)
+                newLabel.Top = 20;
+            else
+                newLabel.Top = lastLabel.Bottom;
 
-                recountTotalAndChange(sender, e);
+            newLabel.Text = kebab.ToString();
+            gbOrder.Controls.Add(newLabel);
 
-                clearInput();
-            }
+            Label costLabel = new Label();
+            costLabel.Width = 60;
+            costLabel.Name = "costN" + labelCounter;
+            costLabel.Left = gbOrder.Width - 70;
+            costLabel.Top = newLabel.Top;
+            costLabel.Text = "=" + kebab.CountCost();
+            gbOrder.Controls.Add(costLabel);
+
+            labelCounter++;
+            lastLabel = newLabel;
+
+            recountTotalAndChange(sender, e);
+
+            clearInput();
         }
 
         private void clearInput()
@@ -180,7 +142,7 @@ namespace AddOrder
 
         private void recountTotalAndChange(object sender, EventArgs e)
         {
-            double total = summary;
+            double total = currentOrder.summary;
             double discount, given;
             if (double.TryParse(tbDiscount.Text, out discount) && discount >= 0)
                 total *= (100 - discount) / 100;
@@ -200,5 +162,30 @@ namespace AddOrder
         {
             //TODO: pass info to main form
         }
+
+        private List<SauceTypeEnum> GetKebabSauces()
+        {
+            List<SauceTypeEnum> sauces = new List<SauceTypeEnum>();
+            if (cbBigMac.Checked)
+                sauces.Add(SauceTypeEnum.bigMac);
+
+            if (cbBigTasty.Checked)
+                sauces.Add(SauceTypeEnum.bigTasty);
+
+            if (cbCaesar.Checked)
+                sauces.Add(SauceTypeEnum.caesar);
+
+            if (cbCheese.Checked)
+                sauces.Add(SauceTypeEnum.cheesy);
+
+            if (cbGarlic.Checked)
+               sauces.Add(SauceTypeEnum.garlic);
+               
+            if (cbSalsa.Checked)
+                sauces.Add(SauceTypeEnum.salsa);
+
+            return sauces;
+        }
+
     }
 }
