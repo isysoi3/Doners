@@ -10,7 +10,7 @@ namespace UI_Example.Models
     public class OrderItem
     {
         public double summary { get; private set; }
-        private List<KebabItem> kebabs;
+        public List<KebabItem> kebabs { get; private set; }
 
         public OrderItem()
         {
