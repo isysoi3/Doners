@@ -185,6 +185,7 @@ namespace AddOrder
                 errProvider.SetError(tbNumber, "Не указан номер заказа");
                 return;
             }
+            //TODO: if order is empty some error. why?
             currentOrder.orderNumber = orderNumber;
             AddOrderCallback(currentOrder);
             currentOrder.ClearOrder();
