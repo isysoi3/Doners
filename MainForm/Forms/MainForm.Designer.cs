@@ -77,7 +77,7 @@
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.Location = new System.Drawing.Point(478, 2);
+            this.label25.Location = new System.Drawing.Point(577, 2);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 33);
             this.label25.TabIndex = 76;
@@ -89,7 +89,7 @@
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.Location = new System.Drawing.Point(200, 2);
+            this.label27.Location = new System.Drawing.Point(299, 2);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(140, 33);
             this.label27.TabIndex = 75;
@@ -101,7 +101,7 @@
             this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.Location = new System.Drawing.Point(339, 2);
+            this.label29.Location = new System.Drawing.Point(438, 2);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(140, 33);
             this.label29.TabIndex = 74;
@@ -113,7 +113,7 @@
             this.lbSizeCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbSizeCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbSizeCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbSizeCommon.Location = new System.Drawing.Point(51, 2);
+            this.lbSizeCommon.Location = new System.Drawing.Point(150, 2);
             this.lbSizeCommon.Name = "lbSizeCommon";
             this.lbSizeCommon.Size = new System.Drawing.Size(150, 33);
             this.lbSizeCommon.TabIndex = 79;
@@ -125,7 +125,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(529, 2);
+            this.label1.Location = new System.Drawing.Point(51, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 33);
             this.label1.TabIndex = 80;
