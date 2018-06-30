@@ -160,7 +160,10 @@ namespace AddOrder
 
         private void endOrderButtonClick(object sender, EventArgs e)
         {
-            //TODO: pass info to main form
+
+            currentOrder.ClearOrder();
+            clearInput();
+            this.Close();
         }
 
         private List<SauceTypeEnum> GetKebabSauces()
