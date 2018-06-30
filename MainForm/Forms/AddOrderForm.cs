@@ -185,8 +185,11 @@ namespace AddOrder
                 errProvider.SetError(tbNumber, "Не указан номер заказа");
                 return;
             }
+            DateTime currentTime = DateTime.Now;
+            
             //TODO: if order is empty some error. why?
             currentOrder.orderNumber = orderNumber;
+            currentOrder.orderTime = currentTime;
             AddOrderCallback(currentOrder);
             currentOrder.ClearOrder();
             clearOrderInput();
