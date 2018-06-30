@@ -31,7 +31,7 @@ namespace UI_Example.Models
         bigTasty
     }
 
-    class KebabItem
+    public class KebabItem
     {
 
         public PitaTypeEnum pitaType { get; private set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 //TODO: fix all namespace
 namespace UI_Example.Models
 {
-    class OrderItem
+    public class OrderItem
     {
         public double summary { get; private set; }
         private List<KebabItem> kebabs;
