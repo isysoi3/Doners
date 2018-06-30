@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\KebabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\KebabControl.Designer.cs">
+      <DependentUpon>KebabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OrderControl.Designer.cs">
+      <DependentUpon>OrderControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,12 @@
     <Compile Include="Forms\SecondForm.Designer.cs">
       <DependentUpon>SecondForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\KebabControl.resx">
+      <DependentUpon>KebabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OrderControl.resx">
+      <DependentUpon>OrderControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddOrderForm.resx">
       <DependentUpon>AddOrderForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -99,5 +117,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
