@@ -41,9 +41,9 @@
             this.lbComment.BackColor = System.Drawing.Color.White;
             this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbComment.Location = new System.Drawing.Point(566, 0);
+            this.lbComment.Location = new System.Drawing.Point(577, 0);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(464, 26);
+            this.lbComment.Size = new System.Drawing.Size(400, 26);
             this.lbComment.TabIndex = 74;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -53,7 +53,7 @@
             this.lbQuantity.BackColor = System.Drawing.Color.White;
             this.lbQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbQuantity.Location = new System.Drawing.Point(418, 0);
+            this.lbQuantity.Location = new System.Drawing.Point(427, 0);
             this.lbQuantity.Name = "lbQuantity";
             this.lbQuantity.Size = new System.Drawing.Size(52, 26);
             this.lbQuantity.TabIndex = 73;
@@ -65,9 +65,9 @@
             this.lbSauces.BackColor = System.Drawing.Color.White;
             this.lbSauces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbSauces.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbSauces.Location = new System.Drawing.Point(148, 0);
+            this.lbSauces.Location = new System.Drawing.Point(149, 0);
             this.lbSauces.Name = "lbSauces";
-            this.lbSauces.Size = new System.Drawing.Size(135, 26);
+            this.lbSauces.Size = new System.Drawing.Size(140, 26);
             this.lbSauces.TabIndex = 72;
             this.lbSauces.Text = "Горчичный";
             this.lbSauces.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,9 +77,9 @@
             this.lbPitaType.BackColor = System.Drawing.Color.White;
             this.lbPitaType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbPitaType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbPitaType.Location = new System.Drawing.Point(282, 0);
+            this.lbPitaType.Location = new System.Drawing.Point(288, 0);
             this.lbPitaType.Name = "lbPitaType";
-            this.lbPitaType.Size = new System.Drawing.Size(137, 26);
+            this.lbPitaType.Size = new System.Drawing.Size(140, 26);
             this.lbPitaType.TabIndex = 71;
             this.lbPitaType.Text = "Пшеничный";
             this.lbPitaType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,9 +101,9 @@
             this.lbTime.BackColor = System.Drawing.Color.White;
             this.lbTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTime.Location = new System.Drawing.Point(469, 0);
+            this.lbTime.Location = new System.Drawing.Point(478, 0);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(101, 26);
+            this.lbTime.Size = new System.Drawing.Size(100, 26);
             this.lbTime.TabIndex = 76;
             this.lbTime.Text = "14:22:22";
             this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,7 +119,7 @@
             this.Controls.Add(this.lbSauces);
             this.Controls.Add(this.lbPitaType);
             this.Name = "KebabControl";
-            this.Size = new System.Drawing.Size(1033, 28);
+            this.Size = new System.Drawing.Size(1095, 275);
             this.ResumeLayout(false);
 
         }
