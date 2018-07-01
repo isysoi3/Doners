@@ -103,6 +103,7 @@ namespace AddOrder
         private void clearOrderInput()
         {
             clearInput();
+            lastLabel = null;
             gbOrder.Controls.Clear();
             tbDiscount.Clear();
             tbGiven.Clear();
