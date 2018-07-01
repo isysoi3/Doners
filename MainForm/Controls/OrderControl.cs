@@ -38,7 +38,6 @@ namespace UI_Example.Controls
         private void AddKebabControls(List<KebabItem> kebabs)
         {
             KebabControl lastControl = null;
-            int height = 0;
             foreach(KebabItem kebab in kebabs)
             {
                 KebabControl orderControl = new KebabControl(kebab);
@@ -47,13 +46,12 @@ namespace UI_Example.Controls
                     orderControl.Top = lbOrderId.Top;
                 else
                     orderControl.Top = lastControl.Bottom;
-                height += orderControl.Height;
                 lastControl = orderControl;
                 this.Controls.Add(orderControl);
             }
             lbOrderId.Height = lastControl.Bottom - lbOrderId.Top;
             lbTime.Height = lbOrderId.Height;
-            this.Height = height + lbOrderId.Height;
+            this.Height = lbOrderId.Height;
         }
 
         private void btRemove_Click(object sender, EventArgs e)
