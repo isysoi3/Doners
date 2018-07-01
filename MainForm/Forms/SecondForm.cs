@@ -47,5 +47,12 @@ namespace SecondForm
             OrderControl orderControl = orderControls.Find(control => control.OrderID == orderID);
             orderControl.changeOrderColor(orderControl, null);
         }
+
+        public void removeOrder(int orderID)
+        {
+            OrderControl orderControl = orderControls.Find(order => order.OrderID == orderID);
+            Controls.Remove(orderControl);
+            orderControls.Remove(orderControl);
+        }
     }
 }

@@ -62,10 +62,17 @@ namespace UI_Example
                 orderControl.Left = lastOrder.Left;
             }
             orderControl.ColorChangedCallBack = new ColorChangedDelegate(secondForm.HandleColorChanged);
+            orderControl.OrderRemovedCallBack = new OrderRemovedDelegate(removeOrder);
             orderControls.Add(orderControl);
 
         }
 
-
+        private void removeOrder(int orderID)
+        {
+            OrderControl orderControl = orderControls.FindLast(order => order.OrderID == orderID);
+            Controls.Remove(orderControl);
+            orderControls.Remove(orderControl);
+            secondForm.removeOrder(orderID);
+        }
     }
 }

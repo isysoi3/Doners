@@ -12,10 +12,12 @@ using UI_Example.Models;
 namespace UI_Example.Controls
 {
     public delegate void ColorChangedDelegate(int orderID);
+    public delegate void OrderRemovedDelegate(int orderID);
 
     public partial class OrderControl : UserControl
     {
         public ColorChangedDelegate ColorChangedCallBack;
+        public OrderRemovedDelegate OrderRemovedCallBack;
         public int OrderID { get; set; }
 
         public OrderControl(OrderItem item)
@@ -64,7 +66,8 @@ namespace UI_Example.Controls
 
         private void btRemove_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            if(OrderRemovedCallBack != null)
+                OrderRemovedCallBack(OrderID);
         }
     }
 }
