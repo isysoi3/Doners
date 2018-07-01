@@ -49,7 +49,7 @@ namespace UI_Example
         {
             secondForm.AddNewOrder(item);
 
-            OrderControl orderControl = new OrderControl(item);
+            OrderControl orderControl = new OrderControl(item, true);
             Controls.Add(orderControl);
             if (orderControls.Count == 0)
             {

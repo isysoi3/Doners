@@ -26,7 +26,7 @@ namespace SecondForm
 
         public void AddNewOrder(OrderItem item)
         {
-            OrderControl orderControl = new OrderControl(item);
+            OrderControl orderControl = new OrderControl(item, false);
             Controls.Add(orderControl);
             if (orderControls.Count == 0)
             {

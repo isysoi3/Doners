@@ -20,12 +20,15 @@ namespace UI_Example.Controls
         public OrderRemovedDelegate OrderRemovedCallBack;
         public int OrderID { get; set; }
 
-        public OrderControl(OrderItem item)
+        public OrderControl(OrderItem item, bool isEnabled)
         {
             InitializeComponent();
             OrderID = item.orderNumber;
             lbOrderId.Text = item.orderNumber.ToString();
-            lbOrderId.DoubleClick += changeOrderColor;
+            if (isEnabled)
+                lbOrderId.DoubleClick += changeOrderColor;
+            else
+                btRemove.Visible = false;
             AddKebabControls(item.kebabs);
 
             lbTime.Text = item.orderTime.ToString("HH:mm:ss");
