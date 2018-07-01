@@ -73,6 +73,16 @@ namespace UI_Example
             Controls.Remove(orderControl);
             orderControls.Remove(orderControl);
             secondForm.removeOrder(orderID);
+            moveItems();
+        }
+
+
+        private void moveItems()
+        {
+            if (orderControls.Count != 0)
+                orderControls.First().Top = lbNumberCommon.Bottom + 10;
+            for (int i = 1; i < orderControls.Count; i++)
+                orderControls[i].Top = orderControls[i - 1].Bottom + 10;
         }
     }
 }

@@ -53,6 +53,15 @@ namespace SecondForm
             OrderControl orderControl = orderControls.Find(order => order.OrderID == orderID);
             Controls.Remove(orderControl);
             orderControls.Remove(orderControl);
+            moveItems();
+        }
+        
+        private void moveItems()
+        {
+            if(orderControls.Count != 0)
+                orderControls.First().Top = lbNumberCommon.Bottom + 10;
+            for (int i = 1; i < orderControls.Count; i++)
+                orderControls[i].Top = orderControls[i - 1].Bottom + 10;
         }
     }
 }
