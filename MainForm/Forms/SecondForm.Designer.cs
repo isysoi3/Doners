@@ -31,7 +31,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.lbSizeCommon = new System.Windows.Forms.Label();
             this.lbNumberCommon = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lbComment = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -73,17 +73,17 @@
             this.lbNumberCommon.Text = "№";
             this.lbNumberCommon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label23
+            // lbComment
             // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.Location = new System.Drawing.Point(626, 9);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(400, 33);
-            this.label23.TabIndex = 122;
-            this.label23.Text = "Комментарий";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbComment.Location = new System.Drawing.Point(626, 9);
+            this.lbComment.Name = "lbComment";
+            this.lbComment.Size = new System.Drawing.Size(519, 33);
+            this.lbComment.TabIndex = 122;
+            this.lbComment.Text = "Комментарий";
+            this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label25
             // 
@@ -129,12 +129,13 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.lbSizeCommon);
             this.Controls.Add(this.lbNumberCommon);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.lbComment);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label29);
             this.Name = "SecondForm";
             this.Text = "Form1";
+            this.Resize += new System.EventHandler(this.SecondForm_Resize);
             this.ResumeLayout(false);
 
         }
@@ -144,7 +145,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label lbSizeCommon;
         private System.Windows.Forms.Label lbNumberCommon;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lbComment;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;

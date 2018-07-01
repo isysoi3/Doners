@@ -20,6 +20,15 @@ namespace UI_Example.Controls
         public OrderRemovedDelegate OrderRemovedCallBack;
         public int OrderID { get; set; }
 
+        public void changeWidth(int width)
+        {
+            Width = width;
+            btRemove.Left = width - btRemove.Width - 20;
+            foreach (Control kebab in Controls)
+                if (kebab is KebabControl)
+                    (kebab as KebabControl).setWidth(btRemove.Left - lbTime.Right);
+        }
+
         public OrderControl(OrderItem item, bool isEnabled)
         {
             InitializeComponent();

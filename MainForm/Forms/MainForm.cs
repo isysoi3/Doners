@@ -63,8 +63,10 @@ namespace UI_Example
             }
             orderControl.ColorChangedCallBack = new ColorChangedDelegate(secondForm.HandleColorChanged);
             orderControl.OrderRemovedCallBack = new OrderRemovedDelegate(removeOrder);
-            orderControls.Add(orderControl);
 
+            orderControl.changeWidth(Width - lbNumberCommon.Left);
+
+            orderControls.Add(orderControl);
         }
 
         private void removeOrder(int orderID)
@@ -83,6 +85,13 @@ namespace UI_Example
                 orderControls.First().Top = lbNumberCommon.Bottom + 10;
             for (int i = 1; i < orderControls.Count; i++)
                 orderControls[i].Top = orderControls[i - 1].Bottom + 10;
+        }
+
+        private void QueueForm_Resize(object sender, EventArgs e)
+        {
+            lbComment.Width = Width - lbComment.Left - 45;
+            foreach (OrderControl orderControl in orderControls)
+                orderControl.changeWidth(Width - lbNumberCommon.Left);
         }
     }
 }

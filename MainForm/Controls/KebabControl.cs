@@ -42,5 +42,11 @@ namespace UI_Example.Controls
             lbPitaType.Height = height;
             lbSize.Height = height;
         }
+
+        public void setWidth(int width)
+        {
+            Width = width;
+            lbComment.Width = width - lbQuantity.Right;
+        }
     }
 }

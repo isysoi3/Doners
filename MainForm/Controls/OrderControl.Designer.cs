@@ -49,7 +49,7 @@
             // 
             this.btRemove.BackColor = System.Drawing.Color.White;
             this.btRemove.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btRemove.Location = new System.Drawing.Point(1019, 0);
+            this.btRemove.Location = new System.Drawing.Point(1020, 0);
             this.btRemove.Name = "btRemove";
             this.btRemove.Size = new System.Drawing.Size(26, 22);
             this.btRemove.TabIndex = 66;

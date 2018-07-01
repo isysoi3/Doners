@@ -39,6 +39,7 @@ namespace SecondForm
                 orderControl.Top = lastOrder.Bottom + 10;
                 orderControl.Left = lastOrder.Left;
             }
+            orderControl.changeWidth(Width - lbNumberCommon.Left);
             orderControls.Add(orderControl);
         }
 
@@ -62,6 +63,13 @@ namespace SecondForm
                 orderControls.First().Top = lbNumberCommon.Bottom + 10;
             for (int i = 1; i < orderControls.Count; i++)
                 orderControls[i].Top = orderControls[i - 1].Bottom + 10;
+        }
+
+        private void SecondForm_Resize(object sender, EventArgs e)
+        {
+            lbComment.Width = Width - lbComment.Left - 45;
+            foreach (OrderControl orderControl in orderControls)
+                orderControl.changeWidth(Width - lbNumberCommon.Left);
         }
     }
 }
