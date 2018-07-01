@@ -89,6 +89,8 @@ namespace UI_Example
 
         private void QueueForm_Resize(object sender, EventArgs e)
         {
+            btAdd.Top = Height - btAdd.Height- 50;
+            btAdd.Left = (Width - btAdd.Width) / 2;
             lbComment.Width = Width - lbComment.Left - 45;
             foreach (OrderControl orderControl in orderControls)
                 orderControl.changeWidth(Width - lbNumberCommon.Left);

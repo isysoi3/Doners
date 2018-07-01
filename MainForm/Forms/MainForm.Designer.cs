@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btAdd = new System.Windows.Forms.Button();
             this.lbNumberCommon = new System.Windows.Forms.Label();
             this.lbComment = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -38,15 +38,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btAdd
             // 
-            this.button1.Location = new System.Drawing.Point(652, 482);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Добавить заказ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.AddNewOrderButtonClick);
+            this.btAdd.Location = new System.Drawing.Point(481, 482);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(134, 23);
+            this.btAdd.TabIndex = 0;
+            this.btAdd.Text = "Добавить заказ";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.AddNewOrderButtonClick);
             // 
             // lbNumberCommon
             // 
@@ -144,7 +144,7 @@
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label29);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btAdd);
             this.Name = "QueueForm";
             this.Text = "Заказы";
             this.Resize += new System.EventHandler(this.QueueForm_Resize);
@@ -154,7 +154,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.Label lbNumberCommon;
         private System.Windows.Forms.Label lbComment;
         private System.Windows.Forms.Label label25;
