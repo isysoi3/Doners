@@ -61,8 +61,11 @@ namespace UI_Example
                 orderControl.Top = lastOrder.Bottom + 10;
                 orderControl.Left = lastOrder.Left;
             }
+            orderControl.ColorChangedCallBack = new ColorChangedDelegate(secondForm.HandleColorChanged);
             orderControls.Add(orderControl);
 
         }
+
+
     }
 }

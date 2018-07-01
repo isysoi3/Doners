@@ -11,11 +11,17 @@ using UI_Example.Models;
 
 namespace UI_Example.Controls
 {
+    public delegate void ColorChangedDelegate(int orderID);
+
     public partial class OrderControl : UserControl
     {
+        public ColorChangedDelegate ColorChangedCallBack;
+        public int OrderID { get; set; }
+
         public OrderControl(OrderItem item)
         {
             InitializeComponent();
+            OrderID = item.orderNumber;
             lbOrderId.Text = item.orderNumber.ToString();
             lbOrderId.DoubleClick += changeOrderColor;
             AddKebabControls(item.kebabs);
@@ -23,7 +29,7 @@ namespace UI_Example.Controls
             lbTime.Text = item.orderTime.ToString("HH:mm:ss");
         }
 
-        private void changeOrderColor(object sender, EventArgs e)
+        public void changeOrderColor(object sender, EventArgs e)
         {
             if (lbOrderId.BackColor == Color.White)
                 lbOrderId.BackColor = Color.Red;
@@ -33,6 +39,8 @@ namespace UI_Example.Controls
                 lbOrderId.BackColor = Color.Lime;
             else
                 lbOrderId.BackColor = Color.White;
+            if(ColorChangedCallBack != null)
+                ColorChangedCallBack(OrderID);
         }
 
         private void AddKebabControls(List<KebabItem> kebabs)

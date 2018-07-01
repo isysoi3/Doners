@@ -41,5 +41,11 @@ namespace SecondForm
             }
             orderControls.Add(orderControl);
         }
+
+        public void HandleColorChanged(int orderID)
+        {
+            OrderControl orderControl = orderControls.Find(control => control.OrderID == orderID);
+            orderControl.changeOrderColor(orderControl, null);
+        }
     }
 }
