@@ -474,6 +474,7 @@
             this.Controls.Add(this.lbSause);
             this.Name = "AddOrderForm";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormWillClose);
             this.gbSize.ResumeLayout(false);
             this.gbSize.PerformLayout();
             this.gbPita.ResumeLayout(false);

@@ -233,5 +233,13 @@ namespace AddOrder
             return sauces;
         }
 
+        private void FormWillClose(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                Hide();
+            }
+        }
     }
 }
