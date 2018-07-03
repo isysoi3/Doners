@@ -20,6 +20,14 @@ namespace UI_Example.Models
             kebabs = new List<KebabItem>();
         }
 
+        public bool IsOrderEmpty()
+        {
+            if (kebabs.Count == 0)
+                return true;
+            else
+                return false;
+        }
+
         public void AddNewKebabToOrder(KebabItem item)
         {
             kebabs.Add(item);
