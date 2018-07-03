@@ -188,14 +188,25 @@ namespace AddOrder
             }
             DateTime currentTime = DateTime.Now;
             
-            //TODO: if order is empty some error. why?
+            if (currentOrder.IsOrderEmpty())
+            {
+                errProvider.SetError(gbOrder, "Пустой заказ");
+                return;
+            }
+
             currentOrder.orderNumber = orderNumber;
             currentOrder.orderTime = currentTime;
             AddOrderCallback(currentOrder);
+
+            ClearForm();
+            Hide();
+        }
+
+        private void ClearForm()
+        {
             tbNumber.Text = "";
             currentOrder.ClearOrder();
             clearOrderInput();
-            Hide();
         }
 
         private List<SauceTypeEnum> GetKebabSauces()
