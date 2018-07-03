@@ -147,7 +147,6 @@ namespace AddOrder
 
         private void paymentChanged(object sender, EventArgs e)
         {
-            //TODO: move to order item
             if (rbCard.Checked)
             {
                 tbGiven.Enabled = false;
