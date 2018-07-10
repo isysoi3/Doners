@@ -51,9 +51,11 @@ namespace UI_Example.Controls
                 lbOrderId.BackColor = Color.Yellow;
             else if (lbOrderId.BackColor == Color.Yellow)
                 lbOrderId.BackColor = Color.Lime;
+            else if(lbOrderId.BackColor == Color.Lime)
+                lbOrderId.BackColor = Color.Gray;
             else
                 lbOrderId.BackColor = Color.White;
-            if(ColorChangedCallBack != null)
+            if (ColorChangedCallBack != null)
                 ColorChangedCallBack(OrderID);
         }
 
