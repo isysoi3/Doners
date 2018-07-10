@@ -473,7 +473,8 @@
             this.Controls.Add(this.cbGarlic);
             this.Controls.Add(this.lbSause);
             this.Name = "AddOrderForm";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Новый заказ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormWillClose);
             this.gbSize.ResumeLayout(false);
             this.gbSize.PerformLayout();

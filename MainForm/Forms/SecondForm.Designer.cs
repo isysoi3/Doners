@@ -134,7 +134,7 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label29);
             this.Name = "SecondForm";
-            this.Text = "Form1";
+            this.Text = "Заказы";
             this.Resize += new System.EventHandler(this.SecondForm_Resize);
             this.ResumeLayout(false);
 
