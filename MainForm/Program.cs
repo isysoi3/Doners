@@ -19,7 +19,7 @@ namespace UI_Example
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QueueForm());
+            Application.Run(new AuthForm());
         }
     }
 }

@@ -59,3 +59,15 @@ C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csproj.GenerateResou
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.exe
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.pdb
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\EntityFramework.dll
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\System.Data.SQLite.dll
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\EntityFramework.xml
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\System.Data.SQLite.xml
+C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Forms.EndSessionForm.resources
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csproj.CopyComplete
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.AuthForm.resources

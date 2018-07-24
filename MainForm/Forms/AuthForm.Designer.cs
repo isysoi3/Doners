@@ -1,4 +1,4 @@
-﻿namespace UI_Example.Forms
+﻿namespace UI_Example
 {
     partial class AuthForm
     {
@@ -28,37 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.btLogin = new System.Windows.Forms.Button();
+            this.tbLogin = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbCash = new System.Windows.Forms.TextBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btLogin
             // 
-            this.button1.Location = new System.Drawing.Point(70, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Вход";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btLogin.Location = new System.Drawing.Point(70, 110);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(75, 23);
+            this.btLogin.TabIndex = 0;
+            this.btLogin.Text = "Вход";
+            this.btLogin.UseVisualStyleBackColor = true;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
-            // textBox1
+            // tbLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbLogin.Location = new System.Drawing.Point(93, 28);
+            this.tbLogin.Name = "tbLogin";
+            this.tbLogin.Size = new System.Drawing.Size(100, 20);
+            this.tbLogin.TabIndex = 1;
+            this.tbLogin.TextChanged += new System.EventHandler(this.infoChanged);
             // 
-            // textBox2
+            // tbPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.tbPassword.Location = new System.Drawing.Point(94, 55);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(100, 20);
+            this.tbPassword.TabIndex = 2;
+            this.tbPassword.TextChanged += new System.EventHandler(this.infoChanged);
             // 
             // label1
             // 
@@ -87,12 +93,17 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Касса:";
             // 
-            // textBox3
+            // tbCash
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 81);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.tbCash.Location = new System.Drawing.Point(93, 81);
+            this.tbCash.Name = "tbCash";
+            this.tbCash.Size = new System.Drawing.Size(100, 20);
+            this.tbCash.TabIndex = 5;
+            this.tbCash.TextChanged += new System.EventHandler(this.infoChanged);
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // AuthForm
             // 
@@ -100,14 +111,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(238, 151);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbCash);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbLogin);
+            this.Controls.Add(this.btLogin);
+            this.MaximumSize = new System.Drawing.Size(254, 190);
+            this.MinimumSize = new System.Drawing.Size(254, 190);
             this.Name = "AuthForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,12 +130,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btLogin;
+        private System.Windows.Forms.TextBox tbLogin;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbCash;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
