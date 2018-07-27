@@ -11,6 +11,7 @@ using System.IO.Pipes;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using UI_Example.Models;
+using UI_Example;
 
 //TODO: fix all namespace
 namespace AddOrder
@@ -24,10 +25,12 @@ namespace AddOrder
         private int labelCounter;
         private OrderItem currentOrder;
         public AddNewOrderDelegate AddOrderCallback;
+        private DataBaseWrapper dbWrapper;
 
         public AddOrderForm()
         {
             currentOrder = new OrderItem();
+            dbWrapper = new DataBaseWrapper();
             InitializeComponent();
         }
 
@@ -195,6 +198,8 @@ namespace AddOrder
             currentOrder.orderNumber = orderNumber;
             currentOrder.orderTime = currentTime;
             AddOrderCallback(currentOrder);
+
+            dbWrapper.addOrder(currentOrder);
 
             ClearForm();
             Hide();

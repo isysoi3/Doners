@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.IO;
 using System.Data;
+using UI_Example.Models;
 
 namespace UI_Example
 {
@@ -16,7 +17,40 @@ namespace UI_Example
 
         public DataBaseWrapper()
         {
-            dbConnection = DataBaseConnection.getInstance(); 
+            dbConnection = DataBaseConnection.getInstance();
+            command = new SQLiteCommand();
+            command.Connection = dbConnection.getConnection();
+        }
+
+        public void addOrder(OrderItem item)
+        {
+            foreach(KebabItem kebab in item.kebabs)
+            {
+                String query = "INSERT INTO history ('orderNumber', 'date', 'time', 'isGarlic', 'isSalsa', 'isCheesy', 'isCaesar', 'isMustard', 'isBigMac', 'isBigTasty', 'size', 'pita', 'quantity', 'cost') VALUES ('" +
+                item.orderNumber + "','" +
+                item.orderTime.Date.Month + "." + item.orderTime.Date.Day + "','" +
+                item.orderTime.ToString("HH:mm:ss") + "','" +
+                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.garlic) + "','" +
+                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.salsa) + "','" +
+                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.cheesy) + "','" +
+                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.caesar) + "','" +
+                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.mustard) + "','" +
+                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.bigMac) + "','" +
+                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.bigTasty) + "','" +
+                kebab.sizeType + "','" +
+                kebab.pitaType + "','" +
+                kebab.quantity + "','" +
+                kebab.CountCost() + "')";
+                try
+                {
+                    command.CommandText = query;
+                    command.ExecuteNonQuery();
+
+                }
+                catch (SQLiteException ex)
+                {
+                }
+            }
         }
 
         public bool login(String username, String password)
