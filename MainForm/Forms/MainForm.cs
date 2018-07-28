@@ -95,5 +95,10 @@ namespace UI_Example
             foreach (OrderControl orderControl in orderControls)
                 orderControl.changeWidth(Width - lbNumberCommon.Left);
         }
+
+        private void QueueForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
