@@ -43,12 +43,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.gbMain = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.gbMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // btAdd
             // 
-            this.btAdd.Location = new System.Drawing.Point(481, 482);
+            this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btAdd.Location = new System.Drawing.Point(318, 483);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(134, 23);
             this.btAdd.TabIndex = 0;
@@ -61,7 +64,7 @@
             this.lbNumberCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbNumberCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbNumberCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbNumberCommon.Location = new System.Drawing.Point(160, 2);
+            this.lbNumberCommon.Location = new System.Drawing.Point(5, 29);
             this.lbNumberCommon.Name = "lbNumberCommon";
             this.lbNumberCommon.Size = new System.Drawing.Size(42, 33);
             this.lbNumberCommon.TabIndex = 78;
@@ -73,9 +76,9 @@
             this.lbComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbComment.Location = new System.Drawing.Point(778, 2);
+            this.lbComment.Location = new System.Drawing.Point(623, 29);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(425, 33);
+            this.lbComment.Size = new System.Drawing.Size(415, 33);
             this.lbComment.TabIndex = 77;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,7 +88,7 @@
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.Location = new System.Drawing.Point(727, 2);
+            this.label25.Location = new System.Drawing.Point(572, 29);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 33);
             this.label25.TabIndex = 76;
@@ -97,7 +100,7 @@
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.Location = new System.Drawing.Point(449, 2);
+            this.label27.Location = new System.Drawing.Point(294, 29);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(140, 33);
             this.label27.TabIndex = 75;
@@ -109,7 +112,7 @@
             this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.Location = new System.Drawing.Point(588, 2);
+            this.label29.Location = new System.Drawing.Point(433, 29);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(140, 33);
             this.label29.TabIndex = 74;
@@ -121,7 +124,7 @@
             this.lbSizeCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbSizeCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbSizeCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbSizeCommon.Location = new System.Drawing.Point(300, 2);
+            this.lbSizeCommon.Location = new System.Drawing.Point(145, 29);
             this.lbSizeCommon.Name = "lbSizeCommon";
             this.lbSizeCommon.Size = new System.Drawing.Size(150, 33);
             this.lbSizeCommon.TabIndex = 79;
@@ -133,7 +136,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(201, 2);
+            this.label1.Location = new System.Drawing.Point(46, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 33);
             this.label1.TabIndex = 80;
@@ -158,7 +161,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(6, 341);
+            this.button6.Location = new System.Drawing.Point(6, 328);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(136, 59);
             this.button6.TabIndex = 5;
@@ -167,7 +170,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(6, 277);
+            this.button5.Location = new System.Drawing.Point(6, 264);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(136, 58);
             this.button5.TabIndex = 4;
@@ -176,7 +179,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(6, 212);
+            this.button4.Location = new System.Drawing.Point(6, 199);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 59);
             this.button4.TabIndex = 3;
@@ -185,7 +188,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(6, 148);
+            this.button3.Location = new System.Drawing.Point(6, 135);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 58);
             this.button3.TabIndex = 2;
@@ -194,7 +197,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(6, 80);
+            this.button2.Location = new System.Drawing.Point(6, 67);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 62);
             this.button2.TabIndex = 1;
@@ -203,32 +206,44 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 42);
+            this.button1.Location = new System.Drawing.Point(6, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 32);
             this.button1.TabIndex = 0;
             this.button1.Text = "Главная";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // gbMain
+            // 
+            this.gbMain.Controls.Add(this.label27);
+            this.gbMain.Controls.Add(this.label29);
+            this.gbMain.Controls.Add(this.btAdd);
+            this.gbMain.Controls.Add(this.label1);
+            this.gbMain.Controls.Add(this.label25);
+            this.gbMain.Controls.Add(this.lbSizeCommon);
+            this.gbMain.Controls.Add(this.lbComment);
+            this.gbMain.Controls.Add(this.lbNumberCommon);
+            this.gbMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.gbMain.Location = new System.Drawing.Point(160, 3);
+            this.gbMain.Name = "gbMain";
+            this.gbMain.Size = new System.Drawing.Size(1070, 513);
+            this.gbMain.TabIndex = 83;
+            this.gbMain.TabStop = false;
+            this.gbMain.Text = "Главная";
+            // 
             // QueueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 517);
+            this.Controls.Add(this.gbMain);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbSizeCommon);
-            this.Controls.Add(this.lbNumberCommon);
-            this.Controls.Add(this.lbComment);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.btAdd);
             this.Name = "QueueForm";
             this.Text = "*Заголовок открытой страницы*";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QueueForm_FormClosing);
             this.Resize += new System.EventHandler(this.QueueForm_Resize);
             this.groupBox1.ResumeLayout(false);
+            this.gbMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -250,6 +265,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox gbMain;
     }
 }
 

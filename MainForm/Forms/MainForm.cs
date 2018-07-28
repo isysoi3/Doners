@@ -50,7 +50,7 @@ namespace UI_Example
             secondForm.AddNewOrder(item);
 
             OrderControl orderControl = new OrderControl(item, true);
-            Controls.Add(orderControl);
+            gbMain.Controls.Add(orderControl);
             if (orderControls.Count == 0)
             {
                 orderControl.Top = lbNumberCommon.Bottom + 10;
@@ -64,7 +64,7 @@ namespace UI_Example
             orderControl.ColorChangedCallBack = new ColorChangedDelegate(secondForm.HandleColorChanged);
             orderControl.OrderRemovedCallBack = new OrderRemovedDelegate(removeOrder);
 
-            orderControl.changeWidth(Width - lbNumberCommon.Left);
+            orderControl.changeWidth(gbMain.Width - lbNumberCommon.Left + 15);
 
             orderControls.Add(orderControl);
         }
@@ -72,7 +72,7 @@ namespace UI_Example
         private void removeOrder(int orderID)
         {
             OrderControl orderControl = orderControls.FindLast(order => order.OrderID == orderID);
-            Controls.Remove(orderControl);
+            gbMain.Controls.Remove(orderControl);
             orderControls.Remove(orderControl);
             secondForm.removeOrder(orderID);
             moveItems();
