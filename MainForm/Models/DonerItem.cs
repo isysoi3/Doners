@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 //TODO: fix all namespace
 namespace UI_Example.Models
@@ -51,6 +52,34 @@ namespace UI_Example.Models
             this.sauces = sauces;
             this.comment = comment;
             this.quantity = quantity;
+        }
+
+        public KebabItem(DataRow row)
+        {
+            sizeType = (SizeTypeEnum)Enum.Parse(typeof(SizeTypeEnum), row.Field<String>("size"));
+            pitaType = (PitaTypeEnum)Enum.Parse(typeof(PitaTypeEnum), row.Field<String>("pita"));
+            quantity = (int)row.Field<Int64>("quantity");
+
+            setSauces(row);
+        }
+
+        private void setSauces(DataRow row)
+        {
+            sauces = new List<SauceTypeEnum>();
+            if (bool.Parse(row.Field<String>("isGarlic")))
+                sauces.Add(SauceTypeEnum.garlic);
+            if (bool.Parse(row.Field<String>("isSalsa")))
+                sauces.Add(SauceTypeEnum.salsa);
+            if (bool.Parse(row.Field<String>("isCheesy")))
+                sauces.Add(SauceTypeEnum.cheesy);
+            if (bool.Parse(row.Field<String>("isCaesar")))
+                sauces.Add(SauceTypeEnum.caesar);
+            if (bool.Parse(row.Field<String>("isMustard")))
+                sauces.Add(SauceTypeEnum.mustard);
+            if (bool.Parse(row.Field<String>("isBigMac")))
+                sauces.Add(SauceTypeEnum.bigMac);
+            if (bool.Parse(row.Field<String>("isBigTasty")))
+                sauces.Add(SauceTypeEnum.bigTasty);
         }
 
         public double CountCost()
