@@ -72,3 +72,4 @@ C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.pdb
 C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\UI_Example.pdb
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csprojAssemblyReference.cache
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.SellsBookControl.resources
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.HistoryOrderControl.resources

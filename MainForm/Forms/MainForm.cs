@@ -49,12 +49,6 @@ namespace UI_Example
 
             mainGroupBox = gbMain;
             currentGroupBox = mainGroupBox;
-
-            List<OrderItem> orderItems = new DataBaseWrapper().getTodayOrderItems();
-            foreach (OrderItem item in orderItems)
-            {
-                HandleNewOrder(item);
-            }
         }
 
         private void AddNewOrderButtonClick(object sender, EventArgs e)

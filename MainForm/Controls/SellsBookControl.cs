@@ -16,7 +16,7 @@ namespace UI_Example.Controls
     public partial class SellsBookControl : UserControl
     {
         private DataBaseWrapper dbWrapper;
-        private List<OrderControl> orderControls;
+        private List<HistoryOrderControl> orderControls;
 
         public SellsBookControl()
         {
@@ -27,7 +27,7 @@ namespace UI_Example.Controls
             panel.HorizontalScroll.Maximum = 0;
             panel.AutoScroll = true;
             dbWrapper = new DataBaseWrapper();
-            orderControls = new List<OrderControl>();
+            orderControls = new List<HistoryOrderControl>();
 
             List<OrderItem> orderItems = dbWrapper.getTodayOrderItems();
             foreach (OrderItem item in orderItems)
@@ -40,7 +40,7 @@ namespace UI_Example.Controls
 
         private void addNewOrder(OrderItem item)
         {
-            OrderControl orderControl = new OrderControl(item, false);
+            HistoryOrderControl orderControl = new HistoryOrderControl(item);
             panel.Controls.Add(orderControl);
             if (orderControls.Count == 0)
             {
@@ -49,12 +49,11 @@ namespace UI_Example.Controls
             }
             else
             {
-                OrderControl lastOrder = orderControls.Last();
+                HistoryOrderControl lastOrder = orderControls.Last();
                 orderControl.Top = lastOrder.Bottom + 10;
                 orderControl.Left = lastOrder.Left;
             }
-
-            orderControl.changeWidth(gbSellsBook.Width - lbNumberCommon.Left + 15);
+           
 
             orderControls.Add(orderControl);
         }

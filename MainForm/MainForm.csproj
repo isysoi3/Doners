@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\HistoryOrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HistoryOrderControl.Designer.cs">
+      <DependentUpon>HistoryOrderControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\KebabControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     <Compile Include="Forms\SecondForm.Designer.cs">
       <DependentUpon>SecondForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\HistoryOrderControl.resx">
+      <DependentUpon>HistoryOrderControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\KebabControl.resx">
       <DependentUpon>KebabControl.cs</DependentUpon>
     </EmbeddedResource>
