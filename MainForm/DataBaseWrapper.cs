@@ -25,6 +25,60 @@ namespace UI_Example
             command.Connection = dbConnection.getConnection();
         }
 
+        public List<OrderItem> getOrderItemsByDate(DateTime from, DateTime to)
+        {
+            List<OrderItem> orderItems = new List<OrderItem>();
+
+            DataTable table = new DataTable();
+            String query = "SELECT * FROM history WHERE date >='" + from.ToString("MM/dd/yyyy") + "' AND date <='" + to.ToString("MM/dd/yyyy") + "'";
+            try
+            {
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, dbConnection.getConnection());
+                adapter.Fill(table);
+            }
+            catch (SQLiteException ex)
+            {
+                String v = ex.Message;
+                return orderItems;
+            }
+
+            OrderItem currentOrder = new OrderItem();
+
+            foreach (DataRow row in table.Rows)
+            {
+                if (currentOrder.kebabs.Count != 0)
+                {
+                    int orderNumber = (int)row.Field<Int64>("orderNumber");
+                    DateTime orderTime = DateTime.Parse(row.Field<String>("date") + " " + row.Field<String>("time"), culture);
+
+                    if (currentOrder.orderNumber == orderNumber && currentOrder.orderTime == orderTime)
+                    {
+                        currentOrder.AddNewKebabToOrder(new KebabItem(row));
+                    }
+                    else
+                    {
+                        orderItems.Add(currentOrder);
+
+                        currentOrder = new OrderItem();
+                        currentOrder.orderNumber = (int)row.Field<Int64>("orderNumber");
+                        currentOrder.orderTime = DateTime.Parse(row.Field<String>("date") + " " + row.Field<String>("time"), culture);
+
+                        currentOrder.AddNewKebabToOrder(new KebabItem(row));
+                    }
+                }
+                else
+                {
+                    currentOrder.orderNumber = (int)row.Field<Int64>("orderNumber");
+                    currentOrder.orderTime = DateTime.Parse(row.Field<String>("date") + " " + row.Field<String>("time"), culture);
+
+                    currentOrder.AddNewKebabToOrder(new KebabItem(row));
+                }
+            }
+            if (currentOrder.kebabs.Count != 0)
+                orderItems.Add(currentOrder);
+            return orderItems;
+        }
+
         public List<OrderItem> getTodayOrderItems()
         {
             List<OrderItem> orderItems = new List<OrderItem>();

@@ -38,8 +38,8 @@
             this.lbSizeCommon = new System.Windows.Forms.Label();
             this.lbComment = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFrom = new System.Windows.Forms.DateTimePicker();
+            this.dtpTo = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.btShow = new System.Windows.Forms.Button();
             this.gbHistory.SuspendLayout();
@@ -48,9 +48,9 @@
             // gbHistory
             // 
             this.gbHistory.Controls.Add(this.btShow);
-            this.gbHistory.Controls.Add(this.dateTimePicker2);
+            this.gbHistory.Controls.Add(this.dtpTo);
             this.gbHistory.Controls.Add(this.label4);
-            this.gbHistory.Controls.Add(this.dateTimePicker1);
+            this.gbHistory.Controls.Add(this.dtpFrom);
             this.gbHistory.Controls.Add(this.label3);
             this.gbHistory.Controls.Add(this.label2);
             this.gbHistory.Controls.Add(this.panel);
@@ -170,21 +170,21 @@
             this.label3.TabIndex = 83;
             this.label3.Text = "Заказы с:";
             // 
-            // dateTimePicker1
+            // dtpFrom
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(115, 22);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(174, 24);
-            this.dateTimePicker1.TabIndex = 84;
+            this.dtpFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dtpFrom.Location = new System.Drawing.Point(115, 22);
+            this.dtpFrom.Name = "dtpFrom";
+            this.dtpFrom.Size = new System.Drawing.Size(174, 24);
+            this.dtpFrom.TabIndex = 84;
             // 
-            // dateTimePicker2
+            // dtpTo
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(419, 22);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(174, 24);
-            this.dateTimePicker2.TabIndex = 86;
+            this.dtpTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dtpTo.Location = new System.Drawing.Point(419, 22);
+            this.dtpTo.Name = "dtpTo";
+            this.dtpTo.Size = new System.Drawing.Size(174, 24);
+            this.dtpTo.TabIndex = 86;
             // 
             // label4
             // 
@@ -232,9 +232,9 @@
         private System.Windows.Forms.Label lbSizeCommon;
         private System.Windows.Forms.Label lbComment;
         private System.Windows.Forms.Button btShow;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpTo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFrom;
         private System.Windows.Forms.Label label3;
     }
 }

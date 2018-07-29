@@ -38,6 +38,18 @@ namespace UI_Example.Controls
 
         }
 
+        public void update()
+        {
+            orderControls.Clear();
+            panel.Controls.Clear();
+
+            List<OrderItem> orderItems = dbWrapper.getTodayOrderItems();
+            foreach (OrderItem item in orderItems)
+            {
+                addNewOrder(item);
+            }
+        }
+
         private void addNewOrder(OrderItem item)
         {
             HistoryOrderControl orderControl = new HistoryOrderControl(item);

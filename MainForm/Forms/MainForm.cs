@@ -27,6 +27,8 @@ namespace UI_Example
         private SecondForm.SecondForm secondForm;
         private List<OrderControl> orderControls;
         private Control mainGroupBox;
+        private HistoryControl historyControl;
+        private SellsBookControl sellsBookControl;
         private Control currentGroupBox;
 
         public QueueForm()
@@ -48,6 +50,8 @@ namespace UI_Example
             secondForm.Show();
 
             mainGroupBox = gbMain;
+            historyControl = new HistoryControl();
+            sellsBookControl = new SellsBookControl();
             currentGroupBox = mainGroupBox;
         }
 
@@ -116,7 +120,8 @@ namespace UI_Example
         {
             Controls.Remove(currentGroupBox);
 
-            currentGroupBox = new SellsBookControl();
+            sellsBookControl.update();
+            currentGroupBox = sellsBookControl;
             currentGroupBox.Top = mainGroupBox.Top;
             currentGroupBox.Left = mainGroupBox.Left;
 
@@ -129,6 +134,17 @@ namespace UI_Example
 
             currentGroupBox = mainGroupBox;
           
+            Controls.Add(currentGroupBox);
+        }
+
+        private void btHistory_Click(object sender, EventArgs e)
+        {
+            Controls.Remove(currentGroupBox);
+
+            currentGroupBox = historyControl;
+            currentGroupBox.Top = mainGroupBox.Top;
+            currentGroupBox.Left = mainGroupBox.Left;
+
             Controls.Add(currentGroupBox);
         }
     }
