@@ -44,6 +44,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btMain = new System.Windows.Forms.Button();
             this.gbMain = new System.Windows.Forms.GroupBox();
+            this.panel = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.gbMain.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +52,7 @@
             // btAdd
             // 
             this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btAdd.Location = new System.Drawing.Point(318, 483);
+            this.btAdd.Location = new System.Drawing.Point(318, 477);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(134, 23);
             this.btAdd.TabIndex = 0;
@@ -78,7 +79,7 @@
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(623, 29);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(415, 33);
+            this.lbComment.Size = new System.Drawing.Size(401, 33);
             this.lbComment.TabIndex = 77;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -217,6 +218,7 @@
             // 
             // gbMain
             // 
+            this.gbMain.Controls.Add(this.panel);
             this.gbMain.Controls.Add(this.label27);
             this.gbMain.Controls.Add(this.label29);
             this.gbMain.Controls.Add(this.btAdd);
@@ -232,6 +234,14 @@
             this.gbMain.TabIndex = 83;
             this.gbMain.TabStop = false;
             this.gbMain.Text = "Главная";
+            // 
+            // panel
+            // 
+            this.panel.AutoScroll = true;
+            this.panel.Location = new System.Drawing.Point(5, 65);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(1065, 408);
+            this.panel.TabIndex = 82;
             // 
             // QueueForm
             // 
@@ -268,6 +278,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btMain;
         private System.Windows.Forms.GroupBox gbMain;
+        private System.Windows.Forms.Panel panel;
     }
 }
 

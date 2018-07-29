@@ -33,6 +33,12 @@ namespace UI_Example
         {
             InitializeComponent();
 
+            panel.AutoScroll = false;
+            panel.HorizontalScroll.Enabled = false;
+            panel.HorizontalScroll.Visible = false;
+            panel.HorizontalScroll.Maximum = 0;
+            panel.AutoScroll = true;
+
             orderControls = new List<OrderControl>();
 
             orderForm = new AddOrderForm();
@@ -43,6 +49,12 @@ namespace UI_Example
 
             mainGroupBox = gbMain;
             currentGroupBox = mainGroupBox;
+
+            List<OrderItem> orderItems = new DataBaseWrapper().getTodayOrderItems();
+            foreach (OrderItem item in orderItems)
+            {
+                HandleNewOrder(item);
+            }
         }
 
         private void AddNewOrderButtonClick(object sender, EventArgs e)
@@ -55,11 +67,11 @@ namespace UI_Example
             secondForm.AddNewOrder(item);
 
             OrderControl orderControl = new OrderControl(item, true);
-            gbMain.Controls.Add(orderControl);
+            panel.Controls.Add(orderControl);
             if (orderControls.Count == 0)
             {
-                orderControl.Top = lbNumberCommon.Bottom + 10;
-                orderControl.Left = lbNumberCommon.Left;
+                orderControl.Top = 0;
+                orderControl.Left = 0;
             }
             else {
                 OrderControl lastOrder = orderControls.Last();
@@ -69,7 +81,7 @@ namespace UI_Example
             orderControl.ColorChangedCallBack = new ColorChangedDelegate(secondForm.HandleColorChanged);
             orderControl.OrderRemovedCallBack = new OrderRemovedDelegate(removeOrder);
 
-            orderControl.changeWidth(gbMain.Width - lbNumberCommon.Left + 15);
+            orderControl.changeWidth(gbMain.Width - lbNumberCommon.Left);
 
             orderControls.Add(orderControl);
         }
@@ -77,7 +89,7 @@ namespace UI_Example
         private void removeOrder(int orderID)
         {
             OrderControl orderControl = orderControls.FindLast(order => order.OrderID == orderID);
-            gbMain.Controls.Remove(orderControl);
+            panel.Controls.Remove(orderControl);
             orderControls.Remove(orderControl);
             secondForm.removeOrder(orderID);
             moveItems();
@@ -87,7 +99,7 @@ namespace UI_Example
         private void moveItems()
         {
             if (orderControls.Count != 0)
-                orderControls.First().Top = lbNumberCommon.Bottom + 10;
+                orderControls.First().Top = 0;
             for (int i = 1; i < orderControls.Count; i++)
                 orderControls[i].Top = orderControls[i - 1].Bottom + 10;
         }
