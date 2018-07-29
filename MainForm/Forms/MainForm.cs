@@ -26,6 +26,8 @@ namespace UI_Example
         private AddOrderForm orderForm;
         private SecondForm.SecondForm secondForm;
         private List<OrderControl> orderControls;
+        private Control mainGroupBox;
+        private Control currentGroupBox;
 
         public QueueForm()
         {
@@ -38,6 +40,9 @@ namespace UI_Example
 
             secondForm = new SecondForm.SecondForm();
             secondForm.Show();
+
+            mainGroupBox = gbMain;
+            currentGroupBox = mainGroupBox;
         }
 
         private void AddNewOrderButtonClick(object sender, EventArgs e)
@@ -99,6 +104,26 @@ namespace UI_Example
         private void QueueForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btSellsBook_Click(object sender, EventArgs e)
+        {
+            Controls.Remove(currentGroupBox);
+
+            currentGroupBox = new SellsBookControl();
+            currentGroupBox.Top = mainGroupBox.Top;
+            currentGroupBox.Left = mainGroupBox.Left;
+
+            Controls.Add(currentGroupBox);
+        }
+
+        private void btMain_Click(object sender, EventArgs e)
+        {
+            Controls.Remove(currentGroupBox);
+
+            currentGroupBox = mainGroupBox;
+          
+            Controls.Add(currentGroupBox);
         }
     }
 }
