@@ -69,6 +69,12 @@
     <Compile Include="Controls\CashBookControl.Designer.cs">
       <DependentUpon>CashBookControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CashBookItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CashBookItemControl.Designer.cs">
+      <DependentUpon>CashBookItemControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\HistoryControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +131,7 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\CashBookItem.cs" />
     <Compile Include="Models\DonerItem.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Program.cs" />
@@ -137,6 +144,9 @@
     </Compile>
     <EmbeddedResource Include="Controls\CashBookControl.resx">
       <DependentUpon>CashBookControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CashBookItemControl.resx">
+      <DependentUpon>CashBookItemControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\HistoryControl.resx">
       <DependentUpon>HistoryControl.cs</DependentUpon>

@@ -74,3 +74,5 @@ C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csprojAssemblyRefere
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.SellsBookControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.HistoryOrderControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.HistoryControl.resources
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CashBookControl.resources
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CashBookItemControl.resources
