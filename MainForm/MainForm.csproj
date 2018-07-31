@@ -113,6 +113,12 @@
     </Compile>
     <Compile Include="DataBaseConnection.cs" />
     <Compile Include="DataBaseWrapper.cs" />
+    <Compile Include="Forms\AddCostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCostForm.Designer.cs">
+      <DependentUpon>AddCostForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SellsBookControl.resx">
       <DependentUpon>SellsBookControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddCostForm.resx">
+      <DependentUpon>AddCostForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddOrderForm.resx">
       <DependentUpon>AddOrderForm.cs</DependentUpon>

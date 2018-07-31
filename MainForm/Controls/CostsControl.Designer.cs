@@ -39,11 +39,13 @@
             this.lbSizeCommon = new System.Windows.Forms.Label();
             this.lbComment = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btAdd = new System.Windows.Forms.Button();
             this.gbCashBook.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbCashBook
             // 
+            this.gbCashBook.Controls.Add(this.btAdd);
             this.gbCashBook.Controls.Add(this.label4);
             this.gbCashBook.Controls.Add(this.label3);
             this.gbCashBook.Controls.Add(this.label1);
@@ -103,7 +105,7 @@
             this.panel.AutoScroll = true;
             this.panel.Location = new System.Drawing.Point(6, 52);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1058, 455);
+            this.panel.Size = new System.Drawing.Size(1058, 432);
             this.panel.TabIndex = 81;
             // 
             // label27
@@ -178,6 +180,15 @@
             this.label4.Text = "Комментарий";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btAdd
+            // 
+            this.btAdd.Location = new System.Drawing.Point(462, 487);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(107, 23);
+            this.btAdd.TabIndex = 91;
+            this.btAdd.Text = "Добавить расход";
+            this.btAdd.UseVisualStyleBackColor = true;
+            // 
             // CostsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,5 +214,6 @@
         private System.Windows.Forms.Label lbSizeCommon;
         private System.Windows.Forms.Label lbComment;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btAdd;
     }
 }
