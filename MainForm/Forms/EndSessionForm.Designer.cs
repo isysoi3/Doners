@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbCash = new System.Windows.Forms.TextBox();
+            this.btEndSession = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -42,21 +45,26 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Касса:";
             // 
-            // textBox3
+            // tbCash
             // 
-            this.textBox3.Location = new System.Drawing.Point(91, 16);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.tbCash.Location = new System.Drawing.Point(91, 16);
+            this.tbCash.Name = "tbCash";
+            this.tbCash.Size = new System.Drawing.Size(100, 20);
+            this.tbCash.TabIndex = 8;
             // 
-            // button1
+            // btEndSession
             // 
-            this.button1.Location = new System.Drawing.Point(56, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Закрыть смену";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btEndSession.Location = new System.Drawing.Point(56, 43);
+            this.btEndSession.Name = "btEndSession";
+            this.btEndSession.Size = new System.Drawing.Size(135, 23);
+            this.btEndSession.TabIndex = 7;
+            this.btEndSession.Text = "Закрыть смену";
+            this.btEndSession.UseVisualStyleBackColor = true;
+            this.btEndSession.Click += new System.EventHandler(this.btEndSession_Click);
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // EndSessionForm
             // 
@@ -64,10 +72,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 78);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbCash);
+            this.Controls.Add(this.btEndSession);
             this.Name = "EndSessionForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Закрытие смены";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,7 +86,8 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbCash;
+        private System.Windows.Forms.Button btEndSession;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

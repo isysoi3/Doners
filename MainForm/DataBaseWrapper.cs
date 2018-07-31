@@ -187,6 +187,27 @@ namespace UI_Example
             }
         }
 
+        public void addCashBookItem(CashBookItem item)
+        {
+            String query = "INSERT INTO cashBook ('date','cashierName','cashBegin','cashEnd','cashIn','cashOut','nonCashIn','nonCashOut') VALUES ('" +
+                item.Date.ToString("dd.MM.yyyy") + "','" +
+                item.CashierName.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.CashBegin.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.CashEnd.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.CashIn.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.CashOut.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.NonCashIn.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.NonCashOut.ToString(CultureInfo.InvariantCulture) + "')";
+            try
+            {
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+            }
+            catch (SQLiteException ex)
+            {
+            }
+        }
+
         public UserInfo login(String username, String password)
         {
             DataTable table = new DataTable();

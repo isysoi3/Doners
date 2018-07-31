@@ -16,5 +16,18 @@ namespace UI_Example.Forms
         {
             InitializeComponent();
         }
+
+        private void btEndSession_Click(object sender, EventArgs e)
+        {
+            double cash;
+            if (tbCash.Text == "" || !double.TryParse(tbCash.Text, out cash))
+            {
+                errorProvider.SetError(tbCash, "Введите состояние кассы");
+                return;
+            }
+            QueueForm.CurrentCashierInfo.CashEnd = cash;
+            new DataBaseWrapper().addCashBookItem(QueueForm.CurrentCashierInfo);
+            Application.Exit();
+        }
     }
 }

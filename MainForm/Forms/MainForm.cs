@@ -16,6 +16,7 @@ using UI_Example.Models;
 using AddOrder;
 using SecondForm;
 using UI_Example.Controls;
+using UI_Example.Forms;
 
 //TODO: fix all namespace
 namespace UI_Example
@@ -23,6 +24,8 @@ namespace UI_Example
 
     public partial class QueueForm : Form
     {
+        public static CashBookItem CurrentCashierInfo { get; set; }
+
         private AddOrderForm orderForm;
         private SecondForm.SecondForm secondForm;
         private List<OrderControl> orderControls;
@@ -115,7 +118,13 @@ namespace UI_Example
 
         private void QueueForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+
+                EndSessionForm endSessionForm = new EndSessionForm();
+                endSessionForm.Show();
+            }
         }
 
         private void btSellsBook_Click(object sender, EventArgs e)

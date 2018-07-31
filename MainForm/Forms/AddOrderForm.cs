@@ -161,14 +161,22 @@ namespace AddOrder
             recountTotalAndChange(sender, e);
         }
 
-        private void recountTotalAndChange(object sender, EventArgs e)
+        private double countTotal()
         {
             double total = currentOrder.summary;
-            double discount, given;
+            double discount;
             if (double.TryParse(tbDiscount.Text, out discount) && discount >= 0)
                 total *= (100 - discount) / 100;
             total = Math.Round(total, 2);
-            lbTotal.Text = "Итого: " + total;
+
+            return total;
+        }
+
+        private void recountTotalAndChange(object sender, EventArgs e)
+        {
+            double given;
+            double total = countTotal();
+            lbTotal.Text = "Итого: " + total ;
 
             if (double.TryParse(tbGiven.Text, out given) && given >= total)
                 lbChange.Text = "Сдача: " + (given - total);
@@ -198,6 +206,11 @@ namespace AddOrder
             currentOrder.orderNumber = orderNumber;
             currentOrder.orderTime = currentTime;
             AddOrderCallback(currentOrder);
+
+            if (rbCash.Checked)
+                QueueForm.CurrentCashierInfo.CashIn += countTotal();
+            else
+                QueueForm.CurrentCashierInfo.NonCashIn += countTotal();
 
             dbWrapper.addOrder(currentOrder);
 

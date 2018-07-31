@@ -34,7 +34,8 @@ namespace UI_Example
                 errorProvider.SetError(tbPassword, "Введите пароль");
                 return false;
             }
-            if (tbCash.Text == "")
+            double cash;
+            if (tbCash.Text == "" && double.TryParse(tbCash.Text, out cash))
             {
                 errorProvider.SetError(tbCash, "Введите состояние кассы");
                 return false;
@@ -57,8 +58,10 @@ namespace UI_Example
                 errorProvider.SetError(tbLogin, "Неверный логин или пароль");
                 return;
             }
-            //save cash state
+
             Hide();
+
+            QueueForm.CurrentCashierInfo = new CashBookItem(info.Name, double.Parse(tbCash.Text));
 
             QueueForm mainForm = new QueueForm();
             mainForm.Show();
