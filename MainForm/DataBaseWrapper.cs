@@ -25,6 +25,31 @@ namespace UI_Example
             command.Connection = dbConnection.getConnection();
         }
 
+        public List<CashBookItem> getCashBookItems()
+        {
+            List<CashBookItem> cashBookItems = new List<CashBookItem>();
+
+            DataTable table = new DataTable();
+            String query = "SELECT * FROM cashBook";
+
+            try
+            {
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, dbConnection.getConnection());
+                adapter.Fill(table);
+            }
+            catch (SQLiteException ex)
+            {
+                return cashBookItems;
+            }
+
+            foreach(DataRow row in table.Rows)
+            {
+                cashBookItems.Add(new CashBookItem(row));
+            }
+
+            return cashBookItems;
+        }
+
         public List<OrderItem> getOrderItemsByDate(DateTime from, DateTime to)
         {
             List<OrderItem> orderItems = new List<OrderItem>();
@@ -38,7 +63,6 @@ namespace UI_Example
             }
             catch (SQLiteException ex)
             {
-                String v = ex.Message;
                 return orderItems;
             }
 

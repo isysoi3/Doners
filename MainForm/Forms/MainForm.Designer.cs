@@ -39,7 +39,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btCashBook = new System.Windows.Forms.Button();
             this.btSellsBook = new System.Windows.Forms.Button();
             this.btHistory = new System.Windows.Forms.Button();
             this.btMain = new System.Windows.Forms.Button();
@@ -148,7 +148,7 @@
             // 
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.btCashBook);
             this.groupBox1.Controls.Add(this.btSellsBook);
             this.groupBox1.Controls.Add(this.btHistory);
             this.groupBox1.Controls.Add(this.btMain);
@@ -178,14 +178,15 @@
             this.button5.Text = "Книга расходов";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btCashBook
             // 
-            this.button4.Location = new System.Drawing.Point(6, 199);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 59);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Кассовая книга";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btCashBook.Location = new System.Drawing.Point(6, 199);
+            this.btCashBook.Name = "btCashBook";
+            this.btCashBook.Size = new System.Drawing.Size(136, 59);
+            this.btCashBook.TabIndex = 3;
+            this.btCashBook.Text = "Кассовая книга";
+            this.btCashBook.UseVisualStyleBackColor = true;
+            this.btCashBook.Click += new System.EventHandler(this.btCashBook_Click);
             // 
             // btSellsBook
             // 
@@ -274,7 +275,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btCashBook;
         private System.Windows.Forms.Button btSellsBook;
         private System.Windows.Forms.Button btHistory;
         private System.Windows.Forms.Button btMain;
