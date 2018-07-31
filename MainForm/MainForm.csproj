@@ -134,6 +134,7 @@
     <Compile Include="Models\CashBookItem.cs" />
     <Compile Include="Models\DonerItem.cs" />
     <Compile Include="Models\OrderItem.cs" />
+    <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\SecondForm.cs">

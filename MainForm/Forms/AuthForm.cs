@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI_Example.Models;
 
 namespace UI_Example
 {
@@ -50,7 +51,8 @@ namespace UI_Example
         {
             if (!checkInput())
                 return;
-            if(!dbWrapper.login(tbLogin.Text, tbPassword.Text))
+            UserInfo info = dbWrapper.login(tbLogin.Text, tbPassword.Text);
+            if (info == null)
             {
                 errorProvider.SetError(tbLogin, "Неверный логин или пароль");
                 return;

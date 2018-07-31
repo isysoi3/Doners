@@ -187,7 +187,7 @@ namespace UI_Example
             }
         }
 
-        public bool login(String username, String password)
+        public UserInfo login(String username, String password)
         {
             DataTable table = new DataTable();
             String query = "SELECT * FROM users WHERE username=" + username + " AND password=" + password;
@@ -198,11 +198,11 @@ namespace UI_Example
             }
             catch(SQLiteException ex)
             {
-                return false;
+                return null;
             }
             if(table.Rows.Count > 0)
-                return true;
-            return false;
+                return new UserInfo(table.Rows[0]);
+            return null;
         }
     }
 }
