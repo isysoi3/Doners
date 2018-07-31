@@ -60,7 +60,7 @@
             this.gbHistory.Controls.Add(this.label25);
             this.gbHistory.Controls.Add(this.lbSizeCommon);
             this.gbHistory.Controls.Add(this.lbComment);
-            this.gbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.gbHistory.Location = new System.Drawing.Point(0, 0);
             this.gbHistory.Name = "gbHistory";
             this.gbHistory.Size = new System.Drawing.Size(1070, 513);

@@ -44,9 +44,9 @@
             this.lbComment.BackColor = System.Drawing.Color.White;
             this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbComment.Location = new System.Drawing.Point(734, 0);
+            this.lbComment.Location = new System.Drawing.Point(764, 0);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(324, 33);
+            this.lbComment.Size = new System.Drawing.Size(292, 33);
             this.lbComment.TabIndex = 99;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,7 +56,7 @@
             this.lbPaymentType.BackColor = System.Drawing.Color.White;
             this.lbPaymentType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbPaymentType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbPaymentType.Location = new System.Drawing.Point(635, 0);
+            this.lbPaymentType.Location = new System.Drawing.Point(665, 0);
             this.lbPaymentType.Name = "lbPaymentType";
             this.lbPaymentType.Size = new System.Drawing.Size(100, 33);
             this.lbPaymentType.TabIndex = 98;
@@ -68,7 +68,7 @@
             this.lbToPay.BackColor = System.Drawing.Color.White;
             this.lbToPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbToPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbToPay.Location = new System.Drawing.Point(555, 0);
+            this.lbToPay.Location = new System.Drawing.Point(585, 0);
             this.lbToPay.Name = "lbToPay";
             this.lbToPay.Size = new System.Drawing.Size(81, 33);
             this.lbToPay.TabIndex = 97;
@@ -92,7 +92,7 @@
             this.lbName.BackColor = System.Drawing.Color.White;
             this.lbName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbName.Location = new System.Drawing.Point(204, 0);
+            this.lbName.Location = new System.Drawing.Point(234, 0);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(124, 33);
             this.lbName.TabIndex = 92;
@@ -104,7 +104,7 @@
             this.lbCost.BackColor = System.Drawing.Color.White;
             this.lbCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbCost.Location = new System.Drawing.Point(389, 0);
+            this.lbCost.Location = new System.Drawing.Point(419, 0);
             this.lbCost.Name = "lbCost";
             this.lbCost.Size = new System.Drawing.Size(100, 33);
             this.lbCost.TabIndex = 91;
@@ -116,7 +116,7 @@
             this.lbDiscount.BackColor = System.Drawing.Color.White;
             this.lbDiscount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbDiscount.Location = new System.Drawing.Point(488, 0);
+            this.lbDiscount.Location = new System.Drawing.Point(518, 0);
             this.lbDiscount.Name = "lbDiscount";
             this.lbDiscount.Size = new System.Drawing.Size(68, 33);
             this.lbDiscount.TabIndex = 93;
@@ -130,9 +130,9 @@
             this.lbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbCategory.Location = new System.Drawing.Point(112, 0);
             this.lbCategory.Name = "lbCategory";
-            this.lbCategory.Size = new System.Drawing.Size(93, 33);
+            this.lbCategory.Size = new System.Drawing.Size(123, 33);
             this.lbCategory.TabIndex = 95;
-            this.lbCategory.Text = "Категория";
+            this.lbCategory.Text = "Оборудование";
             this.lbCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbCount
@@ -140,7 +140,7 @@
             this.lbCount.BackColor = System.Drawing.Color.White;
             this.lbCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbCount.Location = new System.Drawing.Point(327, 0);
+            this.lbCount.Location = new System.Drawing.Point(357, 0);
             this.lbCount.Name = "lbCount";
             this.lbCount.Size = new System.Drawing.Size(63, 33);
             this.lbCount.TabIndex = 94;

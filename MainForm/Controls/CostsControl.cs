@@ -32,11 +32,19 @@ namespace UI_Example.Controls
             costItemControls = new List<CostItemControl>();
             addCostForm = new AddCostForm();
             addCostForm.addNewCostCallBack = addNewCostToDB;
+
+            update();
         }
 
         public void update()
         {
-
+            costItemControls.Clear();
+            panel.Controls.Clear();
+            List<CostItem> costItems = dbWrapper.getCostItems();
+            foreach(CostItem item in costItems)
+            {
+                addCost(item);
+            }
         }
 
         public void addCost(CostItem item)

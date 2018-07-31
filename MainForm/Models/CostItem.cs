@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace UI_Example.Models
 {
@@ -36,6 +37,18 @@ namespace UI_Example.Models
             this.discount = discount;
             this.isCash = isCash;
             this.comment = comment;
+        }
+
+        public CostItem(DataRow row)
+        {
+            date = DateTime.Parse(row.Field<String>("date"));
+            category = (CostCategory)Enum.Parse(typeof(CostCategory), row.Field<String>("category"));
+            name = row.Field<String>("name");
+            count = row.Field<double>("count");
+            costPerUnit = row.Field<double>("costPerUnit");
+            discount = row.Field<double>("discount");
+            isCash = bool.Parse(row.Field<String>("isCash"));
+            comment = row.Field<String>("comment");
         }
     }
 }

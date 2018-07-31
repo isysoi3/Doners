@@ -25,6 +25,31 @@ namespace UI_Example
             command.Connection = dbConnection.getConnection();
         }
 
+        public List<CostItem> getCostItems()
+        {
+            List<CostItem> costItems = new List<CostItem>();
+
+            DataTable table = new DataTable();
+            String query = "SELECT * FROM costs";
+
+            try
+            {
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, dbConnection.getConnection());
+                adapter.Fill(table);
+            }
+            catch (SQLiteException ex)
+            {
+                return costItems;
+            }
+
+            foreach (DataRow row in table.Rows)
+            {
+                costItems.Add(new CostItem(row));
+            }
+
+            return costItems;
+        }
+
         public List<CashBookItem> getCashBookItems()
         {
             List<CashBookItem> cashBookItems = new List<CashBookItem>();
