@@ -188,6 +188,7 @@
             this.btAdd.TabIndex = 91;
             this.btAdd.Text = "Добавить расход";
             this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // CostsControl
             // 

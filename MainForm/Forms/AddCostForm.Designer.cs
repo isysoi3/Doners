@@ -46,7 +46,8 @@
             this.lbTotal = new System.Windows.Forms.Label();
             this.lbToPay = new System.Windows.Forms.Label();
             this.rbNonCash = new System.Windows.Forms.RadioButton();
-            this.tbCash = new System.Windows.Forms.RadioButton();
+            this.rbCash = new System.Windows.Forms.RadioButton();
+            this.btAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,6 +96,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(182, 26);
             this.tbName.TabIndex = 3;
+            this.tbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCount
             // 
@@ -103,6 +105,7 @@
             this.tbCount.Name = "tbCount";
             this.tbCount.Size = new System.Drawing.Size(182, 26);
             this.tbCount.TabIndex = 5;
+            this.tbCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -121,6 +124,7 @@
             this.tbCost.Name = "tbCost";
             this.tbCost.Size = new System.Drawing.Size(182, 26);
             this.tbCost.TabIndex = 7;
+            this.tbCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -149,6 +153,8 @@
             this.tbDiscount.Name = "tbDiscount";
             this.tbDiscount.Size = new System.Drawing.Size(182, 26);
             this.tbDiscount.TabIndex = 15;
+            this.tbDiscount.Text = "0";
+            this.tbDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -211,7 +217,7 @@
             // lbToPay
             // 
             this.lbToPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbToPay.Location = new System.Drawing.Point(146, 205);
+            this.lbToPay.Location = new System.Drawing.Point(150, 205);
             this.lbToPay.Name = "lbToPay";
             this.lbToPay.Size = new System.Drawing.Size(182, 20);
             this.lbToPay.TabIndex = 24;
@@ -226,28 +232,40 @@
             this.rbNonCash.Name = "rbNonCash";
             this.rbNonCash.Size = new System.Drawing.Size(83, 24);
             this.rbNonCash.TabIndex = 25;
-            this.rbNonCash.TabStop = true;
             this.rbNonCash.Text = "Безнал";
             this.rbNonCash.UseVisualStyleBackColor = true;
             // 
-            // tbCash
+            // rbCash
             // 
-            this.tbCash.AutoSize = true;
-            this.tbCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbCash.Location = new System.Drawing.Point(167, 235);
-            this.tbCash.Name = "tbCash";
-            this.tbCash.Size = new System.Drawing.Size(58, 24);
-            this.tbCash.TabIndex = 26;
-            this.tbCash.TabStop = true;
-            this.tbCash.Text = "Нал";
-            this.tbCash.UseVisualStyleBackColor = true;
+            this.rbCash.AutoSize = true;
+            this.rbCash.Checked = true;
+            this.rbCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbCash.Location = new System.Drawing.Point(167, 235);
+            this.rbCash.Name = "rbCash";
+            this.rbCash.Size = new System.Drawing.Size(58, 24);
+            this.rbCash.TabIndex = 26;
+            this.rbCash.TabStop = true;
+            this.rbCash.Text = "Нал";
+            this.rbCash.UseVisualStyleBackColor = true;
+            // 
+            // btAdd
+            // 
+            this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btAdd.Location = new System.Drawing.Point(128, 367);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(81, 23);
+            this.btAdd.TabIndex = 27;
+            this.btAdd.Text = "Добавить";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // AddCostForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 362);
-            this.Controls.Add(this.tbCash);
+            this.ClientSize = new System.Drawing.Size(344, 402);
+            this.Controls.Add(this.btAdd);
+            this.Controls.Add(this.rbCash);
             this.Controls.Add(this.rbNonCash);
             this.Controls.Add(this.lbToPay);
             this.Controls.Add(this.lbTotal);
@@ -293,6 +311,7 @@
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Label lbToPay;
         private System.Windows.Forms.RadioButton rbNonCash;
-        private System.Windows.Forms.RadioButton tbCash;
+        private System.Windows.Forms.RadioButton rbCash;
+        private System.Windows.Forms.Button btAdd;
     }
 }

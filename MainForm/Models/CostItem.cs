@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UI_Example.Models
 {
-    public enum CostCategory { PRODUCTS, HOUSEHOLD, SALARY, MEDICAL, EQUIPMENT, COMMERCIAL, PRESENTATIONAL };
+    public enum CostCategory { PRODUCTS, ADVERTISMENT, HOUSEHOLD, SALARY, MEDICAL, EQUIPMENT, COMMERCIAL, PRESENTATIONAL, ETC };
 
     public class CostItem
     {
