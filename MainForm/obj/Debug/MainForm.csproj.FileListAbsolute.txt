@@ -76,3 +76,4 @@ C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.HistoryOr
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.HistoryControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CashBookControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CashBookItemControl.resources
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CostsControl.resources
