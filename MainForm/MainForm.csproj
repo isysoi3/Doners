@@ -144,6 +144,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CashBookItem.cs" />
+    <Compile Include="Models\CostItem.cs" />
     <Compile Include="Models\DonerItem.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\UserInfo.cs" />
