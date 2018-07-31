@@ -64,7 +64,7 @@
             // 
             this.lbNumberCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbNumberCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbNumberCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbNumberCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbNumberCommon.Location = new System.Drawing.Point(5, 29);
             this.lbNumberCommon.Name = "lbNumberCommon";
             this.lbNumberCommon.Size = new System.Drawing.Size(42, 33);
@@ -76,7 +76,7 @@
             // 
             this.lbComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(623, 29);
             this.lbComment.Name = "lbComment";
             this.lbComment.Size = new System.Drawing.Size(401, 33);
@@ -88,7 +88,7 @@
             // 
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label25.Location = new System.Drawing.Point(572, 29);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 33);
@@ -100,7 +100,7 @@
             // 
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label27.Location = new System.Drawing.Point(294, 29);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(140, 33);
@@ -112,7 +112,7 @@
             // 
             this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label29.Location = new System.Drawing.Point(433, 29);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(140, 33);
@@ -124,7 +124,7 @@
             // 
             this.lbSizeCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbSizeCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSizeCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSizeCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbSizeCommon.Location = new System.Drawing.Point(145, 29);
             this.lbSizeCommon.Name = "lbSizeCommon";
             this.lbSizeCommon.Size = new System.Drawing.Size(150, 33);
@@ -136,7 +136,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(46, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 33);
@@ -152,7 +152,7 @@
             this.groupBox1.Controls.Add(this.btSellsBook);
             this.groupBox1.Controls.Add(this.btHistory);
             this.groupBox1.Controls.Add(this.btMain);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 513);
@@ -162,27 +162,27 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(6, 328);
+            this.button6.Location = new System.Drawing.Point(6, 226);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(136, 59);
+            this.button6.Size = new System.Drawing.Size(136, 28);
             this.button6.TabIndex = 5;
             this.button6.Text = "График работы";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(6, 264);
+            this.button5.Location = new System.Drawing.Point(6, 190);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 58);
+            this.button5.Size = new System.Drawing.Size(136, 30);
             this.button5.TabIndex = 4;
             this.button5.Text = "Книга расходов";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // btCashBook
             // 
-            this.btCashBook.Location = new System.Drawing.Point(6, 199);
+            this.btCashBook.Location = new System.Drawing.Point(6, 157);
             this.btCashBook.Name = "btCashBook";
-            this.btCashBook.Size = new System.Drawing.Size(136, 59);
+            this.btCashBook.Size = new System.Drawing.Size(136, 27);
             this.btCashBook.TabIndex = 3;
             this.btCashBook.Text = "Кассовая книга";
             this.btCashBook.UseVisualStyleBackColor = true;
@@ -190,9 +190,9 @@
             // 
             // btSellsBook
             // 
-            this.btSellsBook.Location = new System.Drawing.Point(6, 135);
+            this.btSellsBook.Location = new System.Drawing.Point(6, 122);
             this.btSellsBook.Name = "btSellsBook";
-            this.btSellsBook.Size = new System.Drawing.Size(136, 58);
+            this.btSellsBook.Size = new System.Drawing.Size(136, 29);
             this.btSellsBook.TabIndex = 2;
             this.btSellsBook.Text = "Книга продаж";
             this.btSellsBook.UseVisualStyleBackColor = true;
@@ -202,7 +202,7 @@
             // 
             this.btHistory.Location = new System.Drawing.Point(6, 67);
             this.btHistory.Name = "btHistory";
-            this.btHistory.Size = new System.Drawing.Size(136, 62);
+            this.btHistory.Size = new System.Drawing.Size(136, 49);
             this.btHistory.TabIndex = 1;
             this.btHistory.Text = "История заказов";
             this.btHistory.UseVisualStyleBackColor = true;

@@ -44,7 +44,7 @@
             // 
             this.lbDiff.BackColor = System.Drawing.Color.White;
             this.lbDiff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDiff.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDiff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbDiff.Location = new System.Drawing.Point(944, 0);
             this.lbDiff.Name = "lbDiff";
             this.lbDiff.Size = new System.Drawing.Size(114, 33);
@@ -56,7 +56,7 @@
             // 
             this.lbTotal.BackColor = System.Drawing.Color.White;
             this.lbTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbTotal.Location = new System.Drawing.Point(778, 0);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(168, 33);
@@ -68,7 +68,7 @@
             // 
             this.lbDate.BackColor = System.Drawing.Color.White;
             this.lbDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbDate.Location = new System.Drawing.Point(0, 0);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(130, 33);
@@ -80,7 +80,7 @@
             // 
             this.lbBegin.BackColor = System.Drawing.Color.White;
             this.lbBegin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbBegin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbBegin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbBegin.Location = new System.Drawing.Point(278, 0);
             this.lbBegin.Name = "lbBegin";
             this.lbBegin.Size = new System.Drawing.Size(160, 33);
@@ -92,7 +92,7 @@
             // 
             this.lbIn.BackColor = System.Drawing.Color.White;
             this.lbIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbIn.Location = new System.Drawing.Point(594, 0);
             this.lbIn.Name = "lbIn";
             this.lbIn.Size = new System.Drawing.Size(93, 33);
@@ -104,7 +104,7 @@
             // 
             this.lbOut.BackColor = System.Drawing.Color.White;
             this.lbOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbOut.Location = new System.Drawing.Point(686, 0);
             this.lbOut.Name = "lbOut";
             this.lbOut.Size = new System.Drawing.Size(93, 33);
@@ -116,7 +116,7 @@
             // 
             this.lbCashier.BackColor = System.Drawing.Color.White;
             this.lbCashier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbCashier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbCashier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbCashier.Location = new System.Drawing.Point(129, 0);
             this.lbCashier.Name = "lbCashier";
             this.lbCashier.Size = new System.Drawing.Size(150, 33);
@@ -128,7 +128,7 @@
             // 
             this.lbEnd.BackColor = System.Drawing.Color.White;
             this.lbEnd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbEnd.Location = new System.Drawing.Point(437, 0);
             this.lbEnd.Name = "lbEnd";
             this.lbEnd.Size = new System.Drawing.Size(158, 33);

@@ -78,5 +78,55 @@ namespace UI_Example.Controls
                 panel.Controls.Add(label);
             }
         }
+
+        private void gbHistory_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbSizeCommon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbComment_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

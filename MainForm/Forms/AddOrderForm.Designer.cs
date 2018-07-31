@@ -73,10 +73,10 @@
             // lbSause
             // 
             this.lbSause.AutoSize = true;
-            this.lbSause.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSause.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbSause.Location = new System.Drawing.Point(12, 124);
             this.lbSause.Name = "lbSause";
-            this.lbSause.Size = new System.Drawing.Size(67, 25);
+            this.lbSause.Size = new System.Drawing.Size(48, 20);
             this.lbSause.TabIndex = 2;
             this.lbSause.Text = "Соус:";
             // 
@@ -275,20 +275,20 @@
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
-            this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbTotal.Location = new System.Drawing.Point(735, 398);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(75, 25);
+            this.lbTotal.Size = new System.Drawing.Size(58, 20);
             this.lbTotal.TabIndex = 23;
             this.lbTotal.Text = "Итого:";
             // 
             // lbChange
             // 
             this.lbChange.AutoSize = true;
-            this.lbChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbChange.Location = new System.Drawing.Point(735, 434);
             this.lbChange.Name = "lbChange";
-            this.lbChange.Size = new System.Drawing.Size(80, 25);
+            this.lbChange.Size = new System.Drawing.Size(62, 20);
             this.lbChange.TabIndex = 24;
             this.lbChange.Text = "Сдача:";
             // 
@@ -333,7 +333,7 @@
             // 
             this.gbSize.Controls.Add(this.rbStandart);
             this.gbSize.Controls.Add(this.rbBig);
-            this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gbSize.Location = new System.Drawing.Point(8, 3);
             this.gbSize.Name = "gbSize";
             this.gbSize.Size = new System.Drawing.Size(268, 58);
@@ -345,7 +345,7 @@
             // 
             this.gbPita.Controls.Add(this.rbWheat);
             this.gbPita.Controls.Add(this.rbCheese);
-            this.gbPita.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbPita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gbPita.Location = new System.Drawing.Point(8, 67);
             this.gbPita.Name = "gbPita";
             this.gbPita.Size = new System.Drawing.Size(268, 54);

@@ -39,7 +39,7 @@
             // 
             this.lbComment.BackColor = System.Drawing.Color.White;
             this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(478, 0);
             this.lbComment.Name = "lbComment";
             this.lbComment.Size = new System.Drawing.Size(400, 26);
@@ -51,7 +51,7 @@
             // 
             this.lbQuantity.BackColor = System.Drawing.Color.White;
             this.lbQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbQuantity.Location = new System.Drawing.Point(427, 0);
             this.lbQuantity.Name = "lbQuantity";
             this.lbQuantity.Size = new System.Drawing.Size(52, 26);
@@ -63,7 +63,7 @@
             // 
             this.lbSauces.BackColor = System.Drawing.Color.White;
             this.lbSauces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSauces.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSauces.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbSauces.Location = new System.Drawing.Point(149, 0);
             this.lbSauces.Name = "lbSauces";
             this.lbSauces.Size = new System.Drawing.Size(140, 26);
@@ -75,7 +75,7 @@
             // 
             this.lbPitaType.BackColor = System.Drawing.Color.White;
             this.lbPitaType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbPitaType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbPitaType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbPitaType.Location = new System.Drawing.Point(288, 0);
             this.lbPitaType.Name = "lbPitaType";
             this.lbPitaType.Size = new System.Drawing.Size(140, 26);
@@ -87,7 +87,7 @@
             // 
             this.lbSize.BackColor = System.Drawing.Color.White;
             this.lbSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbSize.Location = new System.Drawing.Point(0, 0);
             this.lbSize.Name = "lbSize";
             this.lbSize.Size = new System.Drawing.Size(150, 26);

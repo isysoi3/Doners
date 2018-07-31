@@ -60,13 +60,14 @@
             this.gbHistory.Controls.Add(this.label25);
             this.gbHistory.Controls.Add(this.lbSizeCommon);
             this.gbHistory.Controls.Add(this.lbComment);
-            this.gbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.gbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gbHistory.Location = new System.Drawing.Point(0, 0);
             this.gbHistory.Name = "gbHistory";
             this.gbHistory.Size = new System.Drawing.Size(1070, 513);
             this.gbHistory.TabIndex = 85;
             this.gbHistory.TabStop = false;
             this.gbHistory.Text = "История заказов";
+            this.gbHistory.Enter += new System.EventHandler(this.gbHistory_Enter);
             // 
             // btShow
             // 
@@ -90,12 +91,13 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label4.Location = new System.Drawing.Point(295, 22);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(322, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 25);
+            this.label4.Size = new System.Drawing.Size(91, 20);
             this.label4.TabIndex = 85;
             this.label4.Text = "Заказы по:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // dtpFrom
             // 
@@ -108,24 +110,26 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label3.Location = new System.Drawing.Point(6, 21);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(28, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 25);
+            this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 83;
             this.label3.Text = "Заказы с:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(6, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 33);
             this.label2.TabIndex = 82;
             this.label2.Text = "Дата";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel
             // 
@@ -139,73 +143,79 @@
             // 
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label27.Location = new System.Drawing.Point(383, 59);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(140, 33);
             this.label27.TabIndex = 75;
             this.label27.Text = "Соус";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label29
             // 
             this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label29.Location = new System.Drawing.Point(522, 59);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(140, 33);
             this.label29.TabIndex = 74;
             this.label29.Text = "Лаваш";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(132, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 33);
             this.label1.TabIndex = 80;
             this.label1.Text = "Время";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label25
             // 
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label25.Location = new System.Drawing.Point(661, 59);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 33);
             this.label25.TabIndex = 76;
             this.label25.Text = "Кол";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // lbSizeCommon
             // 
             this.lbSizeCommon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbSizeCommon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbSizeCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSizeCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbSizeCommon.Location = new System.Drawing.Point(234, 59);
             this.lbSizeCommon.Name = "lbSizeCommon";
             this.lbSizeCommon.Size = new System.Drawing.Size(150, 33);
             this.lbSizeCommon.TabIndex = 79;
             this.lbSizeCommon.Text = "Размер";
             this.lbSizeCommon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbSizeCommon.Click += new System.EventHandler(this.lbSizeCommon_Click);
             // 
             // lbComment
             // 
             this.lbComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(710, 59);
             this.lbComment.Name = "lbComment";
             this.lbComment.Size = new System.Drawing.Size(335, 33);
             this.lbComment.TabIndex = 77;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbComment.Click += new System.EventHandler(this.lbComment_Click);
             // 
             // HistoryControl
             // 
