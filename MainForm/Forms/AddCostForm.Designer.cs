@@ -73,7 +73,8 @@
             "Оборудование",
             "Ком. расходы",
             "Реклама",
-            "Пред. расходы"});
+            "Пред. расходы",
+            "Другое"});
             this.cbCategory.Location = new System.Drawing.Point(150, 6);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(182, 28);

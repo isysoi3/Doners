@@ -33,6 +33,7 @@ namespace UI_Example
         private HistoryControl historyControl;
         private SellsBookControl sellsBookControl;
         private CashBookControl cashBookControl;
+        private CostsControl costsControl;
         private Control currentGroupBox;
 
         public QueueForm()
@@ -57,6 +58,7 @@ namespace UI_Example
             historyControl = new HistoryControl();
             sellsBookControl = new SellsBookControl();
             cashBookControl = new CashBookControl();
+            costsControl = new CostsControl();
             currentGroupBox = mainGroupBox;
         }
 
@@ -164,6 +166,18 @@ namespace UI_Example
             Controls.Remove(currentGroupBox);
 
             currentGroupBox = cashBookControl;
+            currentGroupBox.Top = mainGroupBox.Top;
+            currentGroupBox.Left = mainGroupBox.Left;
+
+            Controls.Add(currentGroupBox);
+        }
+
+        private void btCosts_Click(object sender, EventArgs e)
+        {
+            Controls.Remove(currentGroupBox);
+
+            costsControl.update();
+            currentGroupBox = costsControl;
             currentGroupBox.Top = mainGroupBox.Top;
             currentGroupBox.Left = mainGroupBox.Left;
 

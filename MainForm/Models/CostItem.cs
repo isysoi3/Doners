@@ -10,6 +10,7 @@ namespace UI_Example.Models
 
     public class CostItem
     {
+        public DateTime date;
         public CostCategory category;
         public String name;
         public double count;
@@ -18,7 +19,8 @@ namespace UI_Example.Models
         public bool isCash;
         public String comment;
 
-        public CostItem(CostCategory category,
+        public CostItem(DateTime date,
+            CostCategory category,
             String name,
             double count,
             double costPerUnit,
@@ -26,6 +28,7 @@ namespace UI_Example.Models
             bool isCash,
             String comment)
         {
+            this.date = date;
             this.category = category;
             this.name = name;
             this.count = count;

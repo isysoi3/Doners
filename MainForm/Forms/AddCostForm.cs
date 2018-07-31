@@ -43,7 +43,7 @@ namespace UI_Example.Forms
         {
             if (!checkInput())
                 return;
-            addNewCostCallBack(new CostItem(getCostCategory(), tbName.Text, double.Parse(tbCount.Text), double.Parse(tbCost.Text), double.Parse(tbDiscount.Text), rbCash.Checked, rtbComment.Text));
+            addNewCostCallBack(new CostItem(DateTime.Now, getCostCategory(), tbName.Text, double.Parse(tbCount.Text), double.Parse(tbCost.Text), double.Parse(tbDiscount.Text), rbCash.Checked, rtbComment.Text));
             Hide();
         }
 

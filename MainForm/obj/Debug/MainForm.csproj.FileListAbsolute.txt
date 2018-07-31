@@ -78,3 +78,4 @@ C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CashBookC
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CashBookItemControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CostsControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Forms.AddCostForm.resources
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CostItemControl.resources

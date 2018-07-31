@@ -187,6 +187,27 @@ namespace UI_Example
             }
         }
 
+        public void addCostItem(CostItem item)
+        {
+            String query = "INSERT INTO costs ('date', 'category', 'name', 'count', 'costPerUnit', 'discount', 'isCash', 'comment') VALUES ('" +
+                item.date.ToString("dd.MM.yyyy") + "','" +
+                item.category.ToString() + "','" +
+                item.name + "','" +
+                item.count.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.costPerUnit.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.discount.ToString(CultureInfo.InvariantCulture) + "','" +
+                item.isCash.ToString() + "','" +
+                item.comment + "')";
+            try
+            {
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+            }
+            catch (SQLiteException ex)
+            {
+            }
+        }
+
         public void addCashBookItem(CashBookItem item)
         {
             String query = "INSERT INTO cashBook ('date','cashierName','cashBegin','cashEnd','cashIn','cashOut','nonCashIn','nonCashOut') VALUES ('" +
