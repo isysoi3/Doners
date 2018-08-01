@@ -31,7 +31,6 @@ namespace UI_Example.Controls
 
             dbWrapper = new DataBaseWrapper();
             orderControls = new List<HistoryOrderControl>();
-
         }
 
         private void addNewOrder(OrderItem item)
@@ -50,7 +49,7 @@ namespace UI_Example.Controls
                 orderControl.Left = lastOrder.Left;
             }
 
-
+            orderControl.changeWidth(lbComment.Right - lbDate.Left);
             orderControls.Add(orderControl);
         }
 
@@ -80,54 +79,24 @@ namespace UI_Example.Controls
             }
         }
 
-        private void gbHistory_Enter(object sender, EventArgs e)
+        public void changeWidth(int width)
         {
-
+            Width = width;
+            gbHistory.Width = width;
+            panel.Width = Width - 10;
+            lbComment.Width = Width - 745;
+            btShow.Left = lbComment.Right - btShow.Width;
+            foreach(HistoryOrderControl control in orderControls)
+            {
+                control.changeWidth(lbComment.Right - lbDate.Left);
+            }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        public void changeHeight(int height)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbSizeCommon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbComment_Click(object sender, EventArgs e)
-        {
-
+            Height = height;
+            gbHistory.Height = height;
+            panel.Height = Height - 100;
         }
     }
 }

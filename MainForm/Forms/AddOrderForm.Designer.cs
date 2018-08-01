@@ -472,6 +472,8 @@
             this.Controls.Add(this.cbSalsa);
             this.Controls.Add(this.cbGarlic);
             this.Controls.Add(this.lbSause);
+            this.MaximumSize = new System.Drawing.Size(1028, 605);
+            this.MinimumSize = new System.Drawing.Size(1028, 605);
             this.Name = "AddOrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Новый заказ";

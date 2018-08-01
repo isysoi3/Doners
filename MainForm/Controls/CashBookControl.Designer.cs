@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.gbCashBook = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbDiff = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -43,9 +43,9 @@
             // 
             // gbCashBook
             // 
-            this.gbCashBook.Controls.Add(this.label3);
+            this.gbCashBook.Controls.Add(this.lbDiff);
             this.gbCashBook.Controls.Add(this.label1);
-            this.gbCashBook.Controls.Add(this.label2);
+            this.gbCashBook.Controls.Add(this.lbDate);
             this.gbCashBook.Controls.Add(this.panel);
             this.gbCashBook.Controls.Add(this.label27);
             this.gbCashBook.Controls.Add(this.label29);
@@ -55,22 +55,22 @@
             this.gbCashBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.gbCashBook.Location = new System.Drawing.Point(0, 0);
             this.gbCashBook.Name = "gbCashBook";
-            this.gbCashBook.Size = new System.Drawing.Size(1070, 513);
+            this.gbCashBook.Size = new System.Drawing.Size(1120, 510);
             this.gbCashBook.TabIndex = 86;
             this.gbCashBook.TabStop = false;
             this.gbCashBook.Text = "Кассовая книга";
             // 
-            // label3
+            // lbDiff
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(950, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 33);
-            this.label3.TabIndex = 89;
-            this.label3.Text = "Разница";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbDiff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbDiff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDiff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDiff.Location = new System.Drawing.Point(950, 16);
+            this.lbDiff.Name = "lbDiff";
+            this.lbDiff.Size = new System.Drawing.Size(130, 33);
+            this.lbDiff.TabIndex = 89;
+            this.lbDiff.Text = "Разница";
+            this.lbDiff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -84,24 +84,24 @@
             this.label1.Text = "Итого за смену";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lbDate
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 33);
-            this.label2.TabIndex = 82;
-            this.label2.Text = "Дата";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDate.Location = new System.Drawing.Point(6, 16);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(130, 33);
+            this.lbDate.TabIndex = 82;
+            this.lbDate.Text = "Дата";
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel
             // 
             this.panel.AutoScroll = true;
-            this.panel.Location = new System.Drawing.Point(6, 52);
+            this.panel.Location = new System.Drawing.Point(5, 52);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1058, 455);
+            this.panel.Size = new System.Drawing.Size(1110, 455);
             this.panel.TabIndex = 81;
             // 
             // label27
@@ -170,7 +170,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbCashBook);
             this.Name = "CashBookControl";
-            this.Size = new System.Drawing.Size(1070, 513);
+            this.Size = new System.Drawing.Size(1120, 510);
             this.gbCashBook.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -179,9 +179,9 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbCashBook;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbDiff;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;

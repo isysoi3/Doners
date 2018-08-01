@@ -78,5 +78,24 @@ namespace UI_Example.Controls
         {
             addCostForm.Show();
         }
+
+        public void changeWidth(int width)
+        {
+            Width = width;
+            gbCashBook.Width = width;
+            panel.Width = width - 10;
+            lbComment.Width = width - 805;
+            btAdd.Left = (width - btAdd.Width) / 2;
+            foreach (CostItemControl control in costItemControls)
+                control.changeWidth(lbComment.Right - lbDate.Left);
+        }
+
+        public void changeHeight(int height)
+        {
+            Height = height;
+            gbCashBook.Height = height;
+            panel.Height = height - 85;
+            btAdd.Top = Height - 30;
+        }
     }
 }

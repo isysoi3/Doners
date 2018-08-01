@@ -36,7 +36,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.lbSizeCommon = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbNavigation = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.btCosts = new System.Windows.Forms.Button();
             this.btCashBook = new System.Windows.Forms.Button();
@@ -45,14 +45,14 @@
             this.btMain = new System.Windows.Forms.Button();
             this.gbMain = new System.Windows.Forms.GroupBox();
             this.panel = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
+            this.gbNavigation.SuspendLayout();
             this.gbMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // btAdd
             // 
             this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btAdd.Location = new System.Drawing.Point(318, 477);
+            this.btAdd.Location = new System.Drawing.Point(423, 476);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(134, 23);
             this.btAdd.TabIndex = 0;
@@ -79,7 +79,7 @@
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(623, 29);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(401, 33);
+            this.lbComment.Size = new System.Drawing.Size(445, 33);
             this.lbComment.TabIndex = 77;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,21 +144,21 @@
             this.label1.Text = "Время";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // groupBox1
+            // gbNavigation
             // 
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.btCosts);
-            this.groupBox1.Controls.Add(this.btCashBook);
-            this.groupBox1.Controls.Add(this.btSellsBook);
-            this.groupBox1.Controls.Add(this.btHistory);
-            this.groupBox1.Controls.Add(this.btMain);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(4, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(150, 513);
-            this.groupBox1.TabIndex = 82;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Навигация";
+            this.gbNavigation.Controls.Add(this.button6);
+            this.gbNavigation.Controls.Add(this.btCosts);
+            this.gbNavigation.Controls.Add(this.btCashBook);
+            this.gbNavigation.Controls.Add(this.btSellsBook);
+            this.gbNavigation.Controls.Add(this.btHistory);
+            this.gbNavigation.Controls.Add(this.btMain);
+            this.gbNavigation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbNavigation.Location = new System.Drawing.Point(4, 3);
+            this.gbNavigation.Name = "gbNavigation";
+            this.gbNavigation.Size = new System.Drawing.Size(150, 513);
+            this.gbNavigation.TabIndex = 82;
+            this.gbNavigation.TabStop = false;
+            this.gbNavigation.Text = "Навигация";
             // 
             // button6
             // 
@@ -231,9 +231,9 @@
             this.gbMain.Controls.Add(this.lbComment);
             this.gbMain.Controls.Add(this.lbNumberCommon);
             this.gbMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.gbMain.Location = new System.Drawing.Point(160, 9);
+            this.gbMain.Location = new System.Drawing.Point(160, 6);
             this.gbMain.Name = "gbMain";
-            this.gbMain.Size = new System.Drawing.Size(1070, 504);
+            this.gbMain.Size = new System.Drawing.Size(1120, 510);
             this.gbMain.TabIndex = 83;
             this.gbMain.TabStop = false;
             this.gbMain.Text = "Главная";
@@ -243,21 +243,22 @@
             this.panel.AutoScroll = true;
             this.panel.Location = new System.Drawing.Point(5, 65);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1065, 408);
+            this.panel.Size = new System.Drawing.Size(1110, 410);
             this.panel.TabIndex = 82;
             // 
             // QueueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 517);
+            this.ClientSize = new System.Drawing.Size(1284, 521);
             this.Controls.Add(this.gbMain);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbNavigation);
+            this.MinimumSize = new System.Drawing.Size(1300, 560);
             this.Name = "QueueForm";
-            this.Text = "*Заголовок открытой страницы*";
+            this.Text = "Главная";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QueueForm_FormClosing);
             this.Resize += new System.EventHandler(this.QueueForm_Resize);
-            this.groupBox1.ResumeLayout(false);
+            this.gbNavigation.ResumeLayout(false);
             this.gbMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -273,7 +274,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label lbSizeCommon;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbNavigation;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btCosts;
         private System.Windows.Forms.Button btCashBook;

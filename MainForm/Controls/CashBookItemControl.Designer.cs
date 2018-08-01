@@ -47,7 +47,7 @@
             this.lbDiff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbDiff.Location = new System.Drawing.Point(944, 0);
             this.lbDiff.Name = "lbDiff";
-            this.lbDiff.Size = new System.Drawing.Size(114, 33);
+            this.lbDiff.Size = new System.Drawing.Size(132, 33);
             this.lbDiff.TabIndex = 97;
             this.lbDiff.Text = "Разница";
             this.lbDiff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -156,7 +156,7 @@
             this.Controls.Add(this.lbCashier);
             this.Controls.Add(this.lbEnd);
             this.Name = "CashBookItemControl";
-            this.Size = new System.Drawing.Size(1059, 36);
+            this.Size = new System.Drawing.Size(1077, 34);
             this.ResumeLayout(false);
 
         }

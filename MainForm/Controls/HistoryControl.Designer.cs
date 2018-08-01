@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dtpFrom = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             this.gbHistory.Controls.Add(this.label4);
             this.gbHistory.Controls.Add(this.dtpFrom);
             this.gbHistory.Controls.Add(this.label3);
-            this.gbHistory.Controls.Add(this.label2);
+            this.gbHistory.Controls.Add(this.lbDate);
             this.gbHistory.Controls.Add(this.panel);
             this.gbHistory.Controls.Add(this.label27);
             this.gbHistory.Controls.Add(this.label29);
@@ -63,16 +63,15 @@
             this.gbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.gbHistory.Location = new System.Drawing.Point(0, 0);
             this.gbHistory.Name = "gbHistory";
-            this.gbHistory.Size = new System.Drawing.Size(1070, 513);
+            this.gbHistory.Size = new System.Drawing.Size(1120, 510);
             this.gbHistory.TabIndex = 85;
             this.gbHistory.TabStop = false;
             this.gbHistory.Text = "История заказов";
-            this.gbHistory.Enter += new System.EventHandler(this.gbHistory_Enter);
             // 
             // btShow
             // 
             this.btShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btShow.Location = new System.Drawing.Point(960, 23);
+            this.btShow.Location = new System.Drawing.Point(1000, 22);
             this.btShow.Name = "btShow";
             this.btShow.Size = new System.Drawing.Size(85, 23);
             this.btShow.TabIndex = 87;
@@ -97,7 +96,6 @@
             this.label4.Size = new System.Drawing.Size(91, 20);
             this.label4.TabIndex = 85;
             this.label4.Text = "Заказы по:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // dtpFrom
             // 
@@ -116,27 +114,25 @@
             this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 83;
             this.label3.Text = "Заказы с:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label2
+            // lbDate
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 33);
-            this.label2.TabIndex = 82;
-            this.label2.Text = "Дата";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDate.Location = new System.Drawing.Point(6, 59);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(130, 33);
+            this.lbDate.TabIndex = 82;
+            this.lbDate.Text = "Дата";
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel
             // 
             this.panel.AutoScroll = true;
-            this.panel.Location = new System.Drawing.Point(6, 95);
+            this.panel.Location = new System.Drawing.Point(6, 93);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1058, 412);
+            this.panel.Size = new System.Drawing.Size(1110, 410);
             this.panel.TabIndex = 81;
             // 
             // label27
@@ -150,7 +146,6 @@
             this.label27.TabIndex = 75;
             this.label27.Text = "Соус";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label29
             // 
@@ -163,7 +158,6 @@
             this.label29.TabIndex = 74;
             this.label29.Text = "Лаваш";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // label1
             // 
@@ -176,7 +170,6 @@
             this.label1.TabIndex = 80;
             this.label1.Text = "Время";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label25
             // 
@@ -189,7 +182,6 @@
             this.label25.TabIndex = 76;
             this.label25.Text = "Кол";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // lbSizeCommon
             // 
@@ -202,7 +194,6 @@
             this.lbSizeCommon.TabIndex = 79;
             this.lbSizeCommon.Text = "Размер";
             this.lbSizeCommon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbSizeCommon.Click += new System.EventHandler(this.lbSizeCommon_Click);
             // 
             // lbComment
             // 
@@ -211,11 +202,10 @@
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(710, 59);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(335, 33);
+            this.lbComment.Size = new System.Drawing.Size(375, 33);
             this.lbComment.TabIndex = 77;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbComment.Click += new System.EventHandler(this.lbComment_Click);
             // 
             // HistoryControl
             // 
@@ -223,7 +213,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbHistory);
             this.Name = "HistoryControl";
-            this.Size = new System.Drawing.Size(1070, 513);
+            this.Size = new System.Drawing.Size(1120, 510);
             this.gbHistory.ResumeLayout(false);
             this.gbHistory.PerformLayout();
             this.ResumeLayout(false);
@@ -233,7 +223,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbHistory;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;

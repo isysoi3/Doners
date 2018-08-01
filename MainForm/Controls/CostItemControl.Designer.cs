@@ -46,7 +46,7 @@
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(764, 0);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(292, 33);
+            this.lbComment.Size = new System.Drawing.Size(314, 33);
             this.lbComment.TabIndex = 99;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,7 +161,7 @@
             this.Controls.Add(this.lbCategory);
             this.Controls.Add(this.lbCount);
             this.Name = "CostItemControl";
-            this.Size = new System.Drawing.Size(1059, 34);
+            this.Size = new System.Drawing.Size(1078, 34);
             this.ResumeLayout(false);
 
         }

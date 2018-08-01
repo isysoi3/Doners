@@ -71,6 +71,25 @@ namespace UI_Example.Controls
             orderControls.Add(orderControl);
         }
 
+        public void changeWidth(int width)
+        {
+            Width = width;
+            gbSellsBook.Width = width;
+            panel.Width = Width - 10;
+            lbComment.Width = Width - 745;
+            foreach (HistoryOrderControl control in orderControls)
+            {
+                control.changeWidth(lbComment.Right - lbDate.Left);
+            }
+        }
+
+        public void changeHeight(int height)
+        {
+            Height = height;
+            gbSellsBook.Height = height;
+            panel.Height = Height - 70;
+        }
+
         private void SellsBookControl_Load(object sender, EventArgs e)
         {
             

@@ -28,5 +28,11 @@ namespace UI_Example.Controls
             toolTip.SetToolTip(lbIn, "Наличный приход: " + item.CashIn + "\nБезниличный приход: " + item.NonCashIn);
             toolTip.SetToolTip(lbOut, "Наличный расход: " + item.CashOut + "\nБезниличный расход: " + item.NonCashOut);
         }
+
+        public void changeWidth(int width)
+        {
+            Width = width;
+            lbDiff.Width = width - 944;
+        }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gbSellsBook = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             // 
             // gbSellsBook
             // 
-            this.gbSellsBook.Controls.Add(this.label2);
+            this.gbSellsBook.Controls.Add(this.lbDate);
             this.gbSellsBook.Controls.Add(this.panel);
             this.gbSellsBook.Controls.Add(this.label27);
             this.gbSellsBook.Controls.Add(this.label29);
@@ -53,29 +53,29 @@
             this.gbSellsBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.gbSellsBook.Location = new System.Drawing.Point(0, 0);
             this.gbSellsBook.Name = "gbSellsBook";
-            this.gbSellsBook.Size = new System.Drawing.Size(1070, 513);
+            this.gbSellsBook.Size = new System.Drawing.Size(1120, 510);
             this.gbSellsBook.TabIndex = 84;
             this.gbSellsBook.TabStop = false;
             this.gbSellsBook.Text = "Книга продаж";
             // 
-            // label2
+            // lbDate
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 33);
-            this.label2.TabIndex = 82;
-            this.label2.Text = "Дата";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDate.Location = new System.Drawing.Point(6, 29);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(130, 33);
+            this.lbDate.TabIndex = 82;
+            this.lbDate.Text = "Дата";
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel
             // 
             this.panel.AutoScroll = true;
             this.panel.Location = new System.Drawing.Point(6, 65);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1058, 442);
+            this.panel.Size = new System.Drawing.Size(1111, 440);
             this.panel.TabIndex = 81;
             // 
             // label27
@@ -145,7 +145,7 @@
             this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbComment.Location = new System.Drawing.Point(710, 29);
             this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(335, 33);
+            this.lbComment.Size = new System.Drawing.Size(375, 33);
             this.lbComment.TabIndex = 77;
             this.lbComment.Text = "Комментарий";
             this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -156,7 +156,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbSellsBook);
             this.Name = "SellsBookControl";
-            this.Size = new System.Drawing.Size(1070, 513);
+            this.Size = new System.Drawing.Size(1120, 510);
             this.Load += new System.EventHandler(this.SellsBookControl_Load);
             this.gbSellsBook.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -173,6 +173,6 @@
         private System.Windows.Forms.Label lbSizeCommon;
         private System.Windows.Forms.Label lbComment;
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDate;
     }
 }

@@ -39,7 +39,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 19);
+            this.label3.Location = new System.Drawing.Point(62, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 9;
@@ -47,14 +47,14 @@
             // 
             // tbCash
             // 
-            this.tbCash.Location = new System.Drawing.Point(91, 16);
+            this.tbCash.Location = new System.Drawing.Point(116, 15);
             this.tbCash.Name = "tbCash";
             this.tbCash.Size = new System.Drawing.Size(100, 20);
             this.tbCash.TabIndex = 8;
             // 
             // btEndSession
             // 
-            this.btEndSession.Location = new System.Drawing.Point(56, 43);
+            this.btEndSession.Location = new System.Drawing.Point(81, 42);
             this.btEndSession.Name = "btEndSession";
             this.btEndSession.Size = new System.Drawing.Size(135, 23);
             this.btEndSession.TabIndex = 7;
@@ -70,10 +70,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(250, 78);
+            this.ClientSize = new System.Drawing.Size(279, 78);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbCash);
             this.Controls.Add(this.btEndSession);
+            this.MaximumSize = new System.Drawing.Size(295, 117);
+            this.MinimumSize = new System.Drawing.Size(295, 117);
             this.Name = "EndSessionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Закрытие смены";

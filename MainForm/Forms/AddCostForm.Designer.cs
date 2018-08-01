@@ -295,8 +295,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(360, 441);
+            this.MinimumSize = new System.Drawing.Size(360, 441);
             this.Name = "AddCostForm";
-            this.Text = "AddCostForm";
+            this.Text = "Добавить расход";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddCostForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);

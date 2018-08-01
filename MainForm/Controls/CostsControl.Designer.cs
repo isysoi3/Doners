@@ -29,40 +29,62 @@
         private void InitializeComponent()
         {
             this.gbCashBook = new System.Windows.Forms.GroupBox();
+            this.btAdd = new System.Windows.Forms.Button();
+            this.lbComment = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.lbSizeCommon = new System.Windows.Forms.Label();
-            this.lbComment = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btAdd = new System.Windows.Forms.Button();
+            this.label = new System.Windows.Forms.Label();
             this.gbCashBook.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbCashBook
             // 
             this.gbCashBook.Controls.Add(this.btAdd);
-            this.gbCashBook.Controls.Add(this.label4);
+            this.gbCashBook.Controls.Add(this.lbComment);
             this.gbCashBook.Controls.Add(this.label3);
             this.gbCashBook.Controls.Add(this.label1);
-            this.gbCashBook.Controls.Add(this.label2);
+            this.gbCashBook.Controls.Add(this.lbDate);
             this.gbCashBook.Controls.Add(this.panel);
             this.gbCashBook.Controls.Add(this.label27);
             this.gbCashBook.Controls.Add(this.label29);
             this.gbCashBook.Controls.Add(this.label25);
             this.gbCashBook.Controls.Add(this.lbSizeCommon);
-            this.gbCashBook.Controls.Add(this.lbComment);
+            this.gbCashBook.Controls.Add(this.label);
             this.gbCashBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.gbCashBook.Location = new System.Drawing.Point(0, 0);
             this.gbCashBook.Name = "gbCashBook";
-            this.gbCashBook.Size = new System.Drawing.Size(1070, 513);
+            this.gbCashBook.Size = new System.Drawing.Size(1120, 510);
             this.gbCashBook.TabIndex = 87;
             this.gbCashBook.TabStop = false;
             this.gbCashBook.Text = "Книга расходов";
+            // 
+            // btAdd
+            // 
+            this.btAdd.Location = new System.Drawing.Point(505, 480);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(110, 23);
+            this.btAdd.TabIndex = 91;
+            this.btAdd.Text = "Добавить расход";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
+            // 
+            // lbComment
+            // 
+            this.lbComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbComment.Location = new System.Drawing.Point(769, 16);
+            this.lbComment.Name = "lbComment";
+            this.lbComment.Size = new System.Drawing.Size(315, 33);
+            this.lbComment.TabIndex = 90;
+            this.lbComment.Text = "Комментарий";
+            this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -88,24 +110,24 @@
             this.label1.Text = "К оплате";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lbDate
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 33);
-            this.label2.TabIndex = 82;
-            this.label2.Text = "Дата";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDate.Location = new System.Drawing.Point(6, 16);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(113, 33);
+            this.lbDate.TabIndex = 82;
+            this.lbDate.Text = "Дата";
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel
             // 
             this.panel.AutoScroll = true;
             this.panel.Location = new System.Drawing.Point(6, 52);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1058, 432);
+            this.panel.Size = new System.Drawing.Size(1110, 425);
             this.panel.TabIndex = 81;
             // 
             // label27
@@ -156,39 +178,17 @@
             this.lbSizeCommon.Text = "Категория";
             this.lbSizeCommon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbComment
+            // label
             // 
-            this.lbComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbComment.Location = new System.Drawing.Point(362, 16);
-            this.lbComment.Name = "lbComment";
-            this.lbComment.Size = new System.Drawing.Size(63, 33);
-            this.lbComment.TabIndex = 77;
-            this.lbComment.Text = "Кол-во";
-            this.lbComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(769, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(295, 33);
-            this.label4.TabIndex = 90;
-            this.label4.Text = "Комментарий";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btAdd
-            // 
-            this.btAdd.Location = new System.Drawing.Point(462, 487);
-            this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(107, 23);
-            this.btAdd.TabIndex = 91;
-            this.btAdd.Text = "Добавить расход";
-            this.btAdd.UseVisualStyleBackColor = true;
-            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
+            this.label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label.Location = new System.Drawing.Point(362, 16);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(63, 33);
+            this.label.TabIndex = 77;
+            this.label.Text = "Кол-во";
+            this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CostsControl
             // 
@@ -196,7 +196,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbCashBook);
             this.Name = "CostsControl";
-            this.Size = new System.Drawing.Size(1070, 513);
+            this.Size = new System.Drawing.Size(1120, 510);
             this.gbCashBook.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -207,14 +207,14 @@
         private System.Windows.Forms.GroupBox gbCashBook;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lbSizeCommon;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label lbComment;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btAdd;
     }
 }

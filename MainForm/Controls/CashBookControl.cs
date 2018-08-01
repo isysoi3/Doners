@@ -56,5 +56,22 @@ namespace UI_Example.Controls
 
             cashBookControls.Add(orderControl);
         }
+
+        public void changeHeight(int height)
+        {
+            Height = height;
+            gbCashBook.Height = height;
+            panel.Height = height - 55;
+        }
+
+        public void changeWidth(int width)
+        {
+            Width = width;
+            gbCashBook.Width = width;
+            lbDiff.Width = width - 990;
+            panel.Width = width - 10;
+            foreach (CashBookItemControl control in cashBookControls)
+                control.changeWidth(lbDiff.Right - lbDate.Left);
+        }
     }
 }

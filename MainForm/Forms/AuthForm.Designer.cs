@@ -42,7 +42,7 @@
             // 
             // btLogin
             // 
-            this.btLogin.Location = new System.Drawing.Point(70, 110);
+            this.btLogin.Location = new System.Drawing.Point(102, 98);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(75, 23);
             this.btLogin.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             // tbLogin
             // 
-            this.tbLogin.Location = new System.Drawing.Point(93, 28);
+            this.tbLogin.Location = new System.Drawing.Point(117, 10);
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(100, 20);
             this.tbLogin.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(94, 55);
+            this.tbPassword.Location = new System.Drawing.Point(118, 37);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(100, 20);
             this.tbPassword.TabIndex = 2;
@@ -69,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 31);
+            this.label1.Location = new System.Drawing.Point(64, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 3;
@@ -78,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 58);
+            this.label2.Location = new System.Drawing.Point(64, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 4;
@@ -87,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 84);
+            this.label3.Location = new System.Drawing.Point(63, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 6;
@@ -95,7 +95,7 @@
             // 
             // tbCash
             // 
-            this.tbCash.Location = new System.Drawing.Point(93, 81);
+            this.tbCash.Location = new System.Drawing.Point(117, 63);
             this.tbCash.Name = "tbCash";
             this.tbCash.Size = new System.Drawing.Size(100, 20);
             this.tbCash.TabIndex = 5;
@@ -109,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 151);
+            this.ClientSize = new System.Drawing.Size(278, 132);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbCash);
             this.Controls.Add(this.label2);
@@ -117,8 +117,8 @@
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbLogin);
             this.Controls.Add(this.btLogin);
-            this.MaximumSize = new System.Drawing.Size(254, 190);
-            this.MinimumSize = new System.Drawing.Size(254, 190);
+            this.MaximumSize = new System.Drawing.Size(294, 171);
+            this.MinimumSize = new System.Drawing.Size(294, 171);
             this.Name = "AuthForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";

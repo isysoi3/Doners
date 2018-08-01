@@ -257,7 +257,7 @@ namespace UI_Example
         public UserInfo login(String username, String password)
         {
             DataTable table = new DataTable();
-            String query = "SELECT * FROM users WHERE username=" + username + " AND password=" + password;
+            String query = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
             try
             {
                 SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, dbConnection.getConnection());

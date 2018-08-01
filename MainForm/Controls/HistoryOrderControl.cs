@@ -29,6 +29,7 @@ namespace UI_Example.Controls
             foreach (KebabItem kebab in kebabs)
             {
                 KebabControl orderControl = new KebabControl(kebab);
+                orderControl.setWidth(Width - lbTime.Right);
                 orderControl.Left = lbTime.Right;
                 if (lastControl == null)
                     orderControl.Top = lbDate.Top;
@@ -40,6 +41,14 @@ namespace UI_Example.Controls
             lbDate.Height = lastControl.Bottom - lbDate.Top;
             lbTime.Height = lbDate.Height;
             this.Height = lbDate.Height;
+        }
+
+        public void changeWidth(int width)
+        {
+            Width = width;
+            foreach (Control kebab in Controls)
+                if (kebab is KebabControl)
+                    (kebab as KebabControl).setWidth(Width - lbTime.Right);
         }
     }
 }

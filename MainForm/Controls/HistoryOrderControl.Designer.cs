@@ -63,7 +63,7 @@
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.lbDate);
             this.Name = "HistoryOrderControl";
-            this.Size = new System.Drawing.Size(1046, 34);
+            this.Size = new System.Drawing.Size(1080, 34);
             this.ResumeLayout(false);
 
         }

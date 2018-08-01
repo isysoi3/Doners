@@ -30,6 +30,12 @@ namespace UI_Example.Controls
             lbComment.Text = item.comment;
         }
 
+        public void changeWidth(int width)
+        {
+            Width = width;
+            lbComment.Width = width - 764;
+        }
+
         private String getStringCategory(CostCategory category)
         {
             switch(category)
