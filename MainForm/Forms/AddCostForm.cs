@@ -27,21 +27,42 @@ namespace UI_Example.Forms
         {
             double result;
             if (cbCategory.Text == "")
+            {
+                errorProvider.SetError(cbCategory, "Выберите категорию");   
                 return false;
+            }
             if (tbName.Text == "")
+            {
+                errorProvider.SetError(tbName, "Введите наименование");
                 return false;
+            }
             if (tbCount.Text == "" || !double.TryParse(tbCount.Text, out result))
+            {
+                errorProvider.SetError(tbCount, "Введите количество");
                 return false;
+            }
             if (tbCost.Text == "" || !double.TryParse(tbCost.Text, out result))
+            {
+                errorProvider.SetError(tbCost, "Введите цену за единицу");
                 return false;
+            }
             if (tbDiscount.Text == "" || !double.TryParse(tbDiscount.Text, out result))
+            {
+                errorProvider.SetError(tbDiscount, "Введите скидку");
                 return false;
+            }
             return true;
+        }
+
+        private void clearError(object sender, EventArgs e)
+        {
+            errorProvider.Clear();
         }
 
         private void recountTotalAndToPay(object sender, EventArgs e)
         {
             double count, cost, discount;
+            errorProvider.Clear();
             if (tbCount.Text == "" || !double.TryParse(tbCount.Text, out count) || tbCost.Text == "" || !double.TryParse(tbCost.Text, out cost))
             {
                 lbTotal.Text = "";
@@ -63,6 +84,10 @@ namespace UI_Example.Forms
             if (!checkInput())
                 return;
             addNewCostCallBack(new CostItem(DateTime.Now, getCostCategory(), tbName.Text, double.Parse(tbCount.Text), double.Parse(tbCost.Text), double.Parse(tbDiscount.Text), rbCash.Checked, rtbComment.Text));
+            if (rbCash.Checked)
+                QueueForm.CurrentCashierInfo.CashOut += double.Parse(lbToPay.Text);
+            else
+                QueueForm.CurrentCashierInfo.NonCashOut += double.Parse(lbToPay.Text);
             Hide();
             clearInput();
         }
@@ -94,12 +119,11 @@ namespace UI_Example.Forms
 
         private void clearInput()
         {
-            cbCategory.Text = "";
             tbName.Text = "";
             tbCount.Text = "";
             tbCost.Text = "";
             lbTotal.Text = "";
-            tbDiscount.Text = "";
+            tbDiscount.Text = "0";
             rtbComment.Text = "";
         }
 

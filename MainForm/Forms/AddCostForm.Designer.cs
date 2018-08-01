@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +49,8 @@
             this.rbNonCash = new System.Windows.Forms.RadioButton();
             this.rbCash = new System.Windows.Forms.RadioButton();
             this.btAdd = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,6 +82,7 @@
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(182, 28);
             this.cbCategory.TabIndex = 1;
+            this.cbCategory.TextChanged += new System.EventHandler(this.clearError);
             // 
             // label2
             // 
@@ -98,6 +102,7 @@
             this.tbName.Size = new System.Drawing.Size(182, 26);
             this.tbName.TabIndex = 3;
             this.tbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbName.TextChanged += new System.EventHandler(this.clearError);
             // 
             // tbCount
             // 
@@ -261,6 +266,10 @@
             this.btAdd.UseVisualStyleBackColor = true;
             this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // AddCostForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,6 +298,7 @@
             this.Name = "AddCostForm";
             this.Text = "AddCostForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddCostForm_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +326,6 @@
         private System.Windows.Forms.RadioButton rbNonCash;
         private System.Windows.Forms.RadioButton rbCash;
         private System.Windows.Forms.Button btAdd;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
