@@ -63,6 +63,7 @@ namespace UI_Example.Controls
 
             if (orderItems.Count != 0)
             {
+                orderItems.Reverse();
                 foreach (OrderItem item in orderItems)
                     addNewOrder(item);
             }

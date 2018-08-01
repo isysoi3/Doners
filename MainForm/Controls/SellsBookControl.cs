@@ -44,6 +44,7 @@ namespace UI_Example.Controls
             panel.Controls.Clear();
 
             List<OrderItem> orderItems = dbWrapper.getTodayOrderItems();
+            orderItems.Reverse();
             foreach (OrderItem item in orderItems)
             {
                 addNewOrder(item);

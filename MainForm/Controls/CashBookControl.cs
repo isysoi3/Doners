@@ -30,6 +30,7 @@ namespace UI_Example.Controls
             cashBookControls = new List<CashBookItemControl>();
 
             List<CashBookItem> orderItems = dbWrapper.getCashBookItems();
+            orderItems.Reverse();
             foreach (CashBookItem item in orderItems)
             {
                 addNewItem(item);

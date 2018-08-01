@@ -41,6 +41,7 @@ namespace UI_Example.Controls
             costItemControls.Clear();
             panel.Controls.Clear();
             List<CostItem> costItems = dbWrapper.getCostItems();
+            costItems.Reverse();
             foreach(CostItem item in costItems)
             {
                 addCost(item);
