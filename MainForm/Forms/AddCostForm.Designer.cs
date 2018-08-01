@@ -107,6 +107,7 @@
             this.tbCount.Size = new System.Drawing.Size(182, 26);
             this.tbCount.TabIndex = 5;
             this.tbCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCount.TextChanged += new System.EventHandler(this.recountTotalAndToPay);
             // 
             // label3
             // 
@@ -126,6 +127,7 @@
             this.tbCost.Size = new System.Drawing.Size(182, 26);
             this.tbCost.TabIndex = 7;
             this.tbCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCost.TextChanged += new System.EventHandler(this.recountTotalAndToPay);
             // 
             // label4
             // 
@@ -156,6 +158,7 @@
             this.tbDiscount.TabIndex = 15;
             this.tbDiscount.Text = "0";
             this.tbDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbDiscount.TextChanged += new System.EventHandler(this.recountTotalAndToPay);
             // 
             // label9
             // 
@@ -212,7 +215,6 @@
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(182, 20);
             this.lbTotal.TabIndex = 23;
-            this.lbTotal.Text = "0";
             this.lbTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbToPay
@@ -222,7 +224,6 @@
             this.lbToPay.Name = "lbToPay";
             this.lbToPay.Size = new System.Drawing.Size(182, 20);
             this.lbToPay.TabIndex = 24;
-            this.lbToPay.Text = "0";
             this.lbToPay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rbNonCash
@@ -287,6 +288,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddCostForm";
             this.Text = "AddCostForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddCostForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,12 +39,32 @@ namespace UI_Example.Forms
             return true;
         }
 
+        private void recountTotalAndToPay(object sender, EventArgs e)
+        {
+            double count, cost, discount;
+            if (tbCount.Text == "" || !double.TryParse(tbCount.Text, out count) || tbCost.Text == "" || !double.TryParse(tbCost.Text, out cost))
+            {
+                lbTotal.Text = "";
+                lbToPay.Text = "";
+                return;
+            }
+            lbTotal.Text = (count * cost).ToString();
+
+            if (tbDiscount.Text == "" || !double.TryParse(tbDiscount.Text, out discount))
+            {
+                lbToPay.Text = "";
+                return;
+            }
+            lbToPay.Text = (count * cost - discount).ToString();
+        }
+
         private void btAdd_Click(object sender, EventArgs e)
         {
             if (!checkInput())
                 return;
             addNewCostCallBack(new CostItem(DateTime.Now, getCostCategory(), tbName.Text, double.Parse(tbCount.Text), double.Parse(tbCost.Text), double.Parse(tbDiscount.Text), rbCash.Checked, rtbComment.Text));
             Hide();
+            clearInput();
         }
 
         private CostCategory getCostCategory()
@@ -69,6 +89,28 @@ namespace UI_Example.Forms
                     return CostCategory.PRESENTATIONAL;
                 default:
                     return CostCategory.ETC;
+            }
+        }
+
+        private void clearInput()
+        {
+            cbCategory.Text = "";
+            tbName.Text = "";
+            tbCount.Text = "";
+            tbCost.Text = "";
+            lbTotal.Text = "";
+            tbDiscount.Text = "";
+            rtbComment.Text = "";
+        }
+
+        private void AddCostForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                clearInput();
+                Hide();
+
             }
         }
     }
