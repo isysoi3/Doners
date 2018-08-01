@@ -218,9 +218,9 @@ namespace UI_Example
         {
             Controls.Remove(currentGroupBox);
 
+            costsControl.update();
             costsControl.changeWidth(Width - 180);
             costsControl.changeHeight(Height - 50);
-            costsControl.update();
             currentGroupBox = costsControl;
             currentGroupBox.Top = mainGroupBox.Top;
             currentGroupBox.Left = mainGroupBox.Left;
