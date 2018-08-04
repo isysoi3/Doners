@@ -24,9 +24,11 @@ namespace UI_Example.Controls
         {
             Width = width;
             btRemove.Left = width - btRemove.Width - 20;
+            lbState.Width = btRemove.Left;
+            lbState.SendToBack();
             foreach (Control kebab in Controls)
                 if (kebab is KebabControl)
-                    (kebab as KebabControl).setWidth(btRemove.Left - lbTime.Right);
+                    (kebab as KebabControl).setWidth(btRemove.Left- 5 - lbTime.Right);
         }
 
         public OrderControl(OrderItem item, bool isEnabled)
@@ -35,7 +37,10 @@ namespace UI_Example.Controls
             OrderID = item.orderNumber;
             lbOrderId.Text = item.orderNumber.ToString();
             if (isEnabled)
-                lbOrderId.DoubleClick += changeOrderColor;
+            {
+                foreach (Control control in Controls)
+                    control.DoubleClick += changeOrderColor;
+            }
             else
                 btRemove.Visible = false;
             AddKebabControls(item.kebabs);
@@ -45,16 +50,16 @@ namespace UI_Example.Controls
 
         public void changeOrderColor(object sender, EventArgs e)
         {
-            if (lbOrderId.BackColor == Color.White)
-                lbOrderId.BackColor = Color.Red;
-            else if (lbOrderId.BackColor == Color.Red)
-                lbOrderId.BackColor = Color.Yellow;
-            else if (lbOrderId.BackColor == Color.Yellow)
-                lbOrderId.BackColor = Color.Lime;
-            else if(lbOrderId.BackColor == Color.Lime)
-                lbOrderId.BackColor = Color.Gray;
+            if (lbState.BackColor == Color.White)
+                lbState.BackColor = Color.Red;
+            else if (lbState.BackColor == Color.Red)
+                lbState.BackColor = Color.Yellow;
+            else if (lbState.BackColor == Color.Yellow)
+                lbState.BackColor = Color.Lime;
+            else if(lbState.BackColor == Color.Lime)
+                lbState.BackColor = Color.Gray;
             else
-                lbOrderId.BackColor = Color.White;
+                lbState.BackColor = Color.White;
             if (ColorChangedCallBack != null)
                 ColorChangedCallBack(OrderID);
         }
@@ -70,12 +75,14 @@ namespace UI_Example.Controls
                     orderControl.Top = lbOrderId.Top;
                 else
                     orderControl.Top = lastControl.Bottom;
+                orderControl.setDoubleClickListener(changeOrderColor);
                 lastControl = orderControl;
                 this.Controls.Add(orderControl);
             }
             lbOrderId.Height = lastControl.Bottom - lbOrderId.Top;
             lbTime.Height = lbOrderId.Height;
-            this.Height = lbOrderId.Height;
+            lbState.Height = lbTime.Height + 10;
+            this.Height = lbState.Height;
         }
 
         private void btRemove_Click(object sender, EventArgs e)

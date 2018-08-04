@@ -70,7 +70,6 @@ C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csproj.CopyComplete
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.exe
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.pdb
 C:\Users\GODLIKE\Desktop\Doners\MainForm\bin\Debug\UI_Example.pdb
-C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csprojAssemblyReference.cache
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.SellsBookControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.HistoryOrderControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.HistoryControl.resources
@@ -79,3 +78,4 @@ C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CashBookI
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CostsControl.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Forms.AddCostForm.resources
 C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\UI_Example.Controls.CostItemControl.resources
+C:\Users\GODLIKE\Desktop\Doners\MainForm\obj\Debug\MainForm.csprojAssemblyReference.cache

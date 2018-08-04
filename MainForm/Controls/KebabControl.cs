@@ -48,5 +48,11 @@ namespace UI_Example.Controls
             Width = width;
             lbComment.Width = width - lbQuantity.Right;
         }
+
+        public void setDoubleClickListener(EventHandler listener)
+        {
+            foreach (Control control in Controls)
+                control.DoubleClick += listener;
+        }
     }
 }

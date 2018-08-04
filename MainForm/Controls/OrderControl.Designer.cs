@@ -31,6 +31,7 @@
             this.lbOrderId = new System.Windows.Forms.Label();
             this.btRemove = new System.Windows.Forms.Button();
             this.lbTime = new System.Windows.Forms.Label();
+            this.lbState = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbOrderId
@@ -38,7 +39,7 @@
             this.lbOrderId.BackColor = System.Drawing.Color.White;
             this.lbOrderId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbOrderId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbOrderId.Location = new System.Drawing.Point(0, 0);
+            this.lbOrderId.Location = new System.Drawing.Point(5, 5);
             this.lbOrderId.Name = "lbOrderId";
             this.lbOrderId.Size = new System.Drawing.Size(42, 33);
             this.lbOrderId.TabIndex = 71;
@@ -62,12 +63,23 @@
             this.lbTime.BackColor = System.Drawing.Color.White;
             this.lbTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTime.Location = new System.Drawing.Point(41, 0);
+            this.lbTime.Location = new System.Drawing.Point(46, 5);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(100, 33);
             this.lbTime.TabIndex = 77;
             this.lbTime.Text = "14:22:22";
             this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbState
+            // 
+            this.lbState.BackColor = System.Drawing.Color.White;
+            this.lbState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbState.Location = new System.Drawing.Point(0, 0);
+            this.lbState.Name = "lbState";
+            this.lbState.Size = new System.Drawing.Size(1020, 43);
+            this.lbState.TabIndex = 78;
+            this.lbState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OrderControl
             // 
@@ -76,8 +88,9 @@
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.lbOrderId);
             this.Controls.Add(this.btRemove);
+            this.Controls.Add(this.lbState);
             this.Name = "OrderControl";
-            this.Size = new System.Drawing.Size(1046, 34);
+            this.Size = new System.Drawing.Size(1046, 43);
             this.ResumeLayout(false);
 
         }
@@ -87,5 +100,6 @@
         private System.Windows.Forms.Label lbOrderId;
         private System.Windows.Forms.Button btRemove;
         private System.Windows.Forms.Label lbTime;
+        private System.Windows.Forms.Label lbState;
     }
 }
