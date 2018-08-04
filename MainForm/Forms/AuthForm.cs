@@ -35,7 +35,7 @@ namespace UI_Example
                 return false;
             }
             double cash;
-            if (tbCash.Text == "" && double.TryParse(tbCash.Text, out cash))
+            if (tbCash.Text == "" || !double.TryParse(tbCash.Text, out cash))
             {
                 errorProvider.SetError(tbCash, "Введите состояние кассы");
                 return false;
