@@ -133,10 +133,10 @@ namespace AddOrder
                 errProvider.SetError(gbPita, "Лаваш не выбран");
                 return false;
             }
-            if (!cbCaesar.Checked && !cbCheese.Checked && !cbGarlic.Checked && !cbMustard.Checked
+            if (rbCommon.Checked && !cbCaesar.Checked && !cbCheese.Checked && !cbGarlic.Checked && !cbMustard.Checked
                 && !cbSalsa.Checked && !cbBigMac.Checked && !cbBigTasty.Checked)
             {
-                errProvider.SetError(lbSause, "Соус не выбран");
+                errProvider.SetError(gbSauce, "Соус не выбран");
                 return false;
             }
             int count;
@@ -228,6 +228,19 @@ namespace AddOrder
         private List<SauceTypeEnum> GetKebabSauces()
         {
             List<SauceTypeEnum> sauces = new List<SauceTypeEnum>();
+
+            if (rbBulgarian.Checked)
+            {
+                sauces.Add(SauceTypeEnum.bulgarian);
+                return sauces;
+            }
+
+            if(rbDragon.Checked)
+            {
+                sauces.Add(SauceTypeEnum.dragon);
+                return sauces;
+            }
+
             if (cbBigMac.Checked)
                 sauces.Add(SauceTypeEnum.bigMac);
 
@@ -256,6 +269,14 @@ namespace AddOrder
                 e.Cancel = true;
                 Hide();
             }
+        }
+
+        private void typeSelectionChanged(object sender, EventArgs e)
+        {
+            if (rbCommon.Checked)
+                gbSauce.Enabled = true;
+            else
+                gbSauce.Enabled = false;
         }
     }
 }

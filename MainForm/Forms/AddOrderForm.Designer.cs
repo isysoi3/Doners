@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lbSause = new System.Windows.Forms.Label();
             this.rbStandart = new System.Windows.Forms.RadioButton();
             this.rbBig = new System.Windows.Forms.RadioButton();
             this.cbGarlic = new System.Windows.Forms.CheckBox();
@@ -65,26 +64,23 @@
             this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.tbNumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbCommon = new System.Windows.Forms.RadioButton();
+            this.rbBulgarian = new System.Windows.Forms.RadioButton();
+            this.rbDragon = new System.Windows.Forms.RadioButton();
+            this.gbSauce = new System.Windows.Forms.GroupBox();
             this.gbSize.SuspendLayout();
             this.gbPita.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.gbSauce.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbSause
-            // 
-            this.lbSause.AutoSize = true;
-            this.lbSause.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbSause.Location = new System.Drawing.Point(12, 124);
-            this.lbSause.Name = "lbSause";
-            this.lbSause.Size = new System.Drawing.Size(48, 20);
-            this.lbSause.TabIndex = 2;
-            this.lbSause.Text = "Соус:";
             // 
             // rbStandart
             // 
             this.rbStandart.AutoSize = true;
             this.rbStandart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbStandart.Location = new System.Drawing.Point(31, 30);
+            this.rbStandart.Location = new System.Drawing.Point(73, 25);
             this.rbStandart.Name = "rbStandart";
             this.rbStandart.Size = new System.Drawing.Size(72, 17);
             this.rbStandart.TabIndex = 3;
@@ -97,7 +93,7 @@
             // 
             this.rbBig.AutoSize = true;
             this.rbBig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbBig.Location = new System.Drawing.Point(153, 30);
+            this.rbBig.Location = new System.Drawing.Point(186, 25);
             this.rbBig.Name = "rbBig";
             this.rbBig.Size = new System.Drawing.Size(70, 17);
             this.rbBig.TabIndex = 4;
@@ -109,7 +105,8 @@
             // cbGarlic
             // 
             this.cbGarlic.AutoSize = true;
-            this.cbGarlic.Location = new System.Drawing.Point(39, 194);
+            this.cbGarlic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cbGarlic.Location = new System.Drawing.Point(31, 57);
             this.cbGarlic.Name = "cbGarlic";
             this.cbGarlic.Size = new System.Drawing.Size(83, 17);
             this.cbGarlic.TabIndex = 7;
@@ -120,7 +117,8 @@
             // cbSalsa
             // 
             this.cbSalsa.AutoSize = true;
-            this.cbSalsa.Location = new System.Drawing.Point(161, 194);
+            this.cbSalsa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cbSalsa.Location = new System.Drawing.Point(153, 57);
             this.cbSalsa.Name = "cbSalsa";
             this.cbSalsa.Size = new System.Drawing.Size(63, 17);
             this.cbSalsa.TabIndex = 8;
@@ -131,7 +129,8 @@
             // cbCheese
             // 
             this.cbCheese.AutoSize = true;
-            this.cbCheese.Location = new System.Drawing.Point(39, 224);
+            this.cbCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cbCheese.Location = new System.Drawing.Point(31, 81);
             this.cbCheese.Name = "cbCheese";
             this.cbCheese.Size = new System.Drawing.Size(67, 17);
             this.cbCheese.TabIndex = 9;
@@ -142,7 +141,8 @@
             // cbCaesar
             // 
             this.cbCaesar.AutoSize = true;
-            this.cbCaesar.Location = new System.Drawing.Point(161, 224);
+            this.cbCaesar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cbCaesar.Location = new System.Drawing.Point(153, 81);
             this.cbCaesar.Name = "cbCaesar";
             this.cbCaesar.Size = new System.Drawing.Size(64, 17);
             this.cbCaesar.TabIndex = 10;
@@ -153,7 +153,8 @@
             // cbMustard
             // 
             this.cbMustard.AutoSize = true;
-            this.cbMustard.Location = new System.Drawing.Point(39, 259);
+            this.cbMustard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cbMustard.Location = new System.Drawing.Point(31, 104);
             this.cbMustard.Name = "cbMustard";
             this.cbMustard.Size = new System.Drawing.Size(80, 17);
             this.cbMustard.TabIndex = 11;
@@ -164,7 +165,8 @@
             // cbBigMac
             // 
             this.cbBigMac.AutoSize = true;
-            this.cbBigMac.Location = new System.Drawing.Point(39, 312);
+            this.cbBigMac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cbBigMac.Location = new System.Drawing.Point(31, 157);
             this.cbBigMac.Name = "cbBigMac";
             this.cbBigMac.Size = new System.Drawing.Size(68, 17);
             this.cbBigMac.TabIndex = 12;
@@ -175,7 +177,8 @@
             // cbBigTasty
             // 
             this.cbBigTasty.AutoSize = true;
-            this.cbBigTasty.Location = new System.Drawing.Point(161, 312);
+            this.cbBigTasty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cbBigTasty.Location = new System.Drawing.Point(153, 157);
             this.cbBigTasty.Name = "cbBigTasty";
             this.cbBigTasty.Size = new System.Drawing.Size(83, 17);
             this.cbBigTasty.TabIndex = 13;
@@ -196,7 +199,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 165);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label4.Location = new System.Drawing.Point(6, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 13);
             this.label4.TabIndex = 15;
@@ -205,7 +209,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 290);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label5.Location = new System.Drawing.Point(6, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 16;
@@ -336,7 +341,7 @@
             this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gbSize.Location = new System.Drawing.Point(8, 3);
             this.gbSize.Name = "gbSize";
-            this.gbSize.Size = new System.Drawing.Size(268, 58);
+            this.gbSize.Size = new System.Drawing.Size(345, 50);
             this.gbSize.TabIndex = 29;
             this.gbSize.TabStop = false;
             this.gbSize.Text = "Размер:";
@@ -346,9 +351,9 @@
             this.gbPita.Controls.Add(this.rbWheat);
             this.gbPita.Controls.Add(this.rbCheese);
             this.gbPita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gbPita.Location = new System.Drawing.Point(8, 67);
+            this.gbPita.Location = new System.Drawing.Point(8, 58);
             this.gbPita.Name = "gbPita";
-            this.gbPita.Size = new System.Drawing.Size(268, 54);
+            this.gbPita.Size = new System.Drawing.Size(345, 50);
             this.gbPita.TabIndex = 30;
             this.gbPita.TabStop = false;
             this.gbPita.Text = "Лаваш:";
@@ -357,7 +362,7 @@
             // 
             this.rbWheat.AutoSize = true;
             this.rbWheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbWheat.Location = new System.Drawing.Point(31, 30);
+            this.rbWheat.Location = new System.Drawing.Point(73, 25);
             this.rbWheat.Name = "rbWheat";
             this.rbWheat.Size = new System.Drawing.Size(84, 17);
             this.rbWheat.TabIndex = 3;
@@ -370,7 +375,7 @@
             // 
             this.rbCheese.AutoSize = true;
             this.rbCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbCheese.Location = new System.Drawing.Point(153, 30);
+            this.rbCheese.Location = new System.Drawing.Point(186, 25);
             this.rbCheese.Name = "rbCheese";
             this.rbCheese.Size = new System.Drawing.Size(66, 17);
             this.rbCheese.TabIndex = 4;
@@ -382,7 +387,7 @@
             // tbCount
             // 
             this.tbCount.AllowDrop = true;
-            this.tbCount.Location = new System.Drawing.Point(108, 356);
+            this.tbCount.Location = new System.Drawing.Point(108, 378);
             this.tbCount.Name = "tbCount";
             this.tbCount.Size = new System.Drawing.Size(100, 20);
             this.tbCount.TabIndex = 32;
@@ -392,7 +397,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 356);
+            this.label1.Location = new System.Drawing.Point(14, 378);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 13);
             this.label1.TabIndex = 31;
@@ -401,7 +406,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 398);
+            this.label2.Location = new System.Drawing.Point(14, 413);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 33;
@@ -409,7 +414,7 @@
             // 
             // rtbComment
             // 
-            this.rtbComment.Location = new System.Drawing.Point(108, 396);
+            this.rtbComment.Location = new System.Drawing.Point(108, 411);
             this.rtbComment.Name = "rtbComment";
             this.rtbComment.Size = new System.Drawing.Size(211, 104);
             this.rtbComment.TabIndex = 35;
@@ -436,11 +441,83 @@
             this.label3.TabIndex = 36;
             this.label3.Text = "Номер заказа:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbDragon);
+            this.groupBox1.Controls.Add(this.rbCommon);
+            this.groupBox1.Controls.Add(this.rbBulgarian);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox1.Location = new System.Drawing.Point(8, 114);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(345, 55);
+            this.groupBox1.TabIndex = 31;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Тип:";
+            // 
+            // rbCommon
+            // 
+            this.rbCommon.AutoSize = true;
+            this.rbCommon.Checked = true;
+            this.rbCommon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbCommon.Location = new System.Drawing.Point(31, 25);
+            this.rbCommon.Name = "rbCommon";
+            this.rbCommon.Size = new System.Drawing.Size(70, 17);
+            this.rbCommon.TabIndex = 3;
+            this.rbCommon.TabStop = true;
+            this.rbCommon.Text = "Обычная";
+            this.rbCommon.UseVisualStyleBackColor = true;
+            this.rbCommon.CheckedChanged += new System.EventHandler(this.typeSelectionChanged);
+            // 
+            // rbBulgarian
+            // 
+            this.rbBulgarian.AutoSize = true;
+            this.rbBulgarian.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbBulgarian.Location = new System.Drawing.Point(113, 25);
+            this.rbBulgarian.Name = "rbBulgarian";
+            this.rbBulgarian.Size = new System.Drawing.Size(95, 17);
+            this.rbBulgarian.TabIndex = 4;
+            this.rbBulgarian.Text = "По-болгарски";
+            this.rbBulgarian.UseVisualStyleBackColor = true;
+            this.rbBulgarian.CheckedChanged += new System.EventHandler(this.typeSelectionChanged);
+            // 
+            // rbDragon
+            // 
+            this.rbDragon.AutoSize = true;
+            this.rbDragon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbDragon.Location = new System.Drawing.Point(214, 25);
+            this.rbDragon.Name = "rbDragon";
+            this.rbDragon.Size = new System.Drawing.Size(116, 17);
+            this.rbDragon.TabIndex = 5;
+            this.rbDragon.Text = "Дыхание дракона";
+            this.rbDragon.UseVisualStyleBackColor = true;
+            this.rbDragon.CheckedChanged += new System.EventHandler(this.typeSelectionChanged);
+            // 
+            // gbSauce
+            // 
+            this.gbSauce.Controls.Add(this.label4);
+            this.gbSauce.Controls.Add(this.cbGarlic);
+            this.gbSauce.Controls.Add(this.cbSalsa);
+            this.gbSauce.Controls.Add(this.cbCheese);
+            this.gbSauce.Controls.Add(this.cbCaesar);
+            this.gbSauce.Controls.Add(this.cbMustard);
+            this.gbSauce.Controls.Add(this.cbBigMac);
+            this.gbSauce.Controls.Add(this.cbBigTasty);
+            this.gbSauce.Controls.Add(this.label5);
+            this.gbSauce.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbSauce.Location = new System.Drawing.Point(8, 175);
+            this.gbSauce.Name = "gbSauce";
+            this.gbSauce.Size = new System.Drawing.Size(345, 197);
+            this.gbSauce.TabIndex = 38;
+            this.gbSauce.TabStop = false;
+            this.gbSauce.Text = "Соус";
+            // 
             // AddOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 566);
+            this.Controls.Add(this.gbSauce);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tbNumber);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rtbComment);
@@ -461,17 +538,7 @@
             this.Controls.Add(this.rbCash);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.gbOrder);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.btAdd);
-            this.Controls.Add(this.cbBigTasty);
-            this.Controls.Add(this.cbBigMac);
-            this.Controls.Add(this.cbMustard);
-            this.Controls.Add(this.cbCaesar);
-            this.Controls.Add(this.cbCheese);
-            this.Controls.Add(this.cbSalsa);
-            this.Controls.Add(this.cbGarlic);
-            this.Controls.Add(this.lbSause);
             this.MaximumSize = new System.Drawing.Size(1028, 605);
             this.MinimumSize = new System.Drawing.Size(1028, 605);
             this.Name = "AddOrderForm";
@@ -483,13 +550,16 @@
             this.gbPita.ResumeLayout(false);
             this.gbPita.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errProvider)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.gbSauce.ResumeLayout(false);
+            this.gbSauce.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lbSause;
         private System.Windows.Forms.RadioButton rbStandart;
         private System.Windows.Forms.RadioButton rbBig;
         private System.Windows.Forms.CheckBox cbGarlic;
@@ -525,6 +595,11 @@
         private System.Windows.Forms.ErrorProvider errProvider;
         private System.Windows.Forms.TextBox tbNumber;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbDragon;
+        private System.Windows.Forms.RadioButton rbCommon;
+        private System.Windows.Forms.RadioButton rbBulgarian;
+        private System.Windows.Forms.GroupBox gbSauce;
     }
 }
 

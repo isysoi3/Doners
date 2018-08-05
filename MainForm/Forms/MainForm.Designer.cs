@@ -105,7 +105,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(140, 33);
             this.label27.TabIndex = 75;
-            this.label27.Text = "Соус";
+            this.label27.Text = "Соус/Тип";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29

@@ -23,6 +23,8 @@ namespace UI_Example.Models
 
     public enum SauceTypeEnum
     {
+        bulgarian,
+        dragon,
         garlic,
         salsa,
         cheesy,
@@ -123,6 +125,16 @@ namespace UI_Example.Models
             string result = "";
             foreach (SauceTypeEnum sauce in sauces)
             {
+                if (sauce == SauceTypeEnum.bulgarian)
+                {
+                    result += "По-болгарски\n";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.dragon)
+                {
+                    result += "Дыхание дракона\n";
+                    continue;
+                }
                 if (sauce == SauceTypeEnum.bigMac)
                 {
                     result += "БигМак\n";
@@ -181,6 +193,16 @@ namespace UI_Example.Models
 
             foreach (SauceTypeEnum sauce in sauces)
             {
+                if (sauce == SauceTypeEnum.bulgarian)
+                {
+                    result += "По-болгарски";
+                    continue;
+                }
+                if (sauce == SauceTypeEnum.dragon)
+                {
+                    result += "Дыхание дракона";
+                    continue;
+                }
                 if (sauce == SauceTypeEnum.bigMac)
                 {
                     result += "БигМак ";
