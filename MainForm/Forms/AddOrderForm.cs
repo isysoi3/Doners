@@ -93,8 +93,15 @@ namespace AddOrder
         {
             rbBig.Checked = false;
             rbStandart.Checked = false;
+            rbSmall.Checked = false;
+
             rbWheat.Checked = false;
             rbCheese.Checked = false;
+
+            rbDragon.Checked = false;
+            rbBulgarian.Checked = false;
+            rbCommon.Checked = true;
+            typeSelectionChanged(this, new EventArgs());
 
             cbBigMac.Checked = false;
             cbBigTasty.Checked = false;
