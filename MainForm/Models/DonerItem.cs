@@ -68,20 +68,25 @@ namespace UI_Example.Models
         private void setSauces(DataRow row)
         {
             sauces = new List<SauceTypeEnum>();
-            if (bool.Parse(row.Field<String>("isGarlic")))
-                sauces.Add(SauceTypeEnum.garlic);
-            if (bool.Parse(row.Field<String>("isSalsa")))
-                sauces.Add(SauceTypeEnum.salsa);
-            if (bool.Parse(row.Field<String>("isCheesy")))
-                sauces.Add(SauceTypeEnum.cheesy);
-            if (bool.Parse(row.Field<String>("isCaesar")))
-                sauces.Add(SauceTypeEnum.caesar);
-            if (bool.Parse(row.Field<String>("isMustard")))
-                sauces.Add(SauceTypeEnum.mustard);
-            if (bool.Parse(row.Field<String>("isBigMac")))
+            String info = row.Field<String>("type");
+            if (info.Contains("По-болгарски"))
+                sauces.Add(SauceTypeEnum.bulgarian);
+            if (info.Contains("Дыхание дракона"))
+                sauces.Add(SauceTypeEnum.dragon);
+            if (info.Contains("БигМак"))
                 sauces.Add(SauceTypeEnum.bigMac);
-            if (bool.Parse(row.Field<String>("isBigTasty")))
+            if (info.Contains("БигТейсти"))
                 sauces.Add(SauceTypeEnum.bigTasty);
+            if (info.Contains("Цезарь"))
+                sauces.Add(SauceTypeEnum.caesar);
+            if (info.Contains("Сырный"))
+                sauces.Add(SauceTypeEnum.cheesy);
+            if (info.Contains("Чесночный"))
+                sauces.Add(SauceTypeEnum.garlic);
+            if (info.Contains("Горчичный"))
+                sauces.Add(SauceTypeEnum.mustard);
+            if (info.Contains("Сальса"))
+                sauces.Add(SauceTypeEnum.salsa);
         }
 
         public double CountCost()

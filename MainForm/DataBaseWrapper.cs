@@ -186,17 +186,11 @@ namespace UI_Example
         {
             foreach(KebabItem kebab in item.kebabs)
             {
-                String query = "INSERT INTO history ('orderNumber', 'date', 'time', 'isGarlic', 'isSalsa', 'isCheesy', 'isCaesar', 'isMustard', 'isBigMac', 'isBigTasty', 'size', 'pita', 'quantity', 'cost') VALUES ('" +
+                String query = "INSERT INTO history ('orderNumber', 'date', 'time', 'type', 'size', 'pita', 'quantity', 'cost') VALUES ('" +
                 item.orderNumber + "','" +
                 item.orderTime.ToString("MM/dd/yyyy") + "','" +
                 item.orderTime.ToString("HH:mm:ss") + "','" +
-                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.garlic) + "','" +
-                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.salsa) + "','" +
-                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.cheesy) + "','" +
-                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.caesar) + "','" +
-                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.mustard) + "','" +
-                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.bigMac) + "','" +
-                kebab.sauces.Exists((SauceTypeEnum sauce) => sauce == SauceTypeEnum.bigTasty) + "','" +
+                kebab.GetSaucesString() + "','" +
                 kebab.sizeType + "','" +
                 kebab.pitaType + "','" +
                 kebab.quantity + "','" +
