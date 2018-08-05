@@ -69,6 +69,7 @@
             this.rbBulgarian = new System.Windows.Forms.RadioButton();
             this.rbDragon = new System.Windows.Forms.RadioButton();
             this.gbSauce = new System.Windows.Forms.GroupBox();
+            this.rbSmall = new System.Windows.Forms.RadioButton();
             this.gbSize.SuspendLayout();
             this.gbPita.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
@@ -80,7 +81,7 @@
             // 
             this.rbStandart.AutoSize = true;
             this.rbStandart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbStandart.Location = new System.Drawing.Point(73, 25);
+            this.rbStandart.Location = new System.Drawing.Point(128, 25);
             this.rbStandart.Name = "rbStandart";
             this.rbStandart.Size = new System.Drawing.Size(72, 17);
             this.rbStandart.TabIndex = 3;
@@ -93,7 +94,7 @@
             // 
             this.rbBig.AutoSize = true;
             this.rbBig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbBig.Location = new System.Drawing.Point(186, 25);
+            this.rbBig.Location = new System.Drawing.Point(228, 25);
             this.rbBig.Name = "rbBig";
             this.rbBig.Size = new System.Drawing.Size(70, 17);
             this.rbBig.TabIndex = 4;
@@ -336,6 +337,7 @@
             // 
             // gbSize
             // 
+            this.gbSize.Controls.Add(this.rbSmall);
             this.gbSize.Controls.Add(this.rbStandart);
             this.gbSize.Controls.Add(this.rbBig);
             this.gbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -511,6 +513,18 @@
             this.gbSauce.TabStop = false;
             this.gbSauce.Text = "Соус";
             // 
+            // rbSmall
+            // 
+            this.rbSmall.AutoSize = true;
+            this.rbSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbSmall.Location = new System.Drawing.Point(31, 25);
+            this.rbSmall.Name = "rbSmall";
+            this.rbSmall.Size = new System.Drawing.Size(82, 17);
+            this.rbSmall.TabIndex = 5;
+            this.rbSmall.TabStop = true;
+            this.rbSmall.Text = "Маленькая";
+            this.rbSmall.UseVisualStyleBackColor = true;
+            // 
             // AddOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -600,6 +614,7 @@
         private System.Windows.Forms.RadioButton rbCommon;
         private System.Windows.Forms.RadioButton rbBulgarian;
         private System.Windows.Forms.GroupBox gbSauce;
+        private System.Windows.Forms.RadioButton rbSmall;
     }
 }
 

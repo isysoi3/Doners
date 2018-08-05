@@ -39,7 +39,13 @@ namespace AddOrder
             if (!checkInput())
                 return;
 
-            SizeTypeEnum size = (rbBig.Checked ? SizeTypeEnum.big : SizeTypeEnum.standart);
+            SizeTypeEnum size;
+            if (rbSmall.Checked)
+                size = SizeTypeEnum.small;
+            else if (rbStandart.Checked)
+                size = SizeTypeEnum.standart;
+            else
+                size = SizeTypeEnum.big;
             PitaTypeEnum pitaType = (rbWheat.Checked ? PitaTypeEnum.wheaten : PitaTypeEnum.cheesy);
             List<SauceTypeEnum> sauces = GetKebabSauces();
             string comment = rtbComment.Text;
@@ -123,7 +129,7 @@ namespace AddOrder
 
         private bool checkInput()
         {
-            if (!rbStandart.Checked && !rbBig.Checked)
+            if (!rbStandart.Checked && !rbBig.Checked && !rbSmall.Checked)
             {
                 errProvider.SetError(gbSize, "Размер не выбран");
                 return false;
@@ -274,9 +280,16 @@ namespace AddOrder
         private void typeSelectionChanged(object sender, EventArgs e)
         {
             if (rbCommon.Checked)
+            {
                 gbSauce.Enabled = true;
+                rbSmall.Enabled = true;
+            }
             else
+            {
                 gbSauce.Enabled = false;
+                rbSmall.Checked = false;
+                rbSmall.Enabled = false;
+            }
         }
     }
 }
