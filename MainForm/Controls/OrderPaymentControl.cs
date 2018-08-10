@@ -16,6 +16,7 @@ namespace UI_Example.Controls
     {
         private OrderItem currentOrder;
         public AddNewOrderDelegate AddOrderCallback;
+        private DataBaseWrapper dbWrapper;
 
         public void setCurrentOrder(OrderItem order)
         {
@@ -29,6 +30,7 @@ namespace UI_Example.Controls
 
         public OrderPaymentControl()
         {
+            dbWrapper = new DataBaseWrapper();
             InitializeComponent();
         }
 
@@ -103,9 +105,38 @@ namespace UI_Example.Controls
             clearOrderInput();
         }
 
-        private void cbId_SelectedIndexChanged(object sender, EventArgs e)
+        private void tbId_TextChanged(object sender, EventArgs e)
         {
+            int idStart;
+            if (!int.TryParse(tbId.Text, out idStart))
+            {
+                errProvider.SetError(cbId, "Введено не число");
+                return;
+            }
 
+            List<int> ids = dbWrapper.getCustomersIdStartedWith(idStart, 5);
+            if (ids.Count > 1)
+            {
+                cbId.Items.Clear();
+                if (cbId.DroppedDown != true)
+                    cbId.DroppedDown = true;
+                Cursor.Current = Cursors.Default;
+
+                foreach (int id in ids)
+                {
+                    cbId.Items.Add(id);
+                }
+            }
+            else
+            {
+                cbId.DroppedDown = false;
+            }
+        }
+
+        private void cbId_TextChanged(object sender, EventArgs e)
+        {
+            tbId.Text = cbId.Text;
+            cbId.DroppedDown = false;
         }
     }
 }

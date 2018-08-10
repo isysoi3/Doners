@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gbMakeOrder = new System.Windows.Forms.GroupBox();
+            this.tbId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@
             // 
             // gbMakeOrder
             // 
+            this.gbMakeOrder.Controls.Add(this.tbId);
             this.gbMakeOrder.Controls.Add(this.groupBox1);
             this.gbMakeOrder.Controls.Add(this.button1);
             this.gbMakeOrder.Controls.Add(this.cbId);
@@ -81,6 +83,15 @@
             this.gbMakeOrder.Size = new System.Drawing.Size(356, 551);
             this.gbMakeOrder.TabIndex = 1;
             this.gbMakeOrder.TabStop = false;
+            // 
+            // tbId
+            // 
+            this.tbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.tbId.Location = new System.Drawing.Point(84, 46);
+            this.tbId.Name = "tbId";
+            this.tbId.Size = new System.Drawing.Size(86, 21);
+            this.tbId.TabIndex = 70;
+            this.tbId.TextChanged += new System.EventHandler(this.tbId_TextChanged);
             // 
             // groupBox1
             // 
@@ -127,7 +138,7 @@
             this.cbId.Name = "cbId";
             this.cbId.Size = new System.Drawing.Size(86, 21);
             this.cbId.TabIndex = 67;
-            this.cbId.SelectedIndexChanged += new System.EventHandler(this.cbId_SelectedIndexChanged);
+            this.cbId.TextChanged += new System.EventHandler(this.cbId_TextChanged);
             // 
             // label1
             // 
@@ -312,5 +323,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider errProvider;
+        private System.Windows.Forms.TextBox tbId;
     }
 }

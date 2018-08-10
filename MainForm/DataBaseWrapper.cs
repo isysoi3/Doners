@@ -25,6 +25,31 @@ namespace UI_Example
             command.Connection = dbConnection.getConnection();
         }
 
+        public List<int> getCustomersIdStartedWith(int start, int limit)
+        {
+            List<int> ids = new List<int>();
+
+            DataTable table = new DataTable();
+            String query = "SELECT * FROM customers WHERE id LIKE '" + start + "%' LIMIT " + limit;
+
+            try
+            {
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, dbConnection.getConnection());
+                adapter.Fill(table);
+            }
+            catch (SQLiteException ex)
+            {
+                return ids;
+            }
+
+            foreach(DataRow row in table.Rows)
+            {
+                ids.Add((int)row.Field<Int64>("id"));
+            }
+
+            return ids;
+        }
+
         public List<CostItem> getCostItems()
         {
             List<CostItem> costItems = new List<CostItem>();
