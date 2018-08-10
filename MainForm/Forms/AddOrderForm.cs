@@ -11,6 +11,7 @@ using System.IO.Pipes;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using UI_Example.Models;
+using UI_Example.Controls;
 using UI_Example;
 
 //TODO: fix all namespace
@@ -26,12 +27,20 @@ namespace AddOrder
         private OrderItem currentOrder;
         public AddNewOrderDelegate AddOrderCallback;
         private DataBaseWrapper dbWrapper;
+        private OrderPaymentControl orderPaymentControl;
+        private Control currentGroupBox;
 
         public AddOrderForm()
         {
             currentOrder = new OrderItem();
             dbWrapper = new DataBaseWrapper();
+            
+
             InitializeComponent();
+
+
+            orderPaymentControl = new OrderPaymentControl();
+            currentGroupBox = gbMakeOrder;
         }
 
         private void btAdd_Click(object sender, EventArgs e)
@@ -84,8 +93,7 @@ namespace AddOrder
             labelCounter++;
             lastLabel = newLabel;
 
-            recountTotalAndChange(sender, e);
-
+            clearErrorProvider(sender, e);
             clearInput();
         }
 
@@ -118,15 +126,12 @@ namespace AddOrder
 
         private void clearOrderInput()
         {
-            clearInput();
+            if (currentGroupBox == gbMakeOrder)
+                clearInput();
+            else
+                orderPaymentControl.clearOrderInput();
             lastLabel = null;
             gbOrder.Controls.Clear();
-            tbDiscount.Clear();
-            tbGiven.Clear();
-            rbCash.Checked = true;
-
-            lbTotal.Text = "Итого:";
-            lbChange.Text = "Сдача:";
         }
 
         private void clearErrorProvider(object sender, EventArgs e)
@@ -161,79 +166,8 @@ namespace AddOrder
             return true;
         }
 
-        private void paymentChanged(object sender, EventArgs e)
-        {
-            if (rbCard.Checked)
-            {
-                tbGiven.Enabled = false;
-                tbGiven.Text = "";
-                lbChange.Text = "Сдача: ";
-            }
-            else
-                tbGiven.Enabled = true;
-            recountTotalAndChange(sender, e);
-        }
-
-        private double countTotal()
-        {
-            double total = currentOrder.summary;
-            double discount;
-            if (double.TryParse(tbDiscount.Text, out discount) && discount >= 0)
-                total *= (100 - discount) / 100;
-            total = Math.Round(total, 2);
-
-            return total;
-        }
-
-        private void recountTotalAndChange(object sender, EventArgs e)
-        {
-            double given;
-            double total = countTotal();
-            lbTotal.Text = "Итого: " + total ;
-
-            if (double.TryParse(tbGiven.Text, out given) && given >= total)
-                lbChange.Text = "Сдача: " + (given - total);
-        }
-
-        private void printCkeckButtonClicked(object sender, EventArgs e)
-        {
-            //TODO: print check
-        }
-
-        private void endOrderButtonClick(object sender, EventArgs e)
-        {
-            int orderNumber;
-            if(!int.TryParse(tbNumber.Text, out orderNumber) || orderNumber < 0)
-            {
-                errProvider.SetError(tbNumber, "Не указан номер заказа");
-                return;
-            }
-            DateTime currentTime = DateTime.Now;
-            
-            if (currentOrder.IsOrderEmpty())
-            {
-                errProvider.SetError(gbOrder, "Пустой заказ");
-                return;
-            }
-
-            currentOrder.orderNumber = orderNumber;
-            currentOrder.orderTime = currentTime;
-            AddOrderCallback(currentOrder);
-
-            if (rbCash.Checked)
-                QueueForm.CurrentCashierInfo.CashIn += countTotal();
-            else
-                QueueForm.CurrentCashierInfo.NonCashIn += countTotal();
-
-            dbWrapper.addOrder(currentOrder);
-
-            ClearForm();
-            Hide();
-        }
-
         private void ClearForm()
         {
-            tbNumber.Text = "";
             currentOrder.ClearOrder();
             clearOrderInput();
         }
@@ -248,7 +182,7 @@ namespace AddOrder
                 return sauces;
             }
 
-            if(rbDragon.Checked)
+            if (rbDragon.Checked)
             {
                 sauces.Add(SauceTypeEnum.dragon);
                 return sauces;
@@ -297,6 +231,48 @@ namespace AddOrder
                 rbSmall.Checked = false;
                 rbSmall.Enabled = false;
             }
+        }
+
+        private void btNext_Click(object sender, EventArgs e)
+        {
+            if (currentGroupBox == gbMakeOrder)
+            {
+                if (currentOrder.IsOrderEmpty())
+                {
+                    errProvider.SetError(gbOrder, "Пустой заказ");
+                    return;
+                }
+
+                Controls.Remove(gbMakeOrder);
+
+                orderPaymentControl.Top = currentGroupBox.Top;
+                orderPaymentControl.Left = currentGroupBox.Left;
+                currentGroupBox = orderPaymentControl;
+                orderPaymentControl.setCurrentOrder(currentOrder);
+                Controls.Add(currentGroupBox);
+
+                btBack.Enabled = true;
+            }
+            else
+            {
+                if(orderPaymentControl.endOrderButtonClick())
+                {
+                    currentOrder = orderPaymentControl.getCurrentOrder();
+                    AddOrderCallback(currentOrder);
+                    dbWrapper.addOrder(currentOrder);
+                    ClearForm();
+                    Hide();
+                }
+            }
+        }
+
+        private void btBack_Click(object sender, EventArgs e)
+        {
+            btBack.Enabled = false;
+
+            Controls.Remove(currentGroupBox);
+            currentGroupBox = gbMakeOrder;
+            Controls.Add(currentGroupBox);
         }
     }
 }
