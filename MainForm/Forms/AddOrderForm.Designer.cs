@@ -439,7 +439,7 @@
             this.MinimumSize = new System.Drawing.Size(1028, 650);
             this.Name = "AddOrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "`";
+            this.Text = "Добавить заказ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormWillClose);
             ((System.ComponentModel.ISupportInitialize)(this.errProvider)).EndInit();
             this.gbSize.ResumeLayout(false);

@@ -105,35 +105,46 @@ namespace UI_Example.Controls
             clearOrderInput();
         }
 
+        private static int a = 0;
+
         private void tbId_TextChanged(object sender, EventArgs e)
         {
             int idStart;
+            errProvider.Clear();
+
+            if (tbId.Text.Equals("") || tbId.Text.Equals(cbId.Text))
+            {
+                cbId.DroppedDown = false;
+                return;
+            }
+
+            cbId.Text = "";
             if (!int.TryParse(tbId.Text, out idStart))
             {
                 errProvider.SetError(cbId, "Введено не число");
+                cbId.DroppedDown = false;
                 return;
             }
 
             List<int> ids = dbWrapper.getCustomersIdStartedWith(idStart, 5);
-            if (ids.Count > 1)
-            {
-                cbId.Items.Clear();
-                if (cbId.DroppedDown != true)
-                    cbId.DroppedDown = true;
-                Cursor.Current = Cursors.Default;
-
-                foreach (int id in ids)
-                {
-                    cbId.Items.Add(id);
-                }
-            }
-            else
+            if(ids.Count == 0)
             {
                 cbId.DroppedDown = false;
+                return;
             }
+            cbId.Items.Clear();
+            Cursor.Current = Cursors.Default;
+
+            foreach (int id in ids)
+            {
+                cbId.Items.Add(id);
+            }
+
+            cbId.DroppedDown = false;
+            cbId.DroppedDown = true;
         }
 
-        private void cbId_TextChanged(object sender, EventArgs e)
+        private void cbId_SelectedValueChanged(object sender, EventArgs e)
         {
             tbId.Text = cbId.Text;
             cbId.DroppedDown = false;

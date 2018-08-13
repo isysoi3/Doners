@@ -87,7 +87,7 @@
             // tbId
             // 
             this.tbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.tbId.Location = new System.Drawing.Point(84, 46);
+            this.tbId.Location = new System.Drawing.Point(78, 25);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(86, 21);
             this.tbId.TabIndex = 70;
@@ -138,7 +138,7 @@
             this.cbId.Name = "cbId";
             this.cbId.Size = new System.Drawing.Size(86, 21);
             this.cbId.TabIndex = 67;
-            this.cbId.TextChanged += new System.EventHandler(this.cbId_TextChanged);
+            this.cbId.SelectedValueChanged += new System.EventHandler(this.cbId_SelectedValueChanged);
             // 
             // label1
             // 
