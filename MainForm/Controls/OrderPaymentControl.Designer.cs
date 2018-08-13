@@ -52,6 +52,8 @@
             this.rbCash = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbBalance = new System.Windows.Forms.Label();
             this.gbMakeOrder.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
@@ -95,6 +97,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lbBalance);
+            this.groupBox1.Controls.Add(this.lbName);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(21, 89);
@@ -283,6 +287,22 @@
             // 
             this.errProvider.ContainerControl = this;
             // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Location = new System.Drawing.Point(126, 21);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(0, 13);
+            this.lbName.TabIndex = 72;
+            // 
+            // lbBalance
+            // 
+            this.lbBalance.AutoSize = true;
+            this.lbBalance.Location = new System.Drawing.Point(126, 47);
+            this.lbBalance.Name = "lbBalance";
+            this.lbBalance.Size = new System.Drawing.Size(0, 13);
+            this.lbBalance.TabIndex = 73;
+            // 
             // OrderPaymentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,5 +344,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider errProvider;
         private System.Windows.Forms.TextBox tbId;
+        private System.Windows.Forms.Label lbBalance;
+        private System.Windows.Forms.Label lbName;
     }
 }

@@ -25,6 +25,28 @@ namespace UI_Example
             command.Connection = dbConnection.getConnection();
         }
 
+        public CustomerInfo getCustomerInfo(int id)
+        {
+            DataTable table = new DataTable();
+            String query = "SELECT * FROM customers WHERE id='" + id + "'";
+
+            try
+            {
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, dbConnection.getConnection());
+                adapter.Fill(table);
+            }
+            catch (SQLiteException ex)
+            {
+                return null;
+            }
+
+            if (table.Rows.Count != 0)
+                return new CustomerInfo(table.Rows[0]);
+            else
+                return null;
+
+        }
+
         public List<int> getCustomersIdStartedWith(int start, int limit)
         {
             List<int> ids = new List<int>();

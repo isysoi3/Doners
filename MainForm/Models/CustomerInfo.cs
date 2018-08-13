@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Globalization;
+
 
 namespace UI_Example.Models
 {
@@ -14,7 +17,7 @@ namespace UI_Example.Models
         public String Name { get; }
         public DateTime DOB { get; }
         public CustomerSex Sex { get; }
-        public float Balance { get; set; }
+        public double Balance { get; set; }
 
         public CustomerInfo(int id, String name, DateTime dob, CustomerSex sex)
         {
@@ -28,6 +31,15 @@ namespace UI_Example.Models
         public CustomerInfo(int id, String name, DateTime dob, CustomerSex sex, float balance) : this(id, name, dob, sex)
         {
             Balance = balance;
+        }
+
+        public CustomerInfo(DataRow row)
+        {
+            Id = (int)row.Field<Int64>("id");
+            Name = row.Field<String>("name");
+            DOB = DateTime.Parse(row.Field<String>("dob"), CultureInfo.CreateSpecificCulture("en-US"));
+            Sex = (CustomerSex)Enum.Parse(typeof(CustomerSex), row.Field<String>("sex"));
+            Balance = row.Field<double>("balance");
         }
 
     }

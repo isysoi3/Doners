@@ -117,6 +117,9 @@ namespace UI_Example.Controls
             }
 
             cbId.Text = "";
+            lbName.Text = "";
+            lbBalance.Text = "";
+
             if (!int.TryParse(tbId.Text, out idStart))
             {
                 errProvider.SetError(cbId, "Введено не число");
@@ -145,6 +148,9 @@ namespace UI_Example.Controls
         private void cbId_SelectedValueChanged(object sender, EventArgs e)
         {
             tbId.Text = cbId.Text;
+            CustomerInfo info = dbWrapper.getCustomerInfo(int.Parse(tbId.Text));
+            lbName.Text = info.Name;
+            lbBalance.Text = info.Balance.ToString();
             cbId.DroppedDown = false;
         }
     }
