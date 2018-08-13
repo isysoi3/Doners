@@ -87,7 +87,7 @@
             // tbId
             // 
             this.tbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.tbId.Location = new System.Drawing.Point(78, 25);
+            this.tbId.Location = new System.Drawing.Point(84, 46);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(86, 21);
             this.tbId.TabIndex = 70;

@@ -105,8 +105,6 @@ namespace UI_Example.Controls
             clearOrderInput();
         }
 
-        private static int a = 0;
-
         private void tbId_TextChanged(object sender, EventArgs e)
         {
             int idStart;
